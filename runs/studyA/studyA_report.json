@@ -1,0 +1,407 @@
+{
+ "files": {
+  "runs/studyA_E2B.jsonl": {
+   "rows": 6400,
+   "error_rows": 0,
+   "unresolved_errors": 0,
+   "unresolved_examples": [],
+   "duplicates": 0,
+   "broken_lines": 0,
+   "model": "E2B",
+   "n_jobs": 6400,
+   "rows_in_roles": 6400,
+   "complete": true,
+   "thought_block": "off",
+   "answer_prefix": "Answer:",
+   "answer_prefix_source": {
+    "rule": "ANSWER_PREFIX"
+   },
+   "model_sha256": "fa401b55b07ee70a54c6dae3903c783a6e65064312529ea57175cb5f8dec6634",
+   "package": {
+    "code_hash": "983e343e3c1db31d58d172e2192bbb02ba3bc3e7e12353ddc426fff5994d9f70",
+    "code_sha256_current": true,
+    "items_digest": "511b839ff70e2106c85bdfa5e726e7a5d4b3712ec52e0c6ec750c29f15b782b7",
+    "items_folder": "data/items",
+    "manifests": {
+     "prereg/MANIFEST_prereg-v1.0.txt": "c4d82769f7607766066ffa8986dd16576499dc7b835cf3d94b8f9a9766be5ced"
+    }
+   },
+   "sessions": [
+    {
+     "utc": null,
+     "code_hash": "983e343e3c1db31d58d172e2192bbb02ba3bc3e7e12353ddc426fff5994d9f70",
+     "code_sha256_current": true,
+     "manifests": {
+      "prereg/MANIFEST_prereg-v1.0.txt": "c4d82769f7607766066ffa8986dd16576499dc7b835cf3d94b8f9a9766be5ced"
+     }
+    }
+   ],
+   "items_dir_matches": true
+  },
+  "runs/studyA_E4B.jsonl": {
+   "rows": 6400,
+   "error_rows": 0,
+   "unresolved_errors": 0,
+   "unresolved_examples": [],
+   "duplicates": 0,
+   "broken_lines": 0,
+   "model": "E4B",
+   "n_jobs": 6400,
+   "rows_in_roles": 6400,
+   "complete": true,
+   "thought_block": "off",
+   "answer_prefix": "",
+   "answer_prefix_source": {
+    "rule": "ANSWER_PREFIX"
+   },
+   "model_sha256": "676c35070db6dbe52f93e9c864ee0fba4eddea94b9c875d9cb10daff453fbaee",
+   "package": {
+    "code_hash": "983e343e3c1db31d58d172e2192bbb02ba3bc3e7e12353ddc426fff5994d9f70",
+    "code_sha256_current": true,
+    "items_digest": "511b839ff70e2106c85bdfa5e726e7a5d4b3712ec52e0c6ec750c29f15b782b7",
+    "items_folder": "data/items",
+    "manifests": {
+     "prereg/MANIFEST_prereg-v1.0.txt": "c4d82769f7607766066ffa8986dd16576499dc7b835cf3d94b8f9a9766be5ced"
+    }
+   },
+   "sessions": [
+    {
+     "utc": null,
+     "code_hash": "983e343e3c1db31d58d172e2192bbb02ba3bc3e7e12353ddc426fff5994d9f70",
+     "code_sha256_current": true,
+     "manifests": {
+      "prereg/MANIFEST_prereg-v1.0.txt": "c4d82769f7607766066ffa8986dd16576499dc7b835cf3d94b8f9a9766be5ced"
+     }
+    }
+   ],
+   "items_dir_matches": true
+  },
+  "runs/studyA_12B.jsonl": {
+   "rows": 3200,
+   "error_rows": 0,
+   "unresolved_errors": 0,
+   "unresolved_examples": [],
+   "duplicates": 0,
+   "broken_lines": 0,
+   "model": "12B",
+   "n_jobs": 3200,
+   "rows_in_roles": 3200,
+   "complete": true,
+   "thought_block": "on",
+   "answer_prefix": "Answer:",
+   "answer_prefix_source": {
+    "rule": "ANSWER_PREFIX"
+   },
+   "model_sha256": "93567e57a8fe10b23569b9d9ec38cd005deedf71e29477c421a4b83f418a538b",
+   "package": {
+    "code_hash": "983e343e3c1db31d58d172e2192bbb02ba3bc3e7e12353ddc426fff5994d9f70",
+    "code_sha256_current": true,
+    "items_digest": "511b839ff70e2106c85bdfa5e726e7a5d4b3712ec52e0c6ec750c29f15b782b7",
+    "items_folder": "data/items",
+    "manifests": {
+     "prereg/MANIFEST_prereg-v1.0.txt": "c4d82769f7607766066ffa8986dd16576499dc7b835cf3d94b8f9a9766be5ced"
+    }
+   },
+   "sessions": [
+    {
+     "utc": null,
+     "code_hash": "983e343e3c1db31d58d172e2192bbb02ba3bc3e7e12353ddc426fff5994d9f70",
+     "code_sha256_current": true,
+     "manifests": {
+      "prereg/MANIFEST_prereg-v1.0.txt": "c4d82769f7607766066ffa8986dd16576499dc7b835cf3d94b8f9a9766be5ced"
+     }
+    }
+   ],
+   "items_dir_matches": true
+  },
+  "runs/studyA_31B.jsonl": {
+   "rows": 3200,
+   "error_rows": 0,
+   "unresolved_errors": 0,
+   "unresolved_examples": [],
+   "duplicates": 0,
+   "broken_lines": 0,
+   "model": "31B",
+   "n_jobs": 3200,
+   "rows_in_roles": 3200,
+   "complete": true,
+   "thought_block": "on",
+   "answer_prefix": "Answer:",
+   "answer_prefix_source": {
+    "rule": "smoke file",
+    "smoke_file": "gng1_rename3_31B.json",
+    "smoke_sha256": "d1a1801b5a3dcd9e07592787a705c5194739c61fa9a0457ddd01ff9b00dd7616",
+    "prefix_rule_choice": "Answer:"
+   },
+   "model_sha256": "179cfb99212709597eae5929112cfca677e1bbf566178b479ae1da0c4772874b",
+   "package": {
+    "code_hash": "983e343e3c1db31d58d172e2192bbb02ba3bc3e7e12353ddc426fff5994d9f70",
+    "code_sha256_current": true,
+    "items_digest": "511b839ff70e2106c85bdfa5e726e7a5d4b3712ec52e0c6ec750c29f15b782b7",
+    "items_folder": "data/items",
+    "manifests": {
+     "prereg/MANIFEST_prereg-v1.0.txt": "c4d82769f7607766066ffa8986dd16576499dc7b835cf3d94b8f9a9766be5ced"
+    }
+   },
+   "sessions": [
+    {
+     "utc": null,
+     "code_hash": "983e343e3c1db31d58d172e2192bbb02ba3bc3e7e12353ddc426fff5994d9f70",
+     "code_sha256_current": true,
+     "manifests": {
+      "prereg/MANIFEST_prereg-v1.0.txt": "c4d82769f7607766066ffa8986dd16576499dc7b835cf3d94b8f9a9766be5ced"
+     }
+    }
+   ],
+   "items_dir_matches": true
+  }
+ },
+ "n_rows": 19200,
+ "models": [
+  "12B",
+  "31B",
+  "E2B",
+  "E4B"
+ ],
+ "excluded_models": [],
+ "repos": {
+  "familiar": 16,
+  "fresh": 16
+ },
+ "accuracy": {
+  "12B": {
+   "G0": 0.4,
+   "G1": 0.9156,
+   "G2": 0.9125,
+   "G3": 0.8984,
+   "G4": 0.8766
+  },
+  "31B": {
+   "G0": 0.4641,
+   "G1": 0.9641,
+   "G2": 0.9609,
+   "G3": 0.9375,
+   "G4": 0.9281
+  },
+  "E2B": {
+   "G0": 0.3266,
+   "G1": 0.5727,
+   "G2": 0.5844,
+   "G3": 0.4672,
+   "G4": 0.5008
+  },
+  "E4B": {
+   "G0": 0.3688,
+   "G1": 0.6484,
+   "G2": 0.6172,
+   "G3": 0.5461,
+   "G4": 0.5398
+  }
+ },
+ "letter_mass_share_ge_0.9": {
+  "12B": 0.9990625,
+  "31B": 0.999375,
+  "E2B": 0.9596875,
+  "E4B": 0.82
+ },
+ "A1": {
+  "estimate": 0.00546875,
+  "se": 0.009251326395202175,
+  "t": 0.591131451467991,
+  "df": 31,
+  "p": 0.5587183246257046,
+  "ci95_boot": [
+   -0.012304687500000001,
+   0.023046874999999998
+  ],
+  "n_clusters": 32,
+  "tost": {
+   "p_tost": 1.831615885218037e-05,
+   "equivalent_at_0.05": true,
+   "ci90": [
+    -0.010217047666527616,
+    0.021154547666527614
+   ]
+  },
+  "per_model": {
+   "12B": -0.01875,
+   "31B": -0.00625,
+   "E2B": 0.021875,
+   "E4B": 0.025
+  }
+ },
+ "A1_p_correct": {
+  "estimate": 0.011856855809339468,
+  "se": 0.006962351721273338,
+  "t": 1.7029958100380167,
+  "df": 31,
+  "p": 0.09857659414573264,
+  "ci95_boot": [
+   -0.0016808991604544254,
+   0.025454898182777908
+  ],
+  "n_clusters": 32,
+  "tost": {
+   "p_tost": 2.722922054950726e-06,
+   "equivalent_at_0.05": true,
+   "ci90": [
+    5.205769522999282e-05,
+    0.023661653923448944
+   ]
+  },
+  "per_model": {
+   "12B": -0.004390719665634183,
+   "31B": -0.005135400309230017,
+   "E2B": 0.040374687267190665,
+   "E4B": 0.0165788559450314
+  }
+ },
+ "A2": {
+  "estimate": 0.026953125,
+  "t": 1.8692392790026766,
+  "p": 0.07172274685194174,
+  "ci95_boot": [
+   -0.0003906250000000021,
+   0.053515625000000004
+  ],
+  "n_familiar": 16,
+  "n_fresh": 16,
+  "tost": {
+   "p_tost": 0.060406380757182625,
+   "equivalent_at_0.05": false,
+   "ci90": [
+    0.002452592784925215,
+    0.05145365721507479
+   ],
+   "df_welch": 28.988984003389508
+  }
+ },
+ "A1_gee": {
+  "names_real:edges_swap": {
+   "coef": 0.17992326692638058,
+   "p": 0.21394910941149636
+  },
+  "names_real:edges_swap:C(model)[T.31B]": {
+   "coef": -0.11673935373564179,
+   "p": 0.6326523053823319
+  },
+  "names_real:edges_swap:C(model)[T.E2B]": {
+   "coef": -0.26642458419418336,
+   "p": 0.12264294225205156
+  },
+  "names_real:edges_swap:C(model)[T.E4B]": {
+   "coef": -0.28928748533044685,
+   "p": 0.07575922549884039
+  }
+ },
+ "A1_excluding_parity_flagged": {
+  "estimate": 0.0037950297359159568,
+  "se": 0.009345748548525427,
+  "t": 0.40607017364218906,
+  "df": 31,
+  "p": 0.6874805531213911,
+  "ci95_boot": [
+   -0.01383982522190303,
+   0.02195067035016604
+  ],
+  "n_clusters": 32,
+  "tost": {
+   "p_tost": 1.2609320995931435e-05,
+   "equivalent_at_0.05": true,
+   "ci90": [
+    -0.012050862465059658,
+    0.01964092193689157
+   ]
+  },
+  "per_model": {
+   "12B": -0.021207177814029365,
+   "31B": -0.0065252854812398045,
+   "E2B": 0.013050570962479609,
+   "E4B": 0.02773246329526917
+  }
+ },
+ "parity_flagged_items": {
+  "n": 27,
+  "rule": "|token_parity['G2_minus_G1']| > PARITY_TOL (2) in the item files: the real-name (G1) and neutral-name (G2) prompts still differ by more than PARITY_TOL tokens after the parity repair"
+ },
+ "A3": {
+  "estimate": -0.035700618477207555,
+  "se": 0.016072443747526085,
+  "t": -2.221231508911188,
+  "df": 31,
+  "p": 0.033773138552341694,
+  "ci95_boot": [
+   -0.06723856563343233,
+   -0.0049584802220377245
+  ],
+  "n_clusters": 32,
+  "familiar_minus_fresh": {
+   "estimate": -0.024616605768565628,
+   "ci95": [
+    -0.09080624166994274,
+    0.04157303013281148
+   ],
+   "descriptive": true
+  },
+  "tost": {
+   "p_tost": 0.2955006805390218,
+   "equivalent_at_0.05": false,
+   "ci90": [
+    -0.06295174873254988,
+    -0.008449488221865233
+   ],
+   "bound_unit": "span",
+   "span_decades": 1.125410539459594,
+   "bound_slope_per_decade": 0.04442823151808165,
+   "bound_cc_change_over_span": 0.05
+  },
+  "role": "registered axis: decides 'flat'",
+  "axis": {
+   "12B": 11950000000.0,
+   "31B": 30700000000.0,
+   "E2B": 2300000000.0,
+   "E4B": 4500000000.0
+  },
+  "models_not_on_axis": []
+ },
+ "A3_sensitivity": {
+  "estimate": -0.04496471096614378,
+  "se": 0.021301988256815597,
+  "t": -2.110822258657347,
+  "df": 31,
+  "p": 0.042953209047618096,
+  "ci95_boot": [
+   -0.08655953877807877,
+   -0.004237493398057543
+  ],
+  "n_clusters": 32,
+  "familiar_minus_fresh": {
+   "estimate": -0.03889325625174936,
+   "ci95": [
+    -0.1262755322303668,
+    0.0484890197268681
+   ],
+   "descriptive": true
+  },
+  "tost": {
+   "p_tost": 0.23068740749919447,
+   "equivalent_at_0.05": false,
+   "ci90": [
+    -0.08108263216114607,
+    -0.008846789771141492
+   ],
+   "bound_unit": "span",
+   "span_decades": 0.8216540216896231,
+   "bound_slope_per_decade": 0.06085286346822912,
+   "bound_cc_change_over_span": 0.05
+  },
+  "role": "sensitivity axis: reported next to A3; does not decide 'flat'",
+  "axis": {
+   "12B": 11907350576,
+   "31B": 30697345596,
+   "E2B": 4628569635,
+   "E4B": 7463013674
+  },
+  "models_not_on_axis": []
+ }
+}

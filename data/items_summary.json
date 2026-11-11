@@ -1,0 +1,633 @@
+{
+ "tokenizer": {
+  "file": "ggml-vocab-gemma-4.gguf",
+  "sha256": "58b1ba0b57f3b4d7c468ba4ffd91ad85190346a3d7ad7e71d1cabaae8a14bb65"
+ },
+ "per_cell": 5,
+ "roles": [
+  "confirmatory",
+  "pilot",
+  "reserve"
+ ],
+ "repos": [
+  {
+   "repo": "fastapi",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 520,
+   "token_mismatched_components": 99,
+   "group": "familiar",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "rich",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 687,
+   "token_mismatched_components": 8,
+   "group": "familiar",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "requests",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 572,
+   "token_mismatched_components": 1,
+   "group": "familiar",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "httpx",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 533,
+   "token_mismatched_components": 11,
+   "group": "familiar",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "flask",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 518,
+   "token_mismatched_components": 0,
+   "group": "familiar",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "click",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 543,
+   "token_mismatched_components": 22,
+   "group": "familiar",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "werkzeug",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 633,
+   "token_mismatched_components": 17,
+   "group": "familiar",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "jinja",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 524,
+   "token_mismatched_components": 0,
+   "group": "familiar",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "marshmallow",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 517,
+   "token_mismatched_components": 74,
+   "group": "familiar",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "httpcore",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 577,
+   "token_mismatched_components": 1,
+   "group": "familiar",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "packaging",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 487,
+   "token_mismatched_components": 9,
+   "group": "familiar",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "boltons",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 463,
+   "token_mismatched_components": 22,
+   "group": "familiar",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "starlette",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 628,
+   "token_mismatched_components": 59,
+   "group": "familiar",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "black",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 518,
+   "token_mismatched_components": 1,
+   "group": "familiar",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "tornado",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 526,
+   "token_mismatched_components": 64,
+   "group": "familiar",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "sanic",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 774,
+   "token_mismatched_components": 24,
+   "group": "familiar",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "trio",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 685,
+   "token_mismatched_components": 96,
+   "group": "familiar",
+   "role": "pilot"
+  },
+  {
+   "repo": "anyio",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 601,
+   "token_mismatched_components": 6,
+   "group": "familiar",
+   "role": "reserve"
+  },
+  {
+   "repo": "cattrs",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 540,
+   "token_mismatched_components": 20,
+   "group": "familiar",
+   "role": "reserve"
+  },
+  {
+   "repo": "spec-kit",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 672,
+   "token_mismatched_components": 0,
+   "group": "fresh",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "graphify",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 511,
+   "token_mismatched_components": 4,
+   "group": "fresh",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "Agent-Reach",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 629,
+   "token_mismatched_components": 10,
+   "group": "fresh",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "deer-flow",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 590,
+   "token_mismatched_components": 3,
+   "group": "fresh",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "headroom",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 641,
+   "token_mismatched_components": 104,
+   "group": "fresh",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "strix",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 566,
+   "token_mismatched_components": 0,
+   "group": "fresh",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "daily_stock_analysis",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 619,
+   "token_mismatched_components": 24,
+   "group": "fresh",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "mempalace",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 547,
+   "token_mismatched_components": 79,
+   "group": "fresh",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "voicebox",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 683,
+   "token_mismatched_components": 8,
+   "group": "fresh",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "OpenManus",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 655,
+   "token_mismatched_components": 14,
+   "group": "fresh",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "VibeVoice",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 574,
+   "token_mismatched_components": 15,
+   "group": "fresh",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "DeepTutor",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 745,
+   "token_mismatched_components": 20,
+   "group": "fresh",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "nanobot",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 626,
+   "token_mismatched_components": 27,
+   "group": "fresh",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "iFixAi",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 682,
+   "token_mismatched_components": 114,
+   "group": "fresh",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "VoxCPM",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 540,
+   "token_mismatched_components": 18,
+   "group": "fresh",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "PageIndex",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 644,
+   "token_mismatched_components": 34,
+   "group": "fresh",
+   "role": "confirmatory"
+  },
+  {
+   "repo": "langextract",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 590,
+   "token_mismatched_components": 3,
+   "group": "fresh",
+   "role": "pilot"
+  },
+  {
+   "repo": "Vibe-Trading",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 545,
+   "token_mismatched_components": 5,
+   "group": "fresh",
+   "role": "reserve"
+  },
+  {
+   "repo": "laya",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 542,
+   "token_mismatched_components": 5,
+   "group": "fresh",
+   "role": "reserve"
+  },
+  {
+   "repo": "mcp-for-blender",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 483,
+   "token_mismatched_components": 82,
+   "group": "fresh",
+   "role": "reserve"
+  },
+  {
+   "repo": "CloakBrowser",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 520,
+   "token_mismatched_components": 0,
+   "group": "fresh",
+   "role": "reserve"
+  },
+  {
+   "repo": "code-review-graph",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 485,
+   "token_mismatched_components": 0,
+   "group": "fresh",
+   "role": "reserve"
+  },
+  {
+   "repo": "deepagents",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 562,
+   "token_mismatched_components": 6,
+   "group": "fresh",
+   "role": "reserve"
+  },
+  {
+   "repo": "openai-agents-python",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 681,
+   "token_mismatched_components": 29,
+   "group": "fresh",
+   "role": "reserve"
+  },
+  {
+   "repo": "Pixelle-Video",
+   "n_items": 20,
+   "made_per_cell": {
+    "A-S12": 5,
+    "A-S24": 5,
+    "B-S12": 5,
+    "B-S24": 5
+   },
+   "components": 651,
+   "token_mismatched_components": 13,
+   "group": "fresh",
+   "role": "reserve"
+  }
+ ],
+ "total_items": 880,
+ "token_mismatched_components": 1151,
+ "components": 25829
+}

@@ -1,0 +1,810 @@
+{
+ "summary": {
+  "tasks": 11,
+  "with_gold": 10,
+  "gold_in_top10_share": 0.6,
+  "gold_top1_share": 0.2,
+  "median_best_gold_rank": 10,
+  "anchored_share": 0.7,
+  "strata": {
+   "S0": 3,
+   "S1": 1,
+   "S3": 6
+  },
+  "anchored_strata": {
+   "S0": 3,
+   "S1": 1,
+   "S3": 3
+  },
+  "skipped": {}
+ },
+ "tasks": [
+  {
+   "sha": "c1cc6b2462e95b84315c67bd5aefb33df73d06c4",
+   "date": "2023-04-18",
+   "issue": 2666,
+   "subject": "Fixes #2666: None is the default value of file for httpx.NetRCAuth (#2667)",
+   "n_nodes": 435,
+   "n_edges": 342,
+   "gold": [
+    "httpx._auth.NetRCAuth.__init__"
+   ],
+   "gold_files": [
+    {
+     "path": "httpx/_auth.py",
+     "skipped": null,
+     "lines": 2,
+     "mapped": 2,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "httpx._auth.NetRCAuth.__init__",
+    "httpx._compat.set_minimum_tls_version_1_2",
+    "httpx._auth.NetRCAuth.auth_flow",
+    "httpx._urls.QueryParams.__str__",
+    "httpx._urlparse.urlencode",
+    "httpx._multipart.DataField.__init__",
+    "httpx._urls.URL.__init__",
+    "httpx._auth.NetRCAuth._build_auth_header",
+    "httpx._transports.base.BaseTransport.handle_request",
+    "httpx._decoders.LineDecoder.decode"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "httpx._auth.NetRCAuth.__init__": 1
+   },
+   "anchors": [
+    {
+     "node": "httpx._auth.NetRCAuth.__init__",
+     "mention": "NetRCAuth.__init__",
+     "rule": "dotted",
+     "pos": 576
+    }
+   ],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S0"
+  },
+  {
+   "sha": "ccd98b1a6de221fa4b497de7f7bdf89b1347024d",
+   "date": "2022-08-30",
+   "issue": 2314,
+   "subject": "Relax `HeaderTypes` type alias definition (#2317)",
+   "n_nodes": 428,
+   "n_edges": 333,
+   "gold": [
+    "httpx._models.Headers.__init__"
+   ],
+   "gold_files": [
+    {
+     "path": "httpx/_models.py",
+     "skipped": null,
+     "lines": 4,
+     "mapped": 2,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "httpx/_types.py",
+     "skipped": null,
+     "lines": 4,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "httpx._compat.iscoroutine",
+    "httpx._utils.get_environment_proxies",
+    "httpx._api.request",
+    "httpx._urls.URL.is_absolute_url",
+    "httpx._client.Client.patch",
+    "httpx._client.Client.request",
+    "httpx._client.AsyncClient.patch",
+    "httpx._client.Client.__init__",
+    "httpx._multipart.FileField.__init__",
+    "httpx._models.Headers.__init__"
+   ],
+   "injected": true,
+   "gold_ranks": {
+    "httpx._models.Headers.__init__": 47
+   },
+   "anchors": [],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  },
+  {
+   "sha": "ca5f524943cb6266b42c235bcf45b2c0877a1b35",
+   "date": "2020-10-09",
+   "issue": 1356,
+   "subject": "Add raw_path to scope in ASGITransport (#1357)",
+   "n_nodes": 342,
+   "n_edges": 267,
+   "gold": [
+    "httpx._transports.asgi.ASGITransport.arequest"
+   ],
+   "gold_files": [
+    {
+     "path": "httpx/_transports/asgi.py",
+     "skipped": null,
+     "lines": 1,
+     "mapped": 1,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_asgi.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "httpx._transports.asgi.ASGITransport.__init__",
+    "httpx._models.URL.raw",
+    "httpx._models.URL.join",
+    "httpx._transports.asgi.ASGITransport.arequest",
+    "httpx._transports.wsgi.WSGITransport.request",
+    "httpx._client.AsyncClient._init_transport",
+    "httpx._models.URL.copy_with",
+    "httpx._models.URL.raw_path",
+    "httpx._utils.peek_filelike_length",
+    "httpx._decoders.TextDecoder.decode"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "httpx._transports.asgi.ASGITransport.arequest": 4
+   },
+   "anchors": [
+    {
+     "node": "httpx._models.URL.raw_path",
+     "mention": "raw_path",
+     "rule": "identifier",
+     "pos": 42
+    },
+    {
+     "node": "httpx._models.URL.path",
+     "mention": "path",
+     "rule": "inline_code",
+     "pos": 360
+    }
+   ],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S3"
+  },
+  {
+   "sha": "a226c60861f651b9874e31e66b3bb7f0db46c96d",
+   "date": "2020-08-16",
+   "issue": 1146,
+   "subject": "Fix #1146 Set default allow_redirects to true (#1183)",
+   "n_nodes": 362,
+   "n_edges": 261,
+   "gold": [
+    "httpx._api.head",
+    "httpx._client.AsyncClient.head",
+    "httpx._client.Client.head"
+   ],
+   "gold_files": [
+    {
+     "path": "httpx/_api.py",
+     "skipped": null,
+     "lines": 2,
+     "mapped": 2,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "httpx/_client.py",
+     "skipped": null,
+     "lines": 4,
+     "mapped": 4,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "httpx._api.head",
+    "httpx._client.BaseClient._redirect_method",
+    "httpx._client.Client.head",
+    "httpx._client.AsyncClient.head",
+    "httpx._api.get",
+    "httpx._utils.get_environment_proxies",
+    "httpx._api.request",
+    "httpx._api.delete",
+    "httpx._api.options",
+    "httpx._client.BaseClient._redirect_headers"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "httpx._api.head": 1,
+    "httpx._client.AsyncClient.head": 4,
+    "httpx._client.Client.head": 3
+   },
+   "anchors": [],
+   "ambiguous": [
+    "httpx.head"
+   ],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  },
+  {
+   "sha": "20f4911e805d9cf28b915cc2c7fbae8f27dc2c49",
+   "date": "2020-07-23",
+   "issue": 1033,
+   "subject": "Fixes for LineDecoding (#1075)",
+   "n_nodes": 341,
+   "n_edges": 236,
+   "gold": [
+    "httpx._decoders.LineDecoder.decode"
+   ],
+   "gold_files": [
+    {
+     "path": "httpx/_decoders.py",
+     "skipped": null,
+     "lines": 18,
+     "mapped": 18,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_decoders.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "httpx._models.Response.aiter_lines",
+    "httpx._transports.asgi.ASGITransport.request",
+    "httpx._api.request",
+    "httpx._models.Response.raise_for_status",
+    "httpx._client.AsyncClient._send_single_request",
+    "httpx._transports.wsgi.WSGITransport.request",
+    "httpx._client.Client._send_single_request",
+    "httpx._client.AsyncClient.request",
+    "httpx._content_streams.MultipartStream.__aiter__",
+    "httpx._decoders.LineDecoder.decode"
+   ],
+   "injected": true,
+   "gold_ranks": {
+    "httpx._decoders.LineDecoder.decode": 66
+   },
+   "anchors": [
+    {
+     "node": "httpx._models.Response.aiter_lines",
+     "mention": "aiter_lines",
+     "rule": "identifier",
+     "pos": 0
+    }
+   ],
+   "ambiguous": [
+    "__init__"
+   ],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S3"
+  },
+  {
+   "sha": "ad5e6eb8b0bd4a23218f835cf70025f2f7897cc0",
+   "date": "2020-07-21",
+   "issue": 1033,
+   "subject": "Fixes #1033 - Ensure that text that spans 3 invocations before newline is handled - don't clobber the buffer between inv",
+   "n_nodes": 341,
+   "n_edges": 236,
+   "gold": [
+    "httpx._decoders.LineDecoder.decode"
+   ],
+   "gold_files": [
+    {
+     "path": "httpx/_decoders.py",
+     "skipped": null,
+     "lines": 2,
+     "mapped": 2,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_decoders.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "httpx._models.Response.aiter_lines",
+    "httpx._transports.asgi.ASGITransport.request",
+    "httpx._api.request",
+    "httpx._models.Response.raise_for_status",
+    "httpx._client.AsyncClient._send_single_request",
+    "httpx._transports.wsgi.WSGITransport.request",
+    "httpx._client.Client._send_single_request",
+    "httpx._client.AsyncClient.request",
+    "httpx._content_streams.MultipartStream.__aiter__",
+    "httpx._decoders.LineDecoder.decode"
+   ],
+   "injected": true,
+   "gold_ranks": {
+    "httpx._decoders.LineDecoder.decode": 66
+   },
+   "anchors": [
+    {
+     "node": "httpx._models.Response.aiter_lines",
+     "mention": "aiter_lines",
+     "rule": "identifier",
+     "pos": 0
+    }
+   ],
+   "ambiguous": [
+    "__init__"
+   ],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S3"
+  },
+  {
+   "sha": "093cb4250006dc0b73af986f7e6537b8c4395dcf",
+   "date": "2020-05-28",
+   "issue": 822,
+   "subject": "Improve error when redirecting with custom schemes (#1002)",
+   "n_nodes": 343,
+   "n_edges": 239,
+   "gold": [
+    "httpx._client.BaseClient.redirect_url"
+   ],
+   "gold_files": [
+    {
+     "path": "httpx/_client.py",
+     "skipped": null,
+     "lines": 4,
+     "mapped": 4,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/client/test_redirects.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "httpx._client.Client.send_handling_redirects",
+    "httpx._client.AsyncClient.send_handling_redirects",
+    "httpx._models.URL.port",
+    "httpx._models.URL.authority",
+    "httpx._client.Client.send",
+    "httpx._client.AsyncClient.send",
+    "httpx._api.request",
+    "httpx._client.BaseClient.build_redirect_request",
+    "httpx._client.Client.send_single_request",
+    "httpx._client.BaseClient.redirect_url"
+   ],
+   "injected": true,
+   "gold_ranks": {
+    "httpx._client.BaseClient.redirect_url": 51
+   },
+   "anchors": [
+    {
+     "node": "httpx._client.BaseClient.build_redirect_request",
+     "mention": "build_redirect_request",
+     "rule": "dotted",
+     "pos": 1461
+    },
+    {
+     "node": "httpx._client.BaseClient.redirect_headers",
+     "mention": "redirect_headers",
+     "rule": "dotted",
+     "pos": 1659
+    },
+    {
+     "node": "httpx._models.URL.port",
+     "mention": "port",
+     "rule": "inline_code",
+     "pos": 2780
+    }
+   ],
+   "ambiguous": [
+    "send_handling_redirects",
+    "__init__"
+   ],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S1"
+  },
+  {
+   "sha": "2b92a78c41544da0891d2c42c7e2a28174783c57",
+   "date": "2020-01-07",
+   "issue": 656,
+   "subject": "Drop `Origin` from public API (#688)",
+   "n_nodes": 435,
+   "n_edges": 274,
+   "gold": [
+    "httpx.client.AsyncClient.redirect_headers",
+    "httpx.dispatch.connection_pool.ConnectionPool.send",
+    "httpx.dispatch.proxy_http.HTTPProxy.acquire_connection",
+    "httpx.dispatch.proxy_http.HTTPProxy.request_tunnel_proxy_connection",
+    "httpx.dispatch.proxy_http.HTTPProxy.send",
+    "httpx.models.URL.origin"
+   ],
+   "gold_files": [
+    {
+     "path": "httpx/__init__.py",
+     "skipped": "file or module not found at base",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "httpx/client.py",
+     "skipped": null,
+     "lines": 3,
+     "mapped": 2,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "httpx/dispatch/connection_pool.py",
+     "skipped": null,
+     "lines": 2,
+     "mapped": 2,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "httpx/dispatch/proxy_http.py",
+     "skipped": null,
+     "lines": 6,
+     "mapped": 6,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "httpx/models.py",
+     "skipped": null,
+     "lines": 4,
+     "mapped": 3,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/models/test_url.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "httpx.backends.asyncio.SocketStream.is_connection_dropped",
+    "httpx.client.AsyncClient.redirect_headers",
+    "httpx.dispatch.connection.HTTPConnection.tunnel_start_tls",
+    "httpx.models.URL.is_absolute_url",
+    "httpx.dispatch.proxy_http.HTTPProxy.send",
+    "httpx.utils.get_logger",
+    "httpx.backends.asyncio.SocketStream.close",
+    "httpx.dispatch.proxy_http.HTTPProxy.acquire_connection",
+    "httpx.dispatch.proxy_http.HTTPProxy.should_forward_origin",
+    "httpx.utils.should_not_be_proxied"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "httpx.client.AsyncClient.redirect_headers": 2,
+    "httpx.dispatch.connection_pool.ConnectionPool.send": 33,
+    "httpx.dispatch.proxy_http.HTTPProxy.acquire_connection": 8,
+    "httpx.dispatch.proxy_http.HTTPProxy.request_tunnel_proxy_connection": 24,
+    "httpx.dispatch.proxy_http.HTTPProxy.send": 5,
+    "httpx.models.URL.origin": 13
+   },
+   "anchors": [
+    {
+     "node": "httpx.models.URL.origin",
+     "mention": "origin",
+     "rule": "inline_code",
+     "pos": 269
+    },
+    {
+     "node": "httpx.models.Response.url",
+     "mention": "url",
+     "rule": "inline_code",
+     "pos": 285
+    }
+   ],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S0"
+  },
+  {
+   "sha": "e34df7a7a19b5ebdbad59a0b7e1a54b4f011811b",
+   "date": "2019-12-20",
+   "issue": 659,
+   "subject": "Rename `concurrency` directory to `backends` (#662)",
+   "n_nodes": 427,
+   "n_edges": 247,
+   "gold": [],
+   "gold_files": [
+    {
+     "path": "httpx/client.py",
+     "skipped": null,
+     "lines": 2,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "httpx/dispatch/connection.py",
+     "skipped": null,
+     "lines": 2,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "httpx/dispatch/connection_pool.py",
+     "skipped": null,
+     "lines": 2,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "httpx/dispatch/http11.py",
+     "skipped": null,
+     "lines": 2,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "httpx/dispatch/http2.py",
+     "skipped": null,
+     "lines": 2,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "httpx/dispatch/proxy_http.py",
+     "skipped": null,
+     "lines": 2,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/concurrency.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/conftest.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/dispatch/utils.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_concurrency.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "httpx.client.Client.request",
+    "httpx.client.Client.merge_cookies",
+    "httpx.client.Client.merge_headers",
+    "httpx.client.Client.merge_queryparams",
+    "httpx.concurrency.base.lookup_backend",
+    "httpx.concurrency.auto.AutoBackend.backend",
+    "httpx.client.Client.merge_url",
+    "httpx.client.Client.redirect_headers",
+    "httpx.client.Client.redirect_stream",
+    "httpx.concurrency.auto.AutoBackend.time"
+   ],
+   "injected": false,
+   "gold_ranks": {},
+   "anchors": [
+    {
+     "node": "httpx.concurrency.auto.AutoBackend.backend",
+     "mention": "backend",
+     "rule": "inline_code",
+     "pos": 137
+    }
+   ],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S3"
+  },
+  {
+   "sha": "f06ca87f9728346ba6b8550315b25a2c15ab8fb8",
+   "date": "2019-11-22",
+   "issue": 96,
+   "subject": "Handle h11.Connection.next_event() RemoteProtocolError (#524)",
+   "n_nodes": 450,
+   "n_edges": 288,
+   "gold": [
+    "httpx.dispatch.http11.HTTP11Connection._receive_event"
+   ],
+   "gold_files": [
+    {
+     "path": "httpx/dispatch/http11.py",
+     "skipped": null,
+     "lines": 13,
+     "mapped": 12,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "httpx/exceptions.py",
+     "skipped": null,
+     "lines": 6,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/conftest.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/dispatch/test_connections.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "httpx.dispatch.http11.HTTP11Connection.close",
+    "httpx.dispatch.http11.HTTP11Connection._receive_event",
+    "httpx.dispatch.http11.HTTP11Connection.response_closed",
+    "httpx.dispatch.http11.HTTP11Connection.is_closed",
+    "httpx.dispatch.http11.HTTP11Connection._send_event",
+    "httpx.dispatch.http11.HTTP11Connection._receive_response_data",
+    "httpx.dispatch.connection.HTTPConnection.send",
+    "httpx.dispatch.http11.HTTP11Connection._send_request_data",
+    "httpx.dispatch.http11.HTTP11Connection.__init__",
+    "httpx.dispatch.proxy_http.HTTPProxy.send"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "httpx.dispatch.http11.HTTP11Connection._receive_event": 2
+   },
+   "anchors": [
+    {
+     "node": "httpx.dispatch.http11.HTTP11Connection._receive_event",
+     "mention": "_receive_event",
+     "rule": "dotted",
+     "pos": 1372
+    }
+   ],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S0"
+  },
+  {
+   "sha": "95dad247b531489f4cf18ac6d8daacf9c4906d18",
+   "date": "2019-08-13",
+   "issue": 198,
+   "subject": "Remove \"Host\" header on redirects if URL origin has changed (#199)",
+   "n_nodes": 329,
+   "n_edges": 186,
+   "gold": [
+    "httpx.client.BaseClient.redirect_headers",
+    "httpx.exceptions.HTTPError.__init__"
+   ],
+   "gold_files": [
+    {
+     "path": "httpx/__init__.py",
+     "skipped": "file or module not found at base",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "httpx/client.py",
+     "skipped": null,
+     "lines": 3,
+     "mapped": 1,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "httpx/exceptions.py",
+     "skipped": null,
+     "lines": 4,
+     "mapped": 4,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "httpx/models.py",
+     "skipped": null,
+     "lines": 2,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/client/test_headers.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/client/test_redirects.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "httpx.client.BaseClient.send_handling_redirects",
+    "httpx.concurrency.ssl_monkey_patch",
+    "httpx.models.BaseResponse.raise_for_status",
+    "httpx.client.BaseClient.redirect_method",
+    "httpx.client.BaseClient.redirect_content",
+    "httpx.status_codes.StatusCode.is_redirect",
+    "httpx.client.BaseClient.send",
+    "httpx.client.BaseClient.build_redirect_request",
+    "httpx.concurrency.AsyncioBackend.loop",
+    "httpx.client.BaseClient.redirect_headers"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "httpx.client.BaseClient.redirect_headers": 10,
+    "httpx.exceptions.HTTPError.__init__": 55
+   },
+   "anchors": [],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  }
+ ]
+}

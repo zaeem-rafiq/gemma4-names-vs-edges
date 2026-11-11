@@ -1,0 +1,1297 @@
+{
+ "summary": {
+  "tasks": 23,
+  "with_gold": 22,
+  "gold_in_top10_share": 0.9090909090909091,
+  "gold_top1_share": 0.5,
+  "median_best_gold_rank": 2,
+  "anchored_share": 0.45454545454545453,
+  "strata": {
+   "S0": 8,
+   "S2": 1,
+   "S3": 13
+  },
+  "anchored_strata": {
+   "S0": 8,
+   "S2": 1,
+   "S3": 1
+  },
+  "skipped": {}
+ },
+ "tasks": [
+  {
+   "sha": "d7b6c1f6703df405c69da45e7e0ba3d1aed512ce",
+   "date": "2022-10-31",
+   "issue": 4834,
+   "subject": "Fix subdomain inheritance for nested blueprints.",
+   "n_nodes": 351,
+   "n_edges": 171,
+   "gold": [
+    "flask.blueprints.Blueprint.register"
+   ],
+   "gold_files": [
+    {
+     "path": "src/flask/blueprints.py",
+     "skipped": null,
+     "lines": 9,
+     "mapped": 9,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_blueprints.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.app.Flask.register_blueprint",
+    "flask.blueprints.BlueprintSetupState.__init__",
+    "flask.app.Flask.test_request_context",
+    "flask.app.Flask.run",
+    "flask.blueprints.Blueprint.register",
+    "flask.app.Flask.create_url_adapter",
+    "flask.cli._called_with_wrong_args",
+    "flask.sessions.SessionInterface.get_cookie_domain",
+    "flask.helpers.make_response",
+    "flask.blueprints.BlueprintSetupState.add_url_rule"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.blueprints.Blueprint.register": 5
+   },
+   "anchors": [],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  },
+  {
+   "sha": "00b07c863ec147256b68f71c3fe9b6b2f9dbe6bc",
+   "date": "2022-08-09",
+   "issue": 4756,
+   "subject": "fix typo",
+   "n_nodes": 351,
+   "n_edges": 171,
+   "gold": [
+    "flask.globals.__getattr__"
+   ],
+   "gold_files": [
+    {
+     "path": "src/flask/globals.py",
+     "skipped": null,
+     "lines": 4,
+     "mapped": 4,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.debughelpers.explain_template_loading_attempts",
+    "flask.__getattr__",
+    "flask.globals._FakeStack._warn",
+    "flask.json.htmlsafe_dump",
+    "flask.cli.load_dotenv",
+    "flask.app.Flask.before_first_request",
+    "flask.app.Flask.logger",
+    "flask.globals.__getattr__",
+    "flask.app.Flask.env",
+    "flask.json.JSONDecoder.__init__"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.globals.__getattr__": 8
+   },
+   "anchors": [],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  },
+  {
+   "sha": "b707bf443afe856b77e09b7a41592f10d46e02df",
+   "date": "2022-03-15",
+   "issue": 4485,
+   "subject": "Preserve HttpOnly flag when deleting session cookie",
+   "n_nodes": 324,
+   "n_edges": 170,
+   "gold": [
+    "flask.sessions.SecureCookieSessionInterface.save_session"
+   ],
+   "gold_files": [
+    {
+     "path": "src/flask/sessions.py",
+     "skipped": null,
+     "lines": 9,
+     "mapped": 9,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.sessions.SecureCookieSessionInterface.save_session",
+    "flask.sessions.SessionInterface.get_cookie_httponly",
+    "flask.sessions.SessionInterface.should_set_cookie",
+    "flask.sessions.SecureCookieSessionInterface.get_signing_serializer",
+    "flask.sessions.NullSession._fail",
+    "flask.config.Config.get_namespace",
+    "flask.app.Flask.run",
+    "flask.sessions.SessionInterface.save_session",
+    "flask.cli.load_dotenv",
+    "flask.cli.shell_command"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.sessions.SecureCookieSessionInterface.save_session": 1
+   },
+   "anchors": [],
+   "ambiguous": [
+    "save_session"
+   ],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  },
+  {
+   "sha": "1f1b65a62576bc6a2f9cd27e9a725f0554fc70c7",
+   "date": "2020-08-23",
+   "issue": 3738,
+   "subject": "fixed #3738 typo in src/flask/blueprints.py",
+   "n_nodes": 311,
+   "n_edges": 158,
+   "gold": [],
+   "gold_files": [
+    {
+     "path": "src/flask/blueprints.py",
+     "skipped": null,
+     "lines": 2,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.cli.main",
+    "flask.debughelpers.explain_template_loading_attempts",
+    "flask.cli.load_dotenv",
+    "flask.app.Flask.register_blueprint",
+    "flask.cli._called_with_wrong_args",
+    "flask.templating.DispatchingJinjaLoader.list_templates",
+    "flask.blueprints.BlueprintSetupState.add_url_rule",
+    "flask.blueprints.Blueprint.app_url_defaults",
+    "flask.app.Flask.iter_blueprints",
+    "flask.blueprints.Blueprint.make_setup_state"
+   ],
+   "injected": false,
+   "gold_ranks": {},
+   "anchors": [],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  },
+  {
+   "sha": "976dfedaa9efdb566333ea829b12751820268f67",
+   "date": "2019-05-31",
+   "issue": 3207,
+   "subject": "Convert make_test_environ_builder into class (fixes #3207)",
+   "n_nodes": 329,
+   "n_edges": 175,
+   "gold": [
+    "flask.app.Flask.test_request_context",
+    "flask.testing.FlaskClient.open",
+    "flask.testing.make_test_environ_builder"
+   ],
+   "gold_files": [
+    {
+     "path": "flask/app.py",
+     "skipped": null,
+     "lines": 4,
+     "mapped": 4,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "flask/testing.py",
+     "skipped": null,
+     "lines": 102,
+     "mapped": 52,
+     "new_functions": [
+      "EnvironBuilder.__init__"
+     ],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_reqctx.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_testing.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.testing.make_test_environ_builder",
+    "flask.app.Flask.test_request_context",
+    "flask.testing.FlaskClient.open",
+    "flask.app.Flask.test_client",
+    "flask.json.dumps",
+    "flask.json.loads",
+    "flask.app.Flask.request_context",
+    "flask.testing.FlaskClient.__init__",
+    "flask.testing.FlaskClient.session_transaction",
+    "flask.helpers._matching_loader_thinks_module_is_package"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.app.Flask.test_request_context": 2,
+    "flask.testing.FlaskClient.open": 3,
+    "flask.testing.make_test_environ_builder": 1
+   },
+   "anchors": [
+    {
+     "node": "flask.testing.make_test_environ_builder",
+     "mention": "make_test_environ_builder",
+     "rule": "identifier",
+     "pos": 8
+    }
+   ],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S0"
+  },
+  {
+   "sha": "8bb71852849907d1b67ba7514cf1812348e11b44",
+   "date": "2019-05-31",
+   "issue": 3214,
+   "subject": "Better error message when view return type is not supported",
+   "n_nodes": 329,
+   "n_edges": 175,
+   "gold": [
+    "flask.app.Flask.make_response"
+   ],
+   "gold_files": [
+    {
+     "path": "flask/app.py",
+     "skipped": null,
+     "lines": 12,
+     "mapped": 11,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_basic.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.app.Flask.make_response",
+    "flask.helpers.make_response",
+    "flask.app.Flask.wsgi_app",
+    "flask.sessions.SessionInterface.make_null_session",
+    "flask.ctx.after_this_request",
+    "flask.app.Flask.dispatch_request",
+    "flask.app.Flask.errorhandler",
+    "flask.testing.make_test_environ_builder",
+    "flask.json.JSONEncoder.default",
+    "flask.app.Flask.finalize_request"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.app.Flask.make_response": 1
+   },
+   "anchors": [
+    {
+     "node": "flask.app.Flask.make_response",
+     "mention": "Flask.make_response",
+     "rule": "inline_code",
+     "pos": 458
+    }
+   ],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S0"
+  },
+  {
+   "sha": "f25b5000fd7b85418d8ff85b070821748ef14f19",
+   "date": "2019-05-31",
+   "issue": 3224,
+   "subject": "Do not register empty CLI groups from Blueprint",
+   "n_nodes": 329,
+   "n_edges": 175,
+   "gold": [
+    "flask.blueprints.Blueprint.register"
+   ],
+   "gold_files": [
+    {
+     "path": "flask/blueprints.py",
+     "skipped": null,
+     "lines": 3,
+     "mapped": 3,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_cli.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.blueprints.Blueprint.register",
+    "flask.cli.FlaskGroup.list_commands",
+    "flask.cli.FlaskGroup.get_command",
+    "flask.helpers._PackageBoundObject.__init__",
+    "flask.cli.FlaskGroup.__init__",
+    "flask.cli.FlaskGroup._load_plugin_commands",
+    "flask.blueprints.Blueprint.record",
+    "flask.app.Flask.__init__",
+    "flask.blueprints.BlueprintSetupState.__init__",
+    "flask.cli.AppGroup.command"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.blueprints.Blueprint.register": 1
+   },
+   "anchors": [],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  },
+  {
+   "sha": "2308cba407884996047790bfb77f90ae17bdb2bc",
+   "date": "2018-08-31",
+   "issue": 2897,
+   "subject": "Fix #2897 - Add `extra_files` option to `flask run` CLI",
+   "n_nodes": 329,
+   "n_edges": 174,
+   "gold": [
+    "flask.cli.run_command"
+   ],
+   "gold_files": [
+    {
+     "path": "flask/cli.py",
+     "skipped": null,
+     "lines": 7,
+     "mapped": 7,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.app.Flask.run",
+    "flask.cli.run_command",
+    "flask.cli.load_dotenv",
+    "flask.app.Flask.__init__",
+    "flask.cli.show_server_banner",
+    "flask.cli.FlaskGroup.__init__",
+    "flask.cli.shell_command",
+    "flask.app.Flask.test_request_context",
+    "flask.config.Config.get_namespace",
+    "flask.helpers._PackageBoundObject.open_resource"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.cli.run_command": 2
+   },
+   "anchors": [
+    {
+     "node": "flask.app.Flask.run",
+     "mention": "run",
+     "rule": "inline_code",
+     "pos": 38
+    }
+   ],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S2"
+  },
+  {
+   "sha": "db8cb31f2b2c39c1b0800926969c16d44b28ea38",
+   "date": "2018-10-11",
+   "issue": 2937,
+   "subject": "Fix #2937: Ensure the consistency in load_dotenv's return type",
+   "n_nodes": 328,
+   "n_edges": 174,
+   "gold": [
+    "flask.cli.load_dotenv"
+   ],
+   "gold_files": [
+    {
+     "path": "flask/cli.py",
+     "skipped": null,
+     "lines": 14,
+     "mapped": 14,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_cli.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.cli.load_dotenv",
+    "flask.cli.FlaskGroup.__init__",
+    "flask.app.Flask.run",
+    "flask.cli.ScriptInfo.load_app",
+    "flask.cli.FlaskGroup.main",
+    "flask.config.Config.from_envvar",
+    "flask.cli.get_version",
+    "flask.cli.prepare_import",
+    "flask.cli.FlaskGroup._load_plugin_commands",
+    "flask.helpers.get_root_path"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.cli.load_dotenv": 1
+   },
+   "anchors": [
+    {
+     "node": "flask.cli.load_dotenv",
+     "mention": "load_dotenv",
+     "rule": "identifier",
+     "pos": 0
+    }
+   ],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S0"
+  },
+  {
+   "sha": "e0afff0e92a3c46e5de17e75b76ca1332d45497d",
+   "date": "2019-05-06",
+   "issue": 3022,
+   "subject": "Simplify flask.cli.main",
+   "n_nodes": 328,
+   "n_edges": 174,
+   "gold": [
+    "flask.cli.main"
+   ],
+   "gold_files": [
+    {
+     "path": "flask/cli.py",
+     "skipped": null,
+     "lines": 18,
+     "mapped": 18,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.cli.main",
+    "flask.helpers.get_root_path",
+    "flask.cli.get_version",
+    "flask.helpers.find_package",
+    "flask.cli.load_dotenv",
+    "flask.cli.prepare_import",
+    "flask.cli.locate_app",
+    "flask.helpers._matching_loader_thinks_module_is_package",
+    "flask.cli.show_server_banner",
+    "flask.app.Flask.run"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.cli.main": 1
+   },
+   "anchors": [
+    {
+     "node": "flask.cli.main",
+     "mention": "flask.cli.main",
+     "rule": "inline_code",
+     "pos": 160
+    }
+   ],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S0"
+  },
+  {
+   "sha": "e08bcf9f9700180a09f77f52604ea6de36fb83a8",
+   "date": "2018-11-04",
+   "issue": 2935,
+   "subject": "Fix #2935: Copy current session object in copy_current_request_context (#2936)",
+   "n_nodes": 331,
+   "n_edges": 178,
+   "gold": [
+    "flask.ctx.RequestContext.__init__",
+    "flask.ctx.RequestContext.copy",
+    "flask.ctx.copy_current_request_context"
+   ],
+   "gold_files": [
+    {
+     "path": "flask/ctx.py",
+     "skipped": null,
+     "lines": 18,
+     "mapped": 18,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_reqctx.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.app.Flask.__init__",
+    "flask.ctx.copy_current_request_context",
+    "flask.app.Flask.teardown_request",
+    "flask.cli.load_dotenv",
+    "flask.testing.FlaskClient.session_transaction",
+    "flask.app.Flask.test_request_context",
+    "flask.app.Flask.test_client",
+    "flask.helpers.url_for",
+    "flask.app.Flask.run",
+    "flask.ctx.RequestContext.copy"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.ctx.RequestContext.__init__": 35,
+    "flask.ctx.RequestContext.copy": 10,
+    "flask.ctx.copy_current_request_context": 2
+   },
+   "anchors": [
+    {
+     "node": "flask.ctx.copy_current_request_context",
+     "mention": "copy_current_request_context",
+     "rule": "identifier",
+     "pos": 0
+    }
+   ],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S0"
+  },
+  {
+   "sha": "3666a584fd24dc14585648f215a82ce1e8b71baa",
+   "date": "2018-04-27",
+   "issue": 2736,
+   "subject": "fix #2736 - allow lists to be passed through to response_class init",
+   "n_nodes": 330,
+   "n_edges": 176,
+   "gold": [
+    "flask.app.Flask.make_response"
+   ],
+   "gold_files": [
+    {
+     "path": "flask/app.py",
+     "skipped": null,
+     "lines": 2,
+     "mapped": 2,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.app.Flask.make_response",
+    "flask.helpers.make_response",
+    "flask.json.jsonify",
+    "flask.app.Flask.test_request_context",
+    "flask.app.Flask.add_url_rule",
+    "flask.testing.FlaskClient.session_transaction",
+    "flask.ctx.after_this_request",
+    "flask.app.Flask.wsgi_app",
+    "flask.app.Flask.route",
+    "flask.app.Flask.test_client"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.app.Flask.make_response": 1
+   },
+   "anchors": [],
+   "ambiguous": [
+    "make_response"
+   ],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  },
+  {
+   "sha": "575021c07be6b168ca4c3664ea484248c9ffe960",
+   "date": "2018-02-12",
+   "issue": 2627,
+   "subject": "Fix docs for test_request_context",
+   "n_nodes": 325,
+   "n_edges": 174,
+   "gold": [
+    "flask.app.Flask.test_request_context"
+   ],
+   "gold_files": [
+    {
+     "path": "flask/app.py",
+     "skipped": null,
+     "lines": 4,
+     "mapped": 4,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.app.Flask.test_request_context",
+    "flask.app.Flask.request_context",
+    "flask.testing.FlaskClient.session_transaction",
+    "flask.helpers.url_for",
+    "flask.testing.make_test_environ_builder",
+    "flask.ctx.RequestContext.copy",
+    "flask.testing.FlaskClient.open",
+    "flask.app.Flask.wsgi_app",
+    "flask.app.Flask.test_client",
+    "flask.ctx.RequestContext.__init__"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.app.Flask.test_request_context": 1
+   },
+   "anchors": [
+    {
+     "node": "flask.app.Flask.test_request_context",
+     "mention": "test_request_context",
+     "rule": "identifier",
+     "pos": 30
+    }
+   ],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S0"
+  },
+  {
+   "sha": "c52e1b7388c17466a551391cdf81964bf0b7aef0",
+   "date": "2017-11-23",
+   "issue": 2526,
+   "subject": "Fix ValueError for some invalid Range requests",
+   "n_nodes": 290,
+   "n_edges": 158,
+   "gold": [
+    "flask.helpers.send_file"
+   ],
+   "gold_files": [
+    {
+     "path": "flask/helpers.py",
+     "skipped": null,
+     "lines": 3,
+     "mapped": 3,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_helpers.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.app.Flask.dispatch_request",
+    "flask.helpers.send_file",
+    "flask.app.Flask.handle_user_exception",
+    "flask.app.Flask.full_dispatch_request",
+    "flask.app.Flask.handle_url_build_error",
+    "flask.app.Flask.handle_exception",
+    "flask.app.Flask.wsgi_app",
+    "flask.app.Flask.add_url_rule",
+    "flask.helpers.find_package",
+    "flask.ctx.RequestContext.__exit__"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.helpers.send_file": 2
+   },
+   "anchors": [
+    {
+     "node": "flask.helpers.send_file",
+     "mention": "send_file",
+     "rule": "identifier",
+     "pos": 19
+    },
+    {
+     "node": "flask.ctx._AppCtxGlobals.get",
+     "mention": "get",
+     "rule": "inline_code",
+     "pos": 288
+    },
+    {
+     "node": "flask.app.Flask.wsgi_app",
+     "mention": "frame:flask/app.py:1982:wsgi_app",
+     "rule": "traceback",
+     "pos": 506
+    },
+    {
+     "node": "flask.app.Flask.full_dispatch_request",
+     "mention": "full_dispatch_request",
+     "rule": "dotted",
+     "pos": 622
+    },
+    {
+     "node": "flask.app.Flask.handle_user_exception",
+     "mention": "handle_user_exception",
+     "rule": "dotted",
+     "pos": 777
+    },
+    {
+     "node": "flask.app.Flask.dispatch_request",
+     "mention": "frame:flask/app.py:1598:dispatch_request",
+     "rule": "traceback",
+     "pos": 1114
+    }
+   ],
+   "ambiguous": [
+    "dispatch_request"
+   ],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S0"
+  },
+  {
+   "sha": "59f7966e3192bcf478a213ba0aa9cd3bda7da4e4",
+   "date": "2017-07-13",
+   "issue": 2411,
+   "subject": "support passing environ to test client (#2412)",
+   "n_nodes": 317,
+   "n_edges": 165,
+   "gold": [
+    "flask.testing.FlaskClient.open"
+   ],
+   "gold_files": [
+    {
+     "path": "flask/testing.py",
+     "skipped": null,
+     "lines": 40,
+     "mapped": 40,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_testing.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.app.Flask.test_request_context",
+    "flask.testing.make_test_environ_builder",
+    "flask.testing.FlaskClient.open",
+    "flask.testing.FlaskClient.session_transaction",
+    "flask.app.Flask.test_client",
+    "flask.testing.FlaskClient.__init__",
+    "flask.ctx.RequestContext.push",
+    "flask.testing.FlaskClient.__enter__",
+    "flask.app.Flask.request_context",
+    "flask.config.Config.from_envvar"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.testing.FlaskClient.open": 3
+   },
+   "anchors": [],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  },
+  {
+   "sha": "7c40aa9e50d97b7c412745a53c8cdc2597c46680",
+   "date": "2017-06-15",
+   "issue": 2376,
+   "subject": "Import app from wsgi.py or app.py if FLASK_APP is not defined",
+   "n_nodes": 332,
+   "n_edges": 169,
+   "gold": [
+    "flask.cli.ScriptInfo.load_app",
+    "flask.cli.locate_app",
+    "flask.cli.prepare_exec_for_file"
+   ],
+   "gold_files": [
+    {
+     "path": "flask/cli.py",
+     "skipped": null,
+     "lines": 29,
+     "mapped": 29,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_apps/helloworld/hello.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_apps/helloworld/wsgi.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_cli.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.cli.find_best_app",
+    "flask.cli.prepare_exec_for_file",
+    "flask.helpers.get_root_path",
+    "flask.helpers.find_package",
+    "flask.app.Flask.run",
+    "flask.helpers._matching_loader_thinks_module_is_package",
+    "flask.exthook.ExtensionImporter.is_important_frame",
+    "flask.app.Flask.auto_find_instance_path",
+    "flask.app.Flask._reconfigure_for_run_debug",
+    "flask.sessions.SessionInterface.get_cookie_domain"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.cli.ScriptInfo.load_app": 45,
+    "flask.cli.locate_app": 23,
+    "flask.cli.prepare_exec_for_file": 2
+   },
+   "anchors": [],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  },
+  {
+   "sha": "4fc48200a58907ffdf136961b84ef7d19192e6ef",
+   "date": "2017-06-14",
+   "issue": 1907,
+   "subject": "reconfigure the app from run command and method",
+   "n_nodes": 329,
+   "n_edges": 168,
+   "gold": [
+    "flask.app.Flask.create_jinja_environment",
+    "flask.app.Flask.run",
+    "flask.cli.ScriptInfo.load_app"
+   ],
+   "gold_files": [
+    {
+     "path": "flask/app.py",
+     "skipped": null,
+     "lines": 59,
+     "mapped": 21,
+     "new_functions": [
+      "Flask._get_templates_auto_reload",
+      "Flask._reconfigure_for_run_debug",
+      "Flask._set_templates_auto_reload"
+     ],
+     "not_in_graph": []
+    },
+    {
+     "path": "flask/cli.py",
+     "skipped": null,
+     "lines": 8,
+     "mapped": 8,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.app.Flask.run",
+    "flask.app.Flask.create_jinja_environment",
+    "flask.cli.run_command",
+    "flask.templating.DispatchingJinjaLoader.list_templates",
+    "flask.app.Flask.trap_http_exception",
+    "flask.app.Flask.jinja_env",
+    "flask.app.Flask.teardown_request",
+    "flask.templating.render_template_string",
+    "flask.helpers.get_template_attribute",
+    "flask.exthook.ExtensionImporter.is_important_frame"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.app.Flask.create_jinja_environment": 2,
+    "flask.app.Flask.run": 1,
+    "flask.cli.ScriptInfo.load_app": 48
+   },
+   "anchors": [],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  },
+  {
+   "sha": "0f7b3a4f26dfbbe453a504abd4a8bcbf49194d46",
+   "date": "2017-06-14",
+   "issue": 1809,
+   "subject": "document `Flask.register_blueprint` arguments",
+   "n_nodes": 329,
+   "n_edges": 168,
+   "gold": [
+    "flask.app.Flask.register_blueprint",
+    "flask.blueprints.Blueprint.register"
+   ],
+   "gold_files": [
+    {
+     "path": "flask/app.py",
+     "skipped": null,
+     "lines": 33,
+     "mapped": 33,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "flask/blueprints.py",
+     "skipped": null,
+     "lines": 23,
+     "mapped": 23,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.debughelpers.explain_template_loading_attempts",
+    "flask.blueprints.BlueprintSetupState.__init__",
+    "flask.app.Flask.test_request_context",
+    "flask.app.Flask.__init__",
+    "flask.app.Flask.test_client",
+    "flask.app.Flask.register_blueprint",
+    "flask.cli.ScriptInfo.load_app",
+    "flask.json.htmlsafe_dumps",
+    "flask.blueprints.Blueprint.register",
+    "flask.testing.FlaskClient.__init__"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.app.Flask.register_blueprint": 6,
+    "flask.blueprints.Blueprint.register": 9
+   },
+   "anchors": [
+    {
+     "node": "flask.app.Flask.register_blueprint",
+     "mention": "flask.Flask.register_blueprint",
+     "rule": "dotted",
+     "pos": 0
+    }
+   ],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S0"
+  },
+  {
+   "sha": "235c830759beca55a9d141c689f2a8c88a19f3d2",
+   "date": "2017-06-06",
+   "issue": 480,
+   "subject": "document inherited attributes for Flask and Blueprint",
+   "n_nodes": 329,
+   "n_edges": 168,
+   "gold": [
+    "flask.helpers._PackageBoundObject.__init__",
+    "flask.helpers._PackageBoundObject._get_static_url_path",
+    "flask.helpers.send_file"
+   ],
+   "gold_files": [
+    {
+     "path": "flask/app.py",
+     "skipped": null,
+     "lines": 15,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "flask/blueprints.py",
+     "skipped": null,
+     "lines": 15,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "flask/helpers.py",
+     "skipped": null,
+     "lines": 39,
+     "mapped": 12,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.blueprints.Blueprint.__init__",
+    "flask.helpers._PackageBoundObject.__init__",
+    "flask.helpers._PackageBoundObject._set_static_url_path",
+    "flask.helpers._PackageBoundObject._get_static_url_path",
+    "flask.helpers._PackageBoundObject._get_static_folder",
+    "flask.helpers._PackageBoundObject.jinja_loader",
+    "flask.helpers._PackageBoundObject.has_static_folder",
+    "flask.helpers._PackageBoundObject._set_static_folder",
+    "flask.app.Flask.__init__",
+    "flask.helpers._PackageBoundObject.open_resource"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.helpers._PackageBoundObject.__init__": 2,
+    "flask.helpers._PackageBoundObject._get_static_url_path": 4,
+    "flask.helpers.send_file": 34
+   },
+   "anchors": [],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  },
+  {
+   "sha": "b5f4c5215022a01823675038bc246dd1d771a543",
+   "date": "2017-06-05",
+   "issue": 1433,
+   "subject": "don't cache error handlers for exception mro",
+   "n_nodes": 329,
+   "n_edges": 168,
+   "gold": [
+    "flask.app.Flask._find_error_handler"
+   ],
+   "gold_files": [
+    {
+     "path": "flask/app.py",
+     "skipped": null,
+     "lines": 26,
+     "mapped": 25,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.config.Config.get_namespace",
+    "flask.wrappers.JSONMixin._get_data_for_json",
+    "flask.wrappers.JSONMixin.get_json",
+    "flask.helpers.send_file",
+    "flask.helpers._PackageBoundObject.send_static_file",
+    "flask.helpers._PackageBoundObject.get_send_file_max_age",
+    "flask.wrappers.Response._get_data_for_json",
+    "flask.sessions.SessionInterface.get_cookie_domain",
+    "flask.app.Flask.should_ignore_error",
+    "flask.app.Flask._find_error_handler"
+   ],
+   "injected": true,
+   "gold_ranks": {
+    "flask.app.Flask._find_error_handler": 14
+   },
+   "anchors": [],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  },
+  {
+   "sha": "fa7e8d6073052adc5ba69702db4dec6571ef0bfd",
+   "date": "2017-06-04",
+   "issue": 2357,
+   "subject": "be smarter about adding \".cli\" to reloader command",
+   "n_nodes": 329,
+   "n_edges": 168,
+   "gold": [
+    "flask.cli.main"
+   ],
+   "gold_files": [
+    {
+     "path": "flask/cli.py",
+     "skipped": null,
+     "lines": 20,
+     "mapped": 18,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.cli.main",
+    "flask.app.Flask.run",
+    "flask.helpers.find_package",
+    "flask.helpers.get_root_path",
+    "flask.cli.prepare_exec_for_file",
+    "flask.cli.shell_command",
+    "flask.cli.run_command",
+    "flask.config.Config.from_object",
+    "flask.exthook.ExtensionImporter.is_important_frame",
+    "flask.app.Flask.wsgi_app"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.cli.main": 1
+   },
+   "anchors": [
+    {
+     "node": "flask.app.Flask.run",
+     "mention": "run",
+     "rule": "inline_code",
+     "pos": 392
+    }
+   ],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S3"
+  },
+  {
+   "sha": "6637e201743225f8fc840d3b7cfcdae67f2895ef",
+   "date": "2017-06-02",
+   "issue": 1348,
+   "subject": "only open session if request hasn't been pushed yet",
+   "n_nodes": 328,
+   "n_edges": 167,
+   "gold": [
+    "flask.ctx.RequestContext.push"
+   ],
+   "gold_files": [
+    {
+     "path": "flask/ctx.py",
+     "skipped": null,
+     "lines": 19,
+     "mapped": 19,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.app.Flask.process_response",
+    "flask.testing.FlaskClient.session_transaction",
+    "flask.ctx.RequestContext.__init__",
+    "flask.ctx.after_this_request",
+    "flask.sessions.SessionInterface.save_session",
+    "flask.app.Flask.__init__",
+    "flask.helpers.make_response",
+    "flask.app.Flask.save_session",
+    "flask.debughelpers.explain_template_loading_attempts",
+    "flask.ctx.RequestContext.push"
+   ],
+   "injected": true,
+   "gold_ranks": {
+    "flask.ctx.RequestContext.push": 19
+   },
+   "anchors": [],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  },
+  {
+   "sha": "5e1ced3c055f7eb567bf7266c98de3d44ceea1b4",
+   "date": "2017-06-01",
+   "issue": 1438,
+   "subject": "make session serializer extensible",
+   "n_nodes": 307,
+   "n_edges": 173,
+   "gold": [
+    "flask.sessions.SessionInterface.get_cookie_domain",
+    "flask.sessions.SessionInterface.should_set_cookie",
+    "flask.sessions.TaggedJSONSerializer.__init__",
+    "flask.sessions.TaggedJSONSerializer._get_conversion_untag",
+    "flask.sessions.TaggedJSONSerializer._is_dict_with_used_key",
+    "flask.sessions.TaggedJSONSerializer._tag",
+    "flask.sessions.TaggedJSONSerializer._tag_dict_used_with_key",
+    "flask.sessions.TaggedJSONSerializer._tag_string",
+    "flask.sessions.TaggedJSONSerializer._untag",
+    "flask.sessions.TaggedJSONSerializer._untag_dict_used_with_key",
+    "flask.sessions.TaggedJSONSerializer._was_dict_with_used_key",
+    "flask.sessions.TaggedJSONSerializer.dumps",
+    "flask.sessions.TaggedJSONSerializer.keys",
+    "flask.sessions.TaggedJSONSerializer.loads"
+   ],
+   "gold_files": [
+    {
+     "path": "flask/json.py",
+     "skipped": null,
+     "lines": 13,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "flask/json/tag.py",
+     "skipped": "file created by the patch",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "flask/sessions.py",
+     "skipped": null,
+     "lines": 137,
+     "mapped": 106,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "flask.sessions.TaggedJSONSerializer._was_dict_with_used_key",
+    "flask.sessions.TaggedJSONSerializer._is_dict_with_used_key",
+    "flask.sessions.TaggedJSONSerializer._tag_dict_used_with_key",
+    "flask.sessions.TaggedJSONSerializer._untag_dict_used_with_key",
+    "flask.sessions.TaggedJSONSerializer.loads",
+    "flask.app.Flask.handle_user_exception",
+    "flask.sessions.TaggedJSONSerializer._tag_string",
+    "flask.sessions.TaggedJSONSerializer.dumps",
+    "flask.sessions.TaggedJSONSerializer.keys",
+    "flask.sessions.TaggedJSONSerializer._get_conversion_untag"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "flask.sessions.SessionInterface.get_cookie_domain": 52,
+    "flask.sessions.SessionInterface.should_set_cookie": 125,
+    "flask.sessions.TaggedJSONSerializer.__init__": 28,
+    "flask.sessions.TaggedJSONSerializer._get_conversion_untag": 10,
+    "flask.sessions.TaggedJSONSerializer._is_dict_with_used_key": 2,
+    "flask.sessions.TaggedJSONSerializer._tag": 13,
+    "flask.sessions.TaggedJSONSerializer._tag_dict_used_with_key": 3,
+    "flask.sessions.TaggedJSONSerializer._tag_string": 7,
+    "flask.sessions.TaggedJSONSerializer._untag": 15,
+    "flask.sessions.TaggedJSONSerializer._untag_dict_used_with_key": 4,
+    "flask.sessions.TaggedJSONSerializer._was_dict_with_used_key": 1,
+    "flask.sessions.TaggedJSONSerializer.dumps": 8,
+    "flask.sessions.TaggedJSONSerializer.keys": 9,
+    "flask.sessions.TaggedJSONSerializer.loads": 5
+   },
+   "anchors": [],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  }
+ ]
+}

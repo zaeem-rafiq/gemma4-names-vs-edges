@@ -1,0 +1,12 @@
+marshmallow-code__marshmallow-1343: 12 prompts rebuilt
+marshmallow-code__marshmallow-1359: 12 prompts rebuilt
+versioneer.py:616: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+versioneer.py:616: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+pvlib/iam.py:854: SyntaxWarning: "\c" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\c"? A raw string is also an option.
+pvlib__pvlib-python-1072: 12 prompts rebuilt
+llama_kv_cache_iswa: using full-size SWA cache (ref: https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+llama_kv_cache: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 4096
+llama_kv_cache: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 4096
+[31B] 25/36 done, 614 prompt tok/s, 0 errors, about 0.02 h left
+[31B] 36/36 done, 616 prompt tok/s, 0 errors, about 0.00 h left
+{"scored": 36, "skipped_done": 0, "errors": 0}

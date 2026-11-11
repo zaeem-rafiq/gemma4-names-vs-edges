@@ -1,0 +1,135 @@
+{
+ "_criteria": "Exclude if the README or description shows the repository is mainly: R1 a collection, directory or marketplace of independent skills, plugins, prompts, workflows or examples; R2 a tutorial, course, book or learning curriculum; R3 generated code (generated clients, SDKs or harnesses); R4 a stated port, rewrite, re-implementation or fork of a pre-2025 codebase; R5 model code stated to be largely copied from an earlier codebase. Otherwise include. Reviewed 2026-11-07 from the description and the first 3,000 characters of the README.",
+ "github/spec-kit": {
+  "decision": "include",
+  "reason": "CLI toolkit"
+ },
+ "Graphify-Labs/graphify": {
+  "decision": "include",
+  "reason": "tool; the example corpora under worked/ fall outside the main package"
+ },
+ "Panniantong/Agent-Reach": {
+  "decision": "include",
+  "reason": "tool"
+ },
+ "bytedance/deer-flow": {
+  "decision": "include",
+  "reason": "agent application"
+ },
+ "shareAI-lab/learn-claude-code": {
+  "decision": "exclude",
+  "reason": "R2 tutorial built lesson by lesson"
+ },
+ "headroomlabs-ai/headroom": {
+  "decision": "include",
+  "reason": "library and proxy"
+ },
+ "rohitg00/ai-engineering-from-scratch": {
+  "decision": "exclude",
+  "reason": "R2 course"
+ },
+ "usestrix/strix": {
+  "decision": "include",
+  "reason": "tool"
+ },
+ "ZhuLinsen/daily_stock_analysis": {
+  "decision": "include",
+  "reason": "application"
+ },
+ "MemPalace/mempalace": {
+  "decision": "include",
+  "reason": "library"
+ },
+ "jamiepine/voicebox": {
+  "decision": "include",
+  "reason": "application"
+ },
+ "FoundationAgents/OpenManus": {
+  "decision": "include",
+  "reason": "agent framework; no stated port of earlier code"
+ },
+ "HKUDS/CLI-Anything": {
+  "decision": "exclude",
+  "reason": "R1/R3 collection of generated per-application harnesses"
+ },
+ "microsoft/VibeVoice": {
+  "decision": "include",
+  "reason": "model code; one file with a pre-2025 header is skipped"
+ },
+ "HKUDS/DeepTutor": {
+  "decision": "include",
+  "reason": "application"
+ },
+ "Yuan1z0825/nature-skills": {
+  "decision": "exclude",
+  "reason": "R1 skill collection"
+ },
+ "HKUDS/nanobot": {
+  "decision": "include",
+  "reason": "agent application"
+ },
+ "sickn33/agentic-awesome-skills": {
+  "decision": "exclude",
+  "reason": "R1 skill collection"
+ },
+ "anthropics/claude-plugins-official": {
+  "decision": "exclude",
+  "reason": "R1 plugin directory"
+ },
+ "ifixai-ai/iFixAi": {
+  "decision": "include",
+  "reason": "tool"
+ },
+ "OpenBMB/VoxCPM": {
+  "decision": "include",
+  "reason": "model code"
+ },
+ "VectifyAI/PageIndex": {
+  "decision": "include",
+  "reason": "library"
+ },
+ "google/langextract": {
+  "decision": "include",
+  "reason": "library"
+ },
+ "HKUDS/Vibe-Trading": {
+  "decision": "include",
+  "reason": "agent application"
+ },
+ "NandhaKishorM/laya": {
+  "decision": "include",
+  "reason": "model and router code"
+ },
+ "ahujasid/mcp-for-blender": {
+  "decision": "include",
+  "reason": "tool (renamed from blender-mcp; same repository)"
+ },
+ "davila7/claude-code-templates": {
+  "decision": "exclude",
+  "reason": "R1 registry of templates and components"
+ },
+ "CloakHQ/CloakBrowser": {
+  "decision": "include",
+  "reason": "tool"
+ },
+ "tirth8205/code-review-graph": {
+  "decision": "include",
+  "reason": "tool"
+ },
+ "langchain-ai/deepagents": {
+  "decision": "include",
+  "reason": "agent library (monorepo under libs/)"
+ },
+ "openai/openai-agents-python": {
+  "decision": "include",
+  "reason": "agent library; README does not state a port of earlier code"
+ },
+ "ATH-MaaS/Pixelle-Video": {
+  "decision": "include",
+  "reason": "application"
+ },
+ "alirezarezvani/claude-skills": {
+  "decision": "exclude",
+  "reason": "R1 skill collection"
+ }
+}

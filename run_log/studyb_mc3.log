@@ -1,0 +1,50 @@
+{
+ "rich_4079": {
+  "repo": "Textualize/rich",
+  "graph": "rich_19c67b9a3479841e9133bea94607c89ee931d3fc",
+  "official_library_functions": 833,
+  "our_nodes": 833,
+  "common_nodes": 833,
+  "official_pairs": 274,
+  "our_pairs": 657,
+  "common_pairs": 263,
+  "ours_in_official": 0.4003044140030441,
+  "official_in_ours": 0.9598540145985401
+ },
+ "httpx_3672": {
+  "repo": "encode/httpx",
+  "graph": "httpx_4acf5c2c37714cc63b5cf71b3e284fca83c90311",
+  "official_library_functions": 520,
+  "our_nodes": 618,
+  "common_nodes": 520,
+  "official_pairs": 33,
+  "our_pairs": 248,
+  "common_pairs": 33,
+  "ours_in_official": 0.13306451612903225,
+  "official_in_ours": 1.0
+ },
+ "fastapi_15800": {
+  "repo": "fastapi/fastapi",
+  "graph": "fastapi_f1d750fddad90e2faad6c3cc5c85c7687b787e89",
+  "official_library_functions": 268,
+  "our_nodes": 305,
+  "common_nodes": 268,
+  "official_pairs": 183,
+  "our_pairs": 236,
+  "common_pairs": 153,
+  "ours_in_official": 0.6483050847457628,
+  "official_in_ours": 0.8360655737704918
+ },
+ "requests_7505": {
+  "repo": "psf/requests",
+  "graph": "requests_6f205ff422bccd5e4c4fc0b64c5f3e7df5181db6",
+  "official_library_functions": 239,
+  "our_nodes": 239,
+  "common_nodes": 239,
+  "official_pairs": 103,
+  "our_pairs": 208,
+  "common_pairs": 100,
+  "ours_in_official": 0.4807692307692308,
+  "official_in_ours": 0.970873786407767
+ }
+}

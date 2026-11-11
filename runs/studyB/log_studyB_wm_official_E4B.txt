@@ -1,0 +1,124 @@
+fastapi_11355: 2 prompts rebuilt
+fastapi_12942: 2 prompts rebuilt
+fastapi_13207: 2 prompts rebuilt
+fastapi_13713: 2 prompts rebuilt
+fastapi_13786: 2 prompts rebuilt
+fastapi_13920: 2 prompts rebuilt
+fastapi_14077: 2 prompts rebuilt
+fastapi_14099: 2 prompts rebuilt
+fastapi_14186: 2 prompts rebuilt
+fastapi_14246: 2 prompts rebuilt
+fastapi_14258: 2 prompts rebuilt
+fastapi_14262: 2 prompts rebuilt
+fastapi_14266: 2 prompts rebuilt
+fastapi_14297: 2 prompts rebuilt
+fastapi_14301: 2 prompts rebuilt
+fastapi_14306: 2 prompts rebuilt
+fastapi_14349: 2 prompts rebuilt
+fastapi_14356: 2 prompts rebuilt
+fastapi_14360: 2 prompts rebuilt
+fastapi_14361: 2 prompts rebuilt
+fastapi_14371: 2 prompts rebuilt
+fastapi_14372: 2 prompts rebuilt
+fastapi_14419: 2 prompts rebuilt
+fastapi_14430: 2 prompts rebuilt
+fastapi_14448: 2 prompts rebuilt
+fastapi_14455: 2 prompts rebuilt
+fastapi_14458: 2 prompts rebuilt
+fastapi_14459: 2 prompts rebuilt
+fastapi_14463: 2 prompts rebuilt
+fastapi_14479: 2 prompts rebuilt
+fastapi_14482: 2 prompts rebuilt
+fastapi_14485: 2 prompts rebuilt
+fastapi_14512: 2 prompts rebuilt
+fastapi_14583: 2 prompts rebuilt
+fastapi_14605: 2 prompts rebuilt
+fastapi_14609: 2 prompts rebuilt
+fastapi_14616: 2 prompts rebuilt
+fastapi_14786: 2 prompts rebuilt
+fastapi_14794: 2 prompts rebuilt
+fastapi_14851: 2 prompts rebuilt
+fastapi_14873: 2 prompts rebuilt
+fastapi_14953: 2 prompts rebuilt
+fastapi_14962: 2 prompts rebuilt
+fastapi_14978: 2 prompts rebuilt
+fastapi_14986: 2 prompts rebuilt
+fastapi_15030: 2 prompts rebuilt
+fastapi_15588: 2 prompts rebuilt
+fastapi_15589: 2 prompts rebuilt
+fastapi_15745: 2 prompts rebuilt
+fastapi_15763: 2 prompts rebuilt
+fastapi_15785: 2 prompts rebuilt
+fastapi_15800: 2 prompts rebuilt
+fastapi_5077: 2 prompts rebuilt
+fastapi_5624: 2 prompts rebuilt
+fastapi_9425: 2 prompts rebuilt
+fastapi_9555: 2 prompts rebuilt
+fastapi_9753: 2 prompts rebuilt
+httpx_3672: 2 prompts rebuilt
+requests_6589: 2 prompts rebuilt
+requests_6644: 2 prompts rebuilt
+requests_6757: 2 prompts rebuilt
+requests_7205: 2 prompts rebuilt
+requests_7309: 2 prompts rebuilt
+requests_7315: 2 prompts rebuilt
+requests_7328: 2 prompts rebuilt
+requests_7427: 2 prompts rebuilt
+requests_7433: 2 prompts rebuilt
+requests_7502: 2 prompts rebuilt
+requests_7505: 2 prompts rebuilt
+rich_2725: 2 prompts rebuilt
+rich_2943: 2 prompts rebuilt
+rich_3006: 2 prompts rebuilt
+rich_3052: 2 prompts rebuilt
+rich_3061: 2 prompts rebuilt
+rich_3063: 2 prompts rebuilt
+rich_3064: 2 prompts rebuilt
+rich_3130: 2 prompts rebuilt
+rich_3180: 2 prompts rebuilt
+rich_3296: 2 prompts rebuilt
+rich_3468: 2 prompts rebuilt
+rich_3469: 2 prompts rebuilt
+rich_3470: 2 prompts rebuilt
+rich_3471: 2 prompts rebuilt
+rich_3472: 2 prompts rebuilt
+rich_3480: 2 prompts rebuilt
+rich_3486: 2 prompts rebuilt
+rich_3506: 2 prompts rebuilt
+rich_3518: 2 prompts rebuilt
+rich_3521: 2 prompts rebuilt
+rich_3535: 2 prompts rebuilt
+rich_3675: 2 prompts rebuilt
+rich_3676: 2 prompts rebuilt
+rich_3718: 2 prompts rebuilt
+rich_3772: 2 prompts rebuilt
+rich_3777: 2 prompts rebuilt
+rich_3782: 2 prompts rebuilt
+rich_3882: 2 prompts rebuilt
+rich_3894: 2 prompts rebuilt
+rich_3905: 2 prompts rebuilt
+rich_3930: 2 prompts rebuilt
+rich_3934: 2 prompts rebuilt
+rich_3935: 2 prompts rebuilt
+rich_3938: 2 prompts rebuilt
+rich_3942: 2 prompts rebuilt
+rich_3944: 2 prompts rebuilt
+rich_3953: 2 prompts rebuilt
+rich_4006: 2 prompts rebuilt
+rich_4070: 2 prompts rebuilt
+rich_4075: 2 prompts rebuilt
+rich_4076: 2 prompts rebuilt
+rich_4079: 2 prompts rebuilt
+llama_kv_cache_iswa: using full-size SWA cache (ref: https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+llama_kv_cache: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 1024
+llama_kv_cache: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 1024
+[E4B] 25/222 done, 3668 prompt tok/s, 0 errors, about 0.03 h left
+[E4B] 50/222 done, 3678 prompt tok/s, 0 errors, about 0.03 h left
+[E4B] 75/222 done, 3682 prompt tok/s, 0 errors, about 0.03 h left
+[E4B] 100/222 done, 3680 prompt tok/s, 0 errors, about 0.02 h left
+[E4B] 125/222 done, 3684 prompt tok/s, 0 errors, about 0.02 h left
+[E4B] 150/222 done, 3684 prompt tok/s, 0 errors, about 0.01 h left
+[E4B] 175/222 done, 3680 prompt tok/s, 0 errors, about 0.01 h left
+[E4B] 200/222 done, 3681 prompt tok/s, 0 errors, about 0.00 h left
+[E4B] 222/222 done, 3682 prompt tok/s, 0 errors, about 0.00 h left
+{"scored": 222, "skipped_done": 0, "errors": 0}

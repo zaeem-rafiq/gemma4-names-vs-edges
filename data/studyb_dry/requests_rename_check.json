@@ -1,0 +1,55 @@
+{
+ "repo": "requests",
+ "seed": 1,
+ "build_secs": 0.39,
+ "names_defined": 849,
+ "names_renamed": 765,
+ "third_party_names": 312,
+ "packages": [
+  "requests"
+ ],
+ "identity": [
+  "psf",
+  "requests"
+ ],
+ "fallback_subtokens": 0,
+ "parse_errors": 0,
+ "issues": {
+  "n": 11,
+  "hard_texts": 0,
+  "hard": {},
+  "soft": {
+   "url": 9,
+   "headers": 6,
+   "version": 5,
+   "response": 4,
+   "content": 4,
+   "body": 3,
+   "Session": 2,
+   "generate": 2,
+   "stream": 2,
+   "here": 2,
+   "about": 1,
+   "run": 1,
+   "length": 1
+  },
+  "residual_identity": {},
+  "share_changed": {
+   "median": 0.1452991452991453,
+   "max": 0.18275862068965518
+  }
+ },
+ "code": {
+  "n": 233,
+  "hard_texts": 0,
+  "hard": {},
+  "soft": {
+   "url": 6
+  },
+  "residual_identity": {},
+  "share_changed": {
+   "median": 0.1346153846153846,
+   "max": 0.5454545454545454
+  }
+ }
+}

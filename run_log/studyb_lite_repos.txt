@@ -1,0 +1,17 @@
+astropy/astropy
+django/django
+marshmallow-code/marshmallow
+matplotlib/matplotlib
+mwaskom/seaborn
+pallets/flask
+pvlib/pvlib-python
+pydata/xarray
+pydicom/pydicom
+pylint-dev/astroid
+pylint-dev/pylint
+pytest-dev/pytest
+pyvista/pyvista
+scikit-learn/scikit-learn
+sphinx-doc/sphinx
+sqlfluff/sqlfluff
+sympy/sympy

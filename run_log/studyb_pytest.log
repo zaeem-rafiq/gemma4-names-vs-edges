@@ -1,0 +1,16 @@
+..........................................F..ssssss..ss................. [ 51%]
+...........ssssss...............ssssss....sss.......................     [100%]
+=================================== FAILURES ===================================
+_____________________ test_package_code_sha256_is_current ______________________
+
+    def test_package_code_sha256_is_current():
+        """CODE_SHA256.txt must match the code and docs; regenerate with `python -m ngraph.commit code-sha256`."""
+        res = cm.check_code_sha256(PKG)
+>       assert res["ok"], res
+E       AssertionError: {'ok': False, 'stale_or_missing': ['./src/ngraph/analysis.py', './src/ngraph/lite.py', './src/ngraph/official.py', './...', './src/ngraph/studyb_report.py', ...], 'no_longer_matching': ['./src/ngraph/analysis.py', './src/ngraph/rename.py']}
+E       assert False
+
+tests/test_commit.py:554: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_commit.py::test_package_code_sha256_is_current - AssertionE...
+1 failed, 116 passed, 23 skipped in 6.24s

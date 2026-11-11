@@ -1,0 +1,553 @@
+{
+ "settings": {
+  "n_ctx": 4096,
+  "n_batch": 512,
+  "n_ubatch": 512,
+  "n_gpu_layers": -1,
+  "flash_attn": false,
+  "enable_thinking": false,
+  "thought_block": "on",
+  "answer_prefix": "",
+  "llama_cpp_python": "0.3.36"
+ },
+ "model": "gemma-4-31B_q4_0-it.gguf",
+ "answer_prefix": "",
+ "prompts": {
+  "n": 40,
+  "seed": 0,
+  "n_alt": null,
+  "AD": 40,
+  "AJ": 36
+ },
+ "prompt_tail": "ter of the correct option only.<turn|>\n<|turn>model\n<|channel>thought\n<channel|>",
+ "template_appends_thought_block": true,
+ "bos_ok": true,
+ "special_tokens_ok": true,
+ "letter_ids_AD": {
+  "A": [
+   236776,
+   562
+  ],
+  "B": [
+   236799,
+   603
+  ],
+  "C": [
+   236780,
+   565
+  ],
+  "D": [
+   236796,
+   622
+  ]
+ },
+ "letter_ids_AJ": {
+  "A": [
+   236776,
+   562
+  ],
+  "B": [
+   236799,
+   603
+  ],
+  "C": [
+   236780,
+   565
+  ],
+  "D": [
+   236796,
+   622
+  ],
+  "E": [
+   236788,
+   645
+  ],
+  "F": [
+   236811,
+   633
+  ],
+  "G": [
+   236823,
+   667
+  ],
+  "H": [
+   236814,
+   640
+  ],
+  "I": [
+   236777,
+   564
+  ],
+  "J": [
+   236863,
+   730
+  ]
+ },
+ "tokenizer_probe": {
+  "n": 4040,
+  "mismatches": 0,
+  "examples": [],
+  "ok": true
+ },
+ "AD": {
+  "n": 40,
+  "share_mass_ge_0.9": 0.8,
+  "min_mass": 0.07797160075961425,
+  "mean_mass": 0.9113978827906962,
+  "accuracy": 0.975,
+  "pred_letter_counts": {
+   "A": 5,
+   "B": 15,
+   "C": 12,
+   "D": 8
+  },
+  "prompt_tok_per_s": 618.9019161860407,
+  "mean_tokens": 685.7,
+  "examples_top": [
+   [
+    [
+     "D",
+     0.9999511240530866
+    ],
+    [
+     "The",
+     2.9552294018402663e-05
+    ],
+    [
+     "**",
+     4.49489634385654e-06
+    ],
+    [
+     "Correct",
+     3.493445130991176e-06
+    ],
+    [
+     "//",
+     2.2968589993975973e-06
+    ]
+   ],
+   [
+    [
+     "B",
+     0.9994925258940858
+    ],
+    [
+     "To",
+     0.00022670407511904596
+    ],
+    [
+     "The",
+     0.00016273786423523864
+    ],
+    [
+     "Correct",
+     5.460317691845899e-05
+    ],
+    [
+     "Based",
+     4.660526256354968e-05
+    ]
+   ],
+   [
+    [
+     "C",
+     0.9999806053017462
+    ],
+    [
+     "**",
+     1.2068550463129934e-05
+    ],
+    [
+     "Correct",
+     3.5336099786914664e-06
+    ],
+    [
+     "//",
+     6.757422982965749e-07
+    ],
+    [
+     "B",
+     6.479316860605537e-07
+    ]
+   ]
+  ],
+  "p_channel": {
+   "n": 40,
+   "mean": 4.194832941660384e-08,
+   "median": 6.519463325308005e-09,
+   "max": 8.990308412406828e-07,
+   "share_gt_0.1": 0.0
+  }
+ },
+ "AJ": {
+  "n": 36,
+  "share_mass_ge_0.9": 0.6944444444444444,
+  "min_mass": 0.0012507787772260235,
+  "mean_mass": 0.8483707952337335,
+  "accuracy": 1.0,
+  "pred_letter_counts": {
+   "A": 2,
+   "B": 6,
+   "C": 5,
+   "D": 6,
+   "E": 3,
+   "F": 3,
+   "G": 1,
+   "H": 5,
+   "I": 3,
+   "J": 2
+  },
+  "prompt_tok_per_s": 629.6496313358977,
+  "mean_tokens": 793.4722222222222,
+  "examples_top": [
+   [
+    [
+     "H",
+     0.7932752884650978
+    ],
+    [
+     "To",
+     0.18134049846834535
+    ],
+    [
+     "The",
+     0.0196445200648183
+    ],
+    [
+     "Based",
+     0.004586018056119322
+    ],
+    [
+     "Looking",
+     0.0005876656136867569
+    ]
+   ],
+   [
+    [
+     "E",
+     0.9995066136318587
+    ],
+    [
+     "The",
+     0.00032624869166302916
+    ],
+    [
+     "**",
+     4.5309638540247285e-05
+    ],
+    [
+     "To",
+     3.4491129308043784e-05
+    ],
+    [
+     "Correct",
+     2.2147956724416978e-05
+    ]
+   ],
+   [
+    [
+     "F",
+     0.9995817733565069
+    ],
+    [
+     "To",
+     0.00022174827023082894
+    ],
+    [
+     "The",
+     9.350862421371681e-05
+    ],
+    [
+     "f",
+     4.170780377320794e-05
+    ],
+    [
+     "Based",
+     2.678070690423762e-05
+    ]
+   ]
+  ],
+  "p_channel": {
+   "n": 36,
+   "mean": 2.420697570206527e-07,
+   "median": 3.457996718138903e-08,
+   "max": 3.203971536493502e-06,
+   "share_gt_0.1": 0.0
+  }
+ },
+ "AD_other_thought_block": {
+  "n": 40,
+  "share_mass_ge_0.9": 0.0,
+  "min_mass": 1.825625957964681e-10,
+  "mean_mass": 3.2818486786617886e-09,
+  "accuracy": 0.425,
+  "pred_letter_counts": {
+   "A": 0,
+   "B": 11,
+   "C": 29,
+   "D": 0
+  },
+  "prompt_tok_per_s": 623.6006833353534,
+  "mean_tokens": 681.7,
+  "examples_top": [
+   [
+    [
+     "<|channel>",
+     0.9999994147196433
+    ],
+    [
+     " Jika",
+     1.9488775799972913e-08
+    ],
+    [
+     " provide",
+     1.0187445262513321e-08
+    ],
+    [
+     "\uacfc",
+     9.93403466121023e-09
+    ],
+    [
+     " \u0917\u0941\u0923\u094b\u0902",
+     9.751811146011835e-09
+    ]
+   ],
+   [
+    [
+     "<|channel>",
+     0.9999999352017518
+    ],
+    [
+     " haven",
+     1.7518734512312374e-09
+    ],
+    [
+     " \uc774",
+     1.699358239438956e-09
+    ],
+    [
+     "\ud55c",
+     1.1338755672605574e-09
+    ],
+    [
+     " \uc774\ubc88",
+     1.098777144222579e-09
+    ]
+   ],
+   [
+    [
+     "<|channel>",
+     0.9999999473757497
+    ],
+    [
+     "5",
+     2.3201592845951435e-09
+    ],
+    [
+     " haven",
+     2.1302280936988084e-09
+    ],
+    [
+     "8",
+     2.0356255522793902e-09
+    ],
+    [
+     "text",
+     1.3296161762521962e-09
+    ]
+   ]
+  ],
+  "p_channel": {
+   "n": 40,
+   "mean": 0.9999997856969148,
+   "median": 0.9999998704217048,
+   "max": 0.9999999695898159,
+   "share_gt_0.1": 1.0
+  },
+  "mode": "off"
+ },
+ "AJ_other_thought_block": {
+  "n": 36,
+  "share_mass_ge_0.9": 0.0,
+  "min_mass": 8.164842971137088e-10,
+  "mean_mass": 7.19278696434302e-09,
+  "accuracy": 0.1388888888888889,
+  "pred_letter_counts": {
+   "A": 0,
+   "B": 5,
+   "C": 31,
+   "D": 0,
+   "E": 0,
+   "F": 0,
+   "G": 0,
+   "H": 0,
+   "I": 0,
+   "J": 0
+  },
+  "prompt_tok_per_s": 635.181373436407,
+  "mean_tokens": 789.4722222222222,
+  "examples_top": [
+   [
+    [
+     "<|channel>",
+     0.9999998626894696
+    ],
+    [
+     " \uc774",
+     4.335237618775024e-09
+    ],
+    [
+     " \ub370\uc774\ud130\ub97c",
+     2.9467920516458547e-09
+    ],
+    [
+     " \uc5ec\uae30\uc11c",
+     2.6787267830039337e-09
+    ],
+    [
+     "\uc758",
+     2.378218448216093e-09
+    ]
+   ],
+   [
+    [
+     "<|channel>",
+     0.9999999578887655
+    ],
+    [
+     "C",
+     1.2269686294304606e-09
+    ],
+    [
+     "get",
+     1.0355219308260723e-09
+    ],
+    [
+     " \u03c7\u03c1\u03b7\u03c3\u03b9\u03bc\u03bf\u03c0\u03bf\u03b9",
+     8.615908710600416e-10
+    ],
+    [
+     "\u0e40\u0e1e\u0e37\u0e48\u0e2d\u0e43\u0e2b\u0e49",
+     5.753072384448936e-10
+    ]
+   ],
+   [
+    [
+     "<|channel>",
+     0.9999998099086941
+    ],
+    [
+     "C",
+     5.142630186815304e-09
+    ],
+    [
+     " \u015feklinde",
+     3.6945967450923584e-09
+    ],
+    [
+     " seniority",
+     3.5970229444298983e-09
+    ],
+    [
+     "text",
+     3.575841161572668e-09
+    ]
+   ]
+  ],
+  "p_channel": {
+   "n": 36,
+   "mean": 0.999999835915157,
+   "median": 0.9999998656171061,
+   "max": 0.9999999605342581,
+   "share_gt_0.1": 1.0
+  },
+  "mode": "off"
+ },
+ "repeat": {
+  "n": 10,
+  "argmax_agreement": 1.0,
+  "max_abs_logit_diff": 0.0
+ },
+ "checks_ok": true,
+ "prefix_scan": [
+  {
+   "prefix": "",
+   "AD_share_mass_ge_0.9": 0.8,
+   "AJ_share_mass_ge_0.9": 0.6944444444444444,
+   "AD_mean_mass": 0.9113978827906962,
+   "AJ_mean_mass": 0.8483707952337335,
+   "passes": false
+  },
+  {
+   "prefix": "Answer:",
+   "AD_share_mass_ge_0.9": 1.0,
+   "AJ_share_mass_ge_0.9": 1.0,
+   "AD_mean_mass": 0.9999838829855093,
+   "AJ_mean_mass": 0.9999979575414029,
+   "passes": true
+  },
+  {
+   "prefix": "The correct option is",
+   "AD_share_mass_ge_0.9": 0.0,
+   "AJ_share_mass_ge_0.9": 0.0,
+   "AD_mean_mass": 0.25089895768060744,
+   "AJ_mean_mass": 0.24129759619735694,
+   "passes": false
+  }
+ ],
+ "prefix_rule_choice": "Answer:",
+ "prefix_matches_rule": false,
+ "own_setting_passes": false,
+ "other_setting_passes": false,
+ "thought_block_decision": "neither passes",
+ "gng1_pass": false,
+ "model_tag": "31B",
+ "repos": [
+  "langextract",
+  "trio"
+ ],
+ "model_file": {
+  "file": "gemma-4-31B_q4_0-it.gguf",
+  "bytes": 17651001568,
+  "general": {
+   "general.architecture": "gemma4",
+   "general.type": "model",
+   "general.sampling.top_k": 64,
+   "general.sampling.top_p": 0.949999988079071,
+   "general.sampling.temp": 1.0,
+   "general.name": "Hf",
+   "general.size_label": "31B",
+   "general.license": "apache-2.0",
+   "general.license.link": "https://ai.google.dev/gemma/docs/gemma_4_license",
+   "general.base_model.count": 1,
+   "general.base_model.0.name": "Gemma 4 31B It",
+   "general.base_model.0.organization": "Google",
+   "general.base_model.0.repo_url": "https://huggingface.co/google/gemma-4-31B-it",
+   "general.tags": [
+    "image-text-to-text"
+   ],
+   "general.quantization_version": 2,
+   "general.file_type": 2
+  },
+  "chat_template_sha256": "ae53464bf3be25802b3a5b37def7fd89667067d7577049b3b2d74c4d8de4c6d4",
+  "template_appends_thought_block": true,
+  "sha256": "179cfb99212709597eae5929112cfca677e1bbf566178b479ae1da0c4772874b"
+ },
+ "package": {
+  "code_hash": "b17ac80a3adbcaa2cd75d727e27e6b03b22cfbd630862ac27d7491df04722d3f",
+  "code_sha256_current": true,
+  "items_digest": "511b839ff70e2106c85bdfa5e726e7a5d4b3712ec52e0c6ec750c29f15b782b7",
+  "items_folder": "data/items",
+  "manifests": {}
+ },
+ "model_n_params": 30697345596,
+ "projection": {
+  "perms": [
+   1
+  ],
+  "prompts": 3200,
+  "prompt_tokens": 1930810,
+  "tok_per_s": 618.9019161860407,
+  "hours_x1.3": 1.1265709900223617
+ }
+}

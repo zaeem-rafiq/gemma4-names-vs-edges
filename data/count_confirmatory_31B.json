@@ -1,0 +1,67 @@
+{
+ "prompts": 3200,
+ "prompt_tokens": 1930810,
+ "max_tokens": 2677,
+ "mean_tokens": 603.378125,
+ "mean_by_version": {
+  "G0": 122.3375,
+  "G1": 723.3328125,
+  "G2": 723.95625,
+  "G3": 723.3203125,
+  "G4": 723.94375
+ },
+ "parity": {
+  "G2-G1": {
+   "n": 640,
+   "mean": 0.6234375,
+   "mean_abs": 0.9390625,
+   "min": -2,
+   "max": 55
+  },
+  "G4-G3": {
+   "n": 640,
+   "mean": 0.6234375,
+   "mean_abs": 0.9390625,
+   "min": -2,
+   "max": 55
+  }
+ },
+ "thought_block": "on",
+ "perms": [
+  1
+ ],
+ "repos": [
+  "Agent-Reach",
+  "DeepTutor",
+  "OpenManus",
+  "PageIndex",
+  "VibeVoice",
+  "VoxCPM",
+  "black",
+  "boltons",
+  "click",
+  "daily_stock_analysis",
+  "deer-flow",
+  "fastapi",
+  "flask",
+  "graphify",
+  "headroom",
+  "httpcore",
+  "httpx",
+  "iFixAi",
+  "jinja",
+  "marshmallow",
+  "mempalace",
+  "nanobot",
+  "packaging",
+  "requests",
+  "rich",
+  "sanic",
+  "spec-kit",
+  "starlette",
+  "strix",
+  "tornado",
+  "voicebox",
+  "werkzeug"
+ ]
+}

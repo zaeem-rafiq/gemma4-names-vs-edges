@@ -1,0 +1,4 @@
+fa401b55b07ee70a54c6dae3903c783a6e65064312529ea57175cb5f8dec6634  gemma-4-E2B_q4_0-it.gguf  bytes=3349516256  expected_bytes=3349516256  MATCH
+676c35070db6dbe52f93e9c864ee0fba4eddea94b9c875d9cb10daff453fbaee  gemma-4-E4B_q4_0-it.gguf  bytes=5154941280  expected_bytes=5154941280  MATCH
+93567e57a8fe10b23569b9d9ec38cd005deedf71e29477c421a4b83f418a538b  gemma-4-12b-it-qat-q4_0.gguf  bytes=6975879296  expected_bytes=6975879296  MATCH
+179cfb99212709597eae5929112cfca677e1bbf566178b479ae1da0c4772874b  gemma-4-31B_q4_0-it.gguf

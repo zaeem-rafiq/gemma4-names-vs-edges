@@ -1,0 +1,19 @@
+{"archived": false, "created_at": "2018-12-08T08:21:47Z", "fork": false, "full_name": "fastapi/fastapi", "license": "MIT", "stars": 104532, "queried_at": "2026-11-07T06:56Z"}
+{"archived": false, "created_at": "2019-11-10T15:28:09Z", "fork": false, "full_name": "Textualize/rich", "license": "MIT", "stars": 57741, "queried_at": "2026-11-07T06:56Z"}
+{"archived": false, "created_at": "2011-02-13T18:38:17Z", "fork": false, "full_name": "psf/requests", "license": "Apache-2.0", "stars": 54711, "queried_at": "2026-11-07T06:56Z"}
+{"archived": false, "created_at": "2019-04-04T12:27:00Z", "fork": false, "full_name": "encode/httpx", "license": "BSD-3-Clause", "stars": 15742, "queried_at": "2026-11-07T06:56Z"}
+{"archived": false, "created_at": "2010-04-06T11:11:59Z", "fork": false, "full_name": "pallets/flask", "license": "BSD-3-Clause", "stars": 75056, "queried_at": "2026-11-07T06:56Z"}
+{"archived": false, "created_at": "2014-04-24T09:52:19Z", "fork": false, "full_name": "pallets/click", "license": "BSD-3-Clause", "stars": 17816, "queried_at": "2026-11-07T06:56Z"}
+{"archived": false, "created_at": "2010-10-18T11:42:40Z", "fork": false, "full_name": "pallets/werkzeug", "license": "BSD-3-Clause", "stars": 6881, "queried_at": "2026-11-07T06:56Z"}
+{"archived": false, "created_at": "2010-10-17T13:41:17Z", "fork": false, "full_name": "pallets/jinja", "license": "BSD-3-Clause", "stars": 11812, "queried_at": "2026-11-07T06:56Z"}
+{"archived": false, "created_at": "2013-11-10T21:32:24Z", "fork": false, "full_name": "marshmallow-code/marshmallow", "license": "MIT", "stars": 7243, "queried_at": "2026-11-07T06:56Z"}
+{"archived": false, "created_at": "2020-01-30T12:41:11Z", "fork": false, "full_name": "encode/httpcore", "license": "BSD-3-Clause", "stars": 549, "queried_at": "2026-11-07T06:56Z"}
+{"archived": false, "created_at": "2014-05-15T22:49:43Z", "fork": false, "full_name": "pypa/packaging", "license": "NOASSERTION", "stars": 755, "queried_at": "2026-11-07T06:56Z"}
+{"archived": false, "created_at": "2013-02-20T06:17:12Z", "fork": false, "full_name": "mahmoud/boltons", "license": "NOASSERTION", "stars": 6943, "queried_at": "2026-11-07T06:56Z"}
+{"archived": false, "created_at": "2018-06-25T13:16:21Z", "fork": false, "full_name": "Kludex/starlette", "license": "BSD-3-Clause", "stars": 12711, "requested": "encode/starlette", "note": "repo:encode/starlette search returns 422; the repository now lives at Kludex/starlette (clone of the old URL redirects)", "queried_at": "2026-11-07T06:56Z"}
+{"archived": false, "created_at": "2018-03-14T19:54:45Z", "fork": false, "full_name": "psf/black", "license": "MIT", "stars": 42125, "queried_at": "2026-11-07T06:56Z"}
+{"archived": false, "created_at": "2009-09-09T04:55:16Z", "fork": false, "full_name": "tornadoweb/tornado", "license": "Apache-2.0", "stars": 22163, "queried_at": "2026-11-07T06:56Z"}
+{"archived": false, "created_at": "2016-05-26T04:38:22Z", "fork": false, "full_name": "sanic-org/sanic", "license": "MIT", "stars": 18629, "queried_at": "2026-11-07T06:56Z"}
+{"archived": false, "created_at": "2017-01-16T04:45:25Z", "fork": false, "full_name": "python-trio/trio", "license": "NOASSERTION", "stars": 7357, "queried_at": "2026-11-07T06:56Z"}
+{"archived": false, "created_at": "2018-08-19T21:07:18Z", "fork": false, "full_name": "agronholm/anyio", "license": "MIT", "stars": 2568, "queried_at": "2026-11-07T06:56Z"}
+{"archived": false, "created_at": "2016-08-28T16:45:58Z", "fork": false, "full_name": "python-attrs/cattrs", "license": "MIT", "stars": 1060, "queried_at": "2026-11-07T06:56Z"}

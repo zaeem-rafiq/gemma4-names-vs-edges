@@ -1,0 +1,401 @@
+{
+ "summary": {
+  "tasks": 6,
+  "with_gold": 5,
+  "gold_in_top10_share": 0.8,
+  "gold_top1_share": 0.2,
+  "median_best_gold_rank": 5,
+  "anchored_share": 0.6,
+  "strata": {
+   "S0": 2,
+   "S3": 3
+  },
+  "anchored_strata": {
+   "S0": 2,
+   "S3": 1
+  },
+  "skipped": {}
+ },
+ "tasks": [
+  {
+   "sha": "b591de2ace297c1da537e50f64b4066f96553247",
+   "date": "2020-06-14",
+   "issue": 872,
+   "subject": "\u2728 Add support for OpenAPI servers metadata (#1547)",
+   "n_nodes": 148,
+   "n_edges": 158,
+   "gold": [
+    "fastapi.applications.FastAPI.__init__",
+    "fastapi.applications.FastAPI.openapi",
+    "fastapi.openapi.utils.get_openapi",
+    "fastapi.openapi.utils.get_openapi_operation_parameters",
+    "fastapi.openapi.utils.get_openapi_operation_request_body"
+   ],
+   "gold_files": [
+    {
+     "path": "fastapi/applications.py",
+     "skipped": null,
+     "lines": 3,
+     "mapped": 3,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "fastapi/openapi/models.py",
+     "skipped": null,
+     "lines": 2,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "fastapi/openapi/utils.py",
+     "skipped": null,
+     "lines": 9,
+     "mapped": 9,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_openapi_servers.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "fastapi.openapi.docs.get_swagger_ui_oauth2_redirect_html",
+    "fastapi.openapi.docs.get_redoc_html",
+    "fastapi.applications.FastAPI.setup",
+    "fastapi.openapi.utils.get_openapi_path",
+    "fastapi.applications.FastAPI.__init__",
+    "fastapi.openapi.utils.get_openapi_operation_parameters",
+    "fastapi.openapi.docs.get_swagger_ui_html",
+    "fastapi.openapi.utils.get_openapi",
+    "fastapi.openapi.utils.get_openapi_operation_metadata",
+    "fastapi.dependencies.utils.get_dependant"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "fastapi.applications.FastAPI.__init__": 5,
+    "fastapi.applications.FastAPI.openapi": 16,
+    "fastapi.openapi.utils.get_openapi": 8,
+    "fastapi.openapi.utils.get_openapi_operation_parameters": 6,
+    "fastapi.openapi.utils.get_openapi_operation_request_body": 19
+   },
+   "anchors": [
+    {
+     "node": "fastapi.openapi.utils.get_openapi",
+     "mention": "get_openapi",
+     "rule": "inline_code",
+     "pos": 799
+    }
+   ],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S0"
+  },
+  {
+   "sha": "c6dd627bdd10506be3a6c7f52cc90db7cf60540e",
+   "date": "2020-06-13",
+   "issue": 1349,
+   "subject": "\u2728 Add support for Python's http.HTTPStatus in status_code (#1534)",
+   "n_nodes": 148,
+   "n_edges": 158,
+   "gold": [
+    "fastapi.routing.APIRoute.__init__"
+   ],
+   "gold_files": [
+    {
+     "path": "fastapi/routing.py",
+     "skipped": null,
+     "lines": 4,
+     "mapped": 3,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/main.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_application.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "fastapi.dependencies.utils.solve_generator",
+    "fastapi.openapi.docs.get_redoc_html",
+    "fastapi.applications.FastAPI.setup",
+    "fastapi.openapi.utils.get_openapi_path",
+    "fastapi.openapi.docs.get_swagger_ui_oauth2_redirect_html",
+    "fastapi.openapi.docs.get_swagger_ui_html",
+    "fastapi.dependencies.utils.solve_dependencies",
+    "fastapi.exception_handlers.http_exception_handler",
+    "fastapi.routing.get_request_handler",
+    "fastapi.routing.APIRoute.__init__"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "fastapi.routing.APIRoute.__init__": 10
+   },
+   "anchors": [],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  },
+  {
+   "sha": "0f152b4e97a102c0105f26d76d6e1bba3b12fc2a",
+   "date": "2020-03-29",
+   "issue": 894,
+   "subject": ":bug: Check already cloned fields in create_cloned_field to support recursive models (#1164)",
+   "n_nodes": 143,
+   "n_edges": 151,
+   "gold": [
+    "fastapi.utils.create_cloned_field"
+   ],
+   "gold_files": [
+    {
+     "path": "fastapi/utils.py",
+     "skipped": null,
+     "lines": 26,
+     "mapped": 26,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_validate_response_recursive.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "fastapi.utils.create_cloned_field",
+    "fastapi.routing.APIRoute.__init__",
+    "fastapi.utils.create_response_field",
+    "fastapi.utils.get_flat_models_from_routes",
+    "fastapi.dependencies.utils.get_schema_compatible_field",
+    "fastapi.openapi.utils.get_openapi",
+    "fastapi.routing.APIRouter.include_router",
+    "fastapi.utils.get_model_definitions",
+    "fastapi.dependencies.utils.get_body_field",
+    "fastapi.openapi.utils.get_openapi_path"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "fastapi.utils.create_cloned_field": 1
+   },
+   "anchors": [
+    {
+     "node": "fastapi.routing.APIRouter.add_api_route",
+     "mention": "frame:fastapi/routing.py:438:add_api_route",
+     "rule": "traceback",
+     "pos": 1148
+    },
+    {
+     "node": "fastapi.routing.APIRoute.__init__",
+     "mention": "frame:fastapi/routing.py:275:__init__",
+     "rule": "traceback",
+     "pos": 1269
+    },
+    {
+     "node": "fastapi.utils.create_cloned_field",
+     "mention": "create_cloned_field",
+     "rule": "identifier",
+     "pos": 1365
+    }
+   ],
+   "ambiguous": [
+    "add_api_route",
+    "__init__"
+   ],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S0"
+  },
+  {
+   "sha": "4642f63a1ebde30da9c9169229bb37a4932cce63",
+   "date": "2019-09-01",
+   "issue": 492,
+   "subject": ":bug: Use proper import for Request -- fixes #492 (#493)",
+   "n_nodes": 121,
+   "n_edges": 103,
+   "gold": [],
+   "gold_files": [
+    {
+     "path": "fastapi/exceptions.py",
+     "skipped": null,
+     "lines": 2,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "fastapi.routing.get_websocket_app",
+    "fastapi.routing.get_app",
+    "fastapi.datastructures.UploadFile.validate",
+    "fastapi.applications.FastAPI.__init__",
+    "fastapi.dependencies.models.SecurityRequirement.__init__",
+    "fastapi.openapi.utils.get_openapi_path",
+    "fastapi.exceptions.RequestValidationError.__init__",
+    "fastapi.openapi.utils.get_openapi",
+    "fastapi.exceptions.WebSocketRequestValidationError.__init__",
+    "fastapi.security.http.HTTPBase.__call__"
+   ],
+   "injected": false,
+   "gold_ranks": {},
+   "anchors": [],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  },
+  {
+   "sha": "c5817912d2be25bb310bf9da517882f57bbe7bb5",
+   "date": "2019-08-31",
+   "issue": 431,
+   "subject": ":bug: use media_type from Body params for OpenAPI requestBody (Fixes: #431) (#439)",
+   "n_nodes": 119,
+   "n_edges": 102,
+   "gold": [
+    "fastapi.dependencies.utils.get_body_field"
+   ],
+   "gold_files": [
+    {
+     "path": "fastapi/dependencies/utils.py",
+     "skipped": null,
+     "lines": 12,
+     "mapped": 12,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_request_body_parameters_media_type.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "fastapi.openapi.utils.get_openapi_path",
+    "fastapi.openapi.utils.get_openapi_operation_request_body",
+    "fastapi.openapi.utils.get_openapi",
+    "fastapi.applications.FastAPI.post",
+    "fastapi.routing.APIRoute.__init__",
+    "fastapi.routing.APIRouter.post",
+    "fastapi.openapi.utils.get_openapi_operation_parameters",
+    "fastapi.param_functions.Body",
+    "fastapi.dependencies.utils.request_body_to_args",
+    "fastapi.dependencies.utils.get_body_field"
+   ],
+   "injected": true,
+   "gold_ranks": {
+    "fastapi.dependencies.utils.get_body_field": 30
+   },
+   "anchors": [],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  },
+  {
+   "sha": "19c53b21c19fc193b070281baa9e585d26cec91c",
+   "date": "2019-08-31",
+   "issue": 429,
+   "subject": ":sparkles: Allow using custom 422 validation error and use media type from response class in schema (#437)",
+   "n_nodes": 119,
+   "n_edges": 102,
+   "gold": [
+    "fastapi.openapi.utils.get_openapi_operation_parameters",
+    "fastapi.openapi.utils.get_openapi_path"
+   ],
+   "gold_files": [
+    {
+     "path": "fastapi/openapi/utils.py",
+     "skipped": null,
+     "lines": 38,
+     "mapped": 38,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_additional_responses_custom_validationerror.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_additional_responses_default_validationerror.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_additional_responses_response_class.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "fastapi.exception_handlers.request_validation_exception_handler",
+    "fastapi.openapi.utils.get_openapi_path",
+    "fastapi.exception_handlers.http_exception_handler",
+    "fastapi.routing.get_app",
+    "fastapi.applications.FastAPI.setup",
+    "fastapi.openapi.utils.get_openapi",
+    "fastapi.routing.APIRoute.__init__",
+    "fastapi.openapi.utils.get_openapi_operation_parameters",
+    "fastapi.applications.FastAPI.api_route",
+    "fastapi.applications.FastAPI.post"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "fastapi.openapi.utils.get_openapi_operation_parameters": 8,
+    "fastapi.openapi.utils.get_openapi_path": 2
+   },
+   "anchors": [
+    {
+     "node": "fastapi.exception_handlers.http_exception_handler",
+     "mention": "http_exception_handler",
+     "rule": "identifier",
+     "pos": 954
+    },
+    {
+     "node": "fastapi.exception_handlers.request_validation_exception_handler",
+     "mention": "request_validation_exception_handler",
+     "rule": "identifier",
+     "pos": 1483
+    }
+   ],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S3"
+  }
+ ]
+}

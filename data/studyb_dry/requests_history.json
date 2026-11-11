@@ -1,0 +1,794 @@
+{
+ "summary": {
+  "tasks": 11,
+  "with_gold": 7,
+  "gold_in_top10_share": 0.7142857142857143,
+  "gold_top1_share": 0.14285714285714285,
+  "median_best_gold_rank": 3,
+  "anchored_share": 0.8571428571428571,
+  "strata": {
+   "S0": 2,
+   "S1": 2,
+   "S3": 3
+  },
+  "anchored_strata": {
+   "S0": 2,
+   "S1": 2,
+   "S3": 2
+  },
+  "skipped": {}
+ },
+ "tasks": [
+  {
+   "sha": "a62a2d35d918baa8e793f7aa4fb41527644dfca5",
+   "date": "2024-05-22",
+   "issue": 6715,
+   "subject": "Allow for overriding of specific pool key params",
+   "n_nodes": 232,
+   "n_edges": 199,
+   "gold": [
+    "requests.adapters.HTTPAdapter.get_connection_with_tls_context"
+   ],
+   "gold_files": [
+    {
+     "path": "src/requests/adapters.py",
+     "skipped": null,
+     "lines": 78,
+     "mapped": 28,
+     "new_functions": [
+      "HTTPAdapter.build_connection_pool_key_attributes"
+     ],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "requests.adapters.HTTPAdapter.__init__",
+    "requests.adapters.HTTPAdapter.get_connection_with_tls_context",
+    "requests.adapters.HTTPAdapter.init_poolmanager",
+    "requests.adapters.HTTPAdapter.get_connection",
+    "requests.adapters.HTTPAdapter.cert_verify",
+    "requests.adapters._urllib3_request_context",
+    "requests.sessions.Session.__init__",
+    "requests.cookies.create_cookie",
+    "requests.adapters.HTTPAdapter.send",
+    "requests.adapters.HTTPAdapter.add_headers"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "requests.adapters.HTTPAdapter.get_connection_with_tls_context": 2
+   },
+   "anchors": [
+    {
+     "node": "requests.adapters.HTTPAdapter.init_poolmanager",
+     "mention": "init_poolmanager",
+     "rule": "identifier",
+     "pos": 521
+    }
+   ],
+   "ambiguous": [
+    "__init__"
+   ],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S3"
+  },
+  {
+   "sha": "60389df6d69ce833164696dcf36cbb43336d3426",
+   "date": "2024-02-21",
+   "issue": 6643,
+   "subject": "Trim excess leading path separators",
+   "n_nodes": 228,
+   "n_edges": 195,
+   "gold": [
+    "requests.adapters.HTTPAdapter.request_url"
+   ],
+   "gold_files": [
+    {
+     "path": "src/requests/adapters.py",
+     "skipped": null,
+     "lines": 3,
+     "mapped": 3,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_adapters.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "requests.help.info",
+    "requests.help._implementation",
+    "requests.sessions.Session.request",
+    "requests.adapters.HTTPAdapter.get_connection",
+    "requests.models.PreparedRequest.prepare_url",
+    "requests.api.request",
+    "requests.check_compatibility",
+    "requests.adapters.HTTPAdapter.send",
+    "requests.sessions.SessionRedirectMixin.get_redirect_target",
+    "requests.adapters.HTTPAdapter.request_url"
+   ],
+   "injected": true,
+   "gold_ranks": {
+    "requests.adapters.HTTPAdapter.request_url": 47
+   },
+   "anchors": [
+    {
+     "node": "requests.api.get",
+     "mention": "frame:requests/api.py:73:get",
+     "rule": "traceback",
+     "pos": 714
+    },
+    {
+     "node": "requests.api.request",
+     "mention": "frame:requests/api.py:59:request",
+     "rule": "traceback",
+     "pos": 911
+    },
+    {
+     "node": "requests.sessions.Session.request",
+     "mention": "frame:requests/sessions.py:589:request",
+     "rule": "traceback",
+     "pos": 1122
+    },
+    {
+     "node": "requests.sessions.Session.send",
+     "mention": "frame:requests/sessions.py:703:send",
+     "rule": "traceback",
+     "pos": 1301
+    },
+    {
+     "node": "requests.adapters.HTTPAdapter.send",
+     "mention": "frame:requests/adapters.py:486:send",
+     "rule": "traceback",
+     "pos": 1473
+    }
+   ],
+   "ambiguous": [
+    "requests.get"
+   ],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S1"
+  },
+  {
+   "sha": "3ff3ff21dd45957c9e143cd500291959bb15f690",
+   "date": "2024-01-31",
+   "issue": 6628,
+   "subject": "Fix #6628 - JSONDecodeError are not deserializable",
+   "n_nodes": 228,
+   "n_edges": 195,
+   "gold": [],
+   "gold_files": [
+    {
+     "path": "src/requests/exceptions.py",
+     "skipped": null,
+     "lines": 10,
+     "mapped": 0,
+     "new_functions": [
+      "JSONDecodeError.__reduce__"
+     ],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_requests.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "requests.models.Response.json",
+    "requests.exceptions.JSONDecodeError.__init__",
+    "requests.models.PreparedRequest.prepare_body",
+    "requests.utils.get_netrc_auth",
+    "requests.models.Response.raise_for_status",
+    "requests.models.Response.__init__",
+    "requests.models.Response.iter_content",
+    "requests.adapters.HTTPAdapter.send",
+    "requests.sessions.SessionRedirectMixin.resolve_redirects",
+    "requests.api.request"
+   ],
+   "injected": false,
+   "gold_ranks": {},
+   "anchors": [
+    {
+     "node": "requests.exceptions.JSONDecodeError.__init__",
+     "mention": "frame:requests/exceptions.py:41:__init__",
+     "rule": "traceback",
+     "pos": 1017
+    }
+   ],
+   "ambiguous": [
+    "__init__",
+    "requests.get"
+   ],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S3"
+  },
+  {
+   "sha": "26bea1e498d6e234fbc9ce8e07c0389bac73810b",
+   "date": "2023-04-22",
+   "issue": 3844,
+   "subject": "Use urllib3 native chunking ability (#6226)",
+   "n_nodes": 228,
+   "n_edges": 195,
+   "gold": [
+    "requests.adapters.HTTPAdapter.send"
+   ],
+   "gold_files": [
+    {
+     "path": "requests/adapters.py",
+     "skipped": null,
+     "lines": 71,
+     "mapped": 70,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "requests.adapters.HTTPAdapter.send",
+    "requests.sessions.Session.request",
+    "requests.sessions.SessionRedirectMixin.resolve_redirects",
+    "requests.auth.HTTPDigestAuth.handle_401",
+    "requests.api.request",
+    "requests.sessions.Session.__init__",
+    "requests.adapters.HTTPAdapter.get_connection",
+    "requests.adapters.HTTPAdapter.cert_verify",
+    "requests.adapters.HTTPAdapter.request_url",
+    "requests.sessions.Session.put"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "requests.adapters.HTTPAdapter.send": 1
+   },
+   "anchors": [
+    {
+     "node": "requests.sessions.Session.put",
+     "mention": "frame:requests/sessions.py:533:put",
+     "rule": "traceback",
+     "pos": 471
+    },
+    {
+     "node": "requests.sessions.Session.request",
+     "mention": "frame:requests/sessions.py:475:request",
+     "rule": "traceback",
+     "pos": 629
+    },
+    {
+     "node": "requests.sessions.Session.send",
+     "mention": "frame:requests/sessions.py:596:send",
+     "rule": "traceback",
+     "pos": 776
+    },
+    {
+     "node": "requests.adapters.HTTPAdapter.send",
+     "mention": "frame:requests/adapters.py:492:send",
+     "rule": "traceback",
+     "pos": 918
+    },
+    {
+     "node": "requests.sessions.session",
+     "mention": "requests.session",
+     "rule": "dotted",
+     "pos": 1622
+    }
+   ],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S0"
+  },
+  {
+   "sha": "6fbfca90b6029c22da90902e950edd9f6d37a838",
+   "date": "2020-03-17",
+   "issue": 5274,
+   "subject": "Send only one Host header in chunked request",
+   "n_nodes": 225,
+   "n_edges": 192,
+   "gold": [
+    "requests.adapters.HTTPAdapter.send"
+   ],
+   "gold_files": [
+    {
+     "path": "requests/adapters.py",
+     "skipped": null,
+     "lines": 3,
+     "mapped": 3,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_lowlevel.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "requests.sessions.Session.request",
+    "requests.api.request",
+    "requests.adapters.HTTPAdapter.send",
+    "requests.sessions.SessionRedirectMixin.resolve_redirects",
+    "requests.adapters.BaseAdapter.send",
+    "requests.sessions.Session.send",
+    "requests.models.Response.iter_content",
+    "requests.sessions.Session.__init__",
+    "requests.adapters.HTTPAdapter.build_response",
+    "requests.adapters.HTTPAdapter.proxy_headers"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "requests.adapters.HTTPAdapter.send": 3
+   },
+   "anchors": [],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": false,
+   "stratum": "S3"
+  },
+  {
+   "sha": "24630743cecd3d0e9db7bee7e47381dbadf2d789",
+   "date": "2021-07-07",
+   "issue": 5223,
+   "subject": "Avoid zip extract racing condition by using read+write instead extract (#5707)",
+   "n_nodes": 224,
+   "n_edges": 190,
+   "gold": [
+    "requests.utils.extract_zipped_paths"
+   ],
+   "gold_files": [
+    {
+     "path": "requests/utils.py",
+     "skipped": null,
+     "lines": 21,
+     "mapped": 7,
+     "new_functions": [
+      "atomic_open"
+     ],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "requests.help.info",
+    "requests.utils.extract_zipped_paths",
+    "requests.adapters.HTTPAdapter.cert_verify",
+    "requests.help._implementation",
+    "requests.api.request",
+    "requests.adapters.HTTPAdapter.send",
+    "requests.auth.HTTPDigestAuth.handle_401",
+    "requests.sessions.Session.__init__",
+    "requests.utils.get_netrc_auth",
+    "requests.sessions.Session.request"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "requests.utils.extract_zipped_paths": 2
+   },
+   "anchors": [
+    {
+     "node": "requests.api.get",
+     "mention": "frame:requests/api.py:75:get",
+     "rule": "traceback",
+     "pos": 293
+    },
+    {
+     "node": "requests.api.request",
+     "mention": "frame:requests/api.py:60:request",
+     "rule": "traceback",
+     "pos": 444
+    },
+    {
+     "node": "requests.sessions.Session.request",
+     "mention": "frame:requests/sessions.py:533:request",
+     "rule": "traceback",
+     "pos": 599
+    },
+    {
+     "node": "requests.sessions.Session.send",
+     "mention": "frame:requests/sessions.py:646:send",
+     "rule": "traceback",
+     "pos": 760
+    },
+    {
+     "node": "requests.adapters.HTTPAdapter.send",
+     "mention": "frame:requests/adapters.py:416:send",
+     "rule": "traceback",
+     "pos": 918
+    },
+    {
+     "node": "requests.adapters.HTTPAdapter.cert_verify",
+     "mention": "frame:requests/adapters.py:224:cert_verify",
+     "rule": "traceback",
+     "pos": 1076
+    },
+    {
+     "node": "requests.utils.extract_zipped_paths",
+     "mention": "frame:requests/utils.py:254:extract_zipped_paths",
+     "rule": "traceback",
+     "pos": 1241
+    }
+   ],
+   "ambiguous": [
+    "requests.get"
+   ],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S0"
+  },
+  {
+   "sha": "5855dd711f0ab9c9c4782574b8814b1e4c7f98cc",
+   "date": "2020-11-29",
+   "issue": 5667,
+   "subject": "updated `get_encoding_from_headers` to return utf-8 if the content type is set to application/json, following RFC 4627.",
+   "n_nodes": 224,
+   "n_edges": 188,
+   "gold": [
+    "requests.utils.get_encoding_from_headers"
+   ],
+   "gold_files": [
+    {
+     "path": "requests/utils.py",
+     "skipped": null,
+     "lines": 4,
+     "mapped": 3,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "requests.help.info",
+    "requests.models.Response.json",
+    "requests.help._implementation",
+    "requests.models.Response.text",
+    "requests.models.PreparedRequest.prepare_body",
+    "requests.api.request",
+    "requests.utils.get_unicode_from_response",
+    "requests.sessions.SessionRedirectMixin.rebuild_method",
+    "requests.cookies.MockRequest.get_full_url",
+    "requests.utils.get_encoding_from_headers"
+   ],
+   "injected": true,
+   "gold_ranks": {
+    "requests.utils.get_encoding_from_headers": 45
+   },
+   "anchors": [
+    {
+     "node": "requests.models.Response.json",
+     "mention": "json",
+     "rule": "inline_code",
+     "pos": 374
+    },
+    {
+     "node": "requests.models.Response.text",
+     "mention": "text",
+     "rule": "inline_code",
+     "pos": 484
+    }
+   ],
+   "ambiguous": [
+    "requests.get"
+   ],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S3"
+  },
+  {
+   "sha": "9cae7be94f0aa35a26b42e1a34e26f874cd754da",
+   "date": "2020-06-18",
+   "issue": 5504,
+   "subject": "Clarify that PreparedRequests should not be manually created",
+   "n_nodes": 224,
+   "n_edges": 188,
+   "gold": [],
+   "gold_files": [
+    {
+     "path": "requests/models.py",
+     "skipped": null,
+     "lines": 4,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "requests.help.info",
+    "requests.models.PreparedRequest.prepare_body",
+    "requests.help._implementation",
+    "requests.models.PreparedRequest.prepare_content_length",
+    "requests.models.PreparedRequest.prepare",
+    "requests.api.request",
+    "requests.auth.HTTPDigestAuth.__call__",
+    "requests.adapters.HTTPAdapter.send",
+    "requests.models.PreparedRequest.prepare_url",
+    "requests.models.PreparedRequest.prepare_cookies"
+   ],
+   "injected": false,
+   "gold_ranks": {},
+   "anchors": [
+    {
+     "node": "requests.models.PreparedRequest.prepare_body",
+     "mention": "PreparedRequest.prepare_body",
+     "rule": "inline_code",
+     "pos": 191
+    },
+    {
+     "node": "requests.models.PreparedRequest.prepare_headers",
+     "mention": "prepare_headers",
+     "rule": "inline_code",
+     "pos": 565
+    },
+    {
+     "node": "requests.models.PreparedRequest.prepare_content_length",
+     "mention": "prepare_content_length",
+     "rule": "inline_code",
+     "pos": 647
+    }
+   ],
+   "ambiguous": [],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S3"
+  },
+  {
+   "sha": "d2590ee46c0641958b6d4792a206bd5171cb247d",
+   "date": "2019-10-25",
+   "issue": 5212,
+   "subject": "Change documentation website to requests.readthedocs.io (#5236)",
+   "n_nodes": 224,
+   "n_edges": 188,
+   "gold": [],
+   "gold_files": [
+    {
+     "path": "docs/conf.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "requests/__init__.py",
+     "skipped": null,
+     "lines": 2,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "requests/__version__.py",
+     "skipped": "file or module not found at base",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "setup.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "requests.adapters.HTTPAdapter.send",
+    "requests.help.info",
+    "requests.sessions.Session.request",
+    "requests.api.request",
+    "requests.adapters.HTTPAdapter.get_connection",
+    "requests.adapters.HTTPAdapter.build_response",
+    "requests.models.PreparedRequest.prepare_url",
+    "requests.adapters.HTTPAdapter.cert_verify",
+    "requests.adapters.HTTPAdapter.__init__",
+    "requests.sessions.Session.__init__"
+   ],
+   "injected": false,
+   "gold_ranks": {},
+   "anchors": [
+    {
+     "node": "requests.adapters.HTTPAdapter.send",
+     "mention": "frame:requests/adapters.py:449:send",
+     "rule": "traceback",
+     "pos": 2889
+    },
+    {
+     "node": "requests.api.get",
+     "mention": "frame:requests/api.py:75:get",
+     "rule": "traceback",
+     "pos": 3813
+    },
+    {
+     "node": "requests.api.request",
+     "mention": "frame:requests/api.py:60:request",
+     "rule": "traceback",
+     "pos": 3990
+    },
+    {
+     "node": "requests.sessions.Session.request",
+     "mention": "frame:requests/sessions.py:533:request",
+     "rule": "traceback",
+     "pos": 4176
+    },
+    {
+     "node": "requests.sessions.Session.send",
+     "mention": "frame:requests/sessions.py:646:send",
+     "rule": "traceback",
+     "pos": 4349
+    }
+   ],
+   "ambiguous": [
+    "requests.get",
+    "frame:requests/adapters.py:514:send"
+   ],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S3"
+  },
+  {
+   "sha": "9a8a826f226e6973d72914b4a4fc806e0b5036f4",
+   "date": "2017-10-26",
+   "issue": 4353,
+   "subject": "Check if host is invalid for proxy",
+   "n_nodes": 221,
+   "n_edges": 184,
+   "gold": [
+    "requests.adapters.HTTPAdapter.get_connection"
+   ],
+   "gold_files": [
+    {
+     "path": "requests/adapters.py",
+     "skipped": null,
+     "lines": 7,
+     "mapped": 4,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "requests/exceptions.py",
+     "skipped": null,
+     "lines": 4,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_requests.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "requests.help.info",
+    "requests.adapters.HTTPAdapter.send",
+    "requests.sessions.Session.request",
+    "requests.help._implementation",
+    "requests.api.request",
+    "requests.adapters.HTTPAdapter.get_connection",
+    "requests.sessions.SessionRedirectMixin.resolve_redirects",
+    "requests.models.PreparedRequest.prepare_url",
+    "requests.utils.get_netrc_auth",
+    "requests.sessions.Session.__init__"
+   ],
+   "injected": false,
+   "gold_ranks": {
+    "requests.adapters.HTTPAdapter.get_connection": 6
+   },
+   "anchors": [
+    {
+     "node": "requests.api.get",
+     "mention": "frame:requests/api.py:72:get",
+     "rule": "traceback",
+     "pos": 690
+    },
+    {
+     "node": "requests.api.request",
+     "mention": "frame:requests/api.py:58:request",
+     "rule": "traceback",
+     "pos": 816
+    },
+    {
+     "node": "requests.sessions.Session.request",
+     "mention": "frame:requests/sessions.py:508:request",
+     "rule": "traceback",
+     "pos": 951
+    },
+    {
+     "node": "requests.sessions.Session.send",
+     "mention": "frame:requests/sessions.py:618:send",
+     "rule": "traceback",
+     "pos": 1073
+    },
+    {
+     "node": "requests.adapters.HTTPAdapter.send",
+     "mention": "frame:requests/adapters.py:440:send",
+     "rule": "traceback",
+     "pos": 1190
+    }
+   ],
+   "ambiguous": [
+    "requests.get"
+   ],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S1"
+  },
+  {
+   "sha": "4847f5b8cd4071099f06e178856bc9e1b9193b2e",
+   "date": "2017-06-06",
+   "issue": 4136,
+   "subject": "Allow Requests.Response to be used as a context manager",
+   "n_nodes": 216,
+   "n_edges": 182,
+   "gold": [],
+   "gold_files": [
+    {
+     "path": "requests/models.py",
+     "skipped": null,
+     "lines": 6,
+     "mapped": 0,
+     "new_functions": [
+      "Response.__enter__",
+      "Response.__exit__"
+     ],
+     "not_in_graph": []
+    },
+    {
+     "path": "tests/test_requests.py",
+     "skipped": "test or excluded file",
+     "lines": 0,
+     "mapped": 0,
+     "new_functions": [],
+     "not_in_graph": []
+    }
+   ],
+   "pool": [
+    "requests.utils.get_netrc_auth",
+    "requests.api.request",
+    "requests.models.PreparedRequest.prepare_body",
+    "requests.sessions.SessionRedirectMixin.resolve_redirects",
+    "requests.models.Response.iter_content",
+    "requests.adapters.HTTPAdapter.add_headers",
+    "requests.models.Response.__init__",
+    "requests.auth.HTTPDigestAuth.__call__",
+    "requests.models.Response.iter_lines",
+    "requests.sessions.Session.__init__"
+   ],
+   "injected": false,
+   "gold_ranks": {},
+   "anchors": [
+    {
+     "node": "requests.sessions.Session.__exit__",
+     "mention": "__exit__",
+     "rule": "inline_code",
+     "pos": 968
+    },
+    {
+     "node": "requests.sessions.Session.__enter__",
+     "mention": "__enter__",
+     "rule": "inline_code",
+     "pos": 1105
+    }
+   ],
+   "ambiguous": [
+    "requests.get"
+   ],
+   "too_connected": [],
+   "anchored": true,
+   "stratum": "S3"
+  }
+ ]
+}

@@ -1,0 +1,143 @@
+{
+ "repos": {
+  "astropy/astropy": {
+   "test": 6,
+   "dev": 0,
+   "found": 6,
+   "missing": 0,
+   "fetched": 0,
+   "size_kb": 201000
+  },
+  "django/django": {
+   "test": 114,
+   "dev": 0,
+   "found": 114,
+   "missing": 0,
+   "fetched": 0,
+   "size_kb": 312892
+  },
+  "marshmallow-code/marshmallow": {
+   "test": 0,
+   "dev": 2,
+   "found": 2,
+   "missing": 0,
+   "fetched": 0,
+   "size_kb": 8132
+  },
+  "matplotlib/matplotlib": {
+   "test": 23,
+   "dev": 0,
+   "found": 23,
+   "missing": 0,
+   "fetched": 0,
+   "size_kb": 504328
+  },
+  "mwaskom/seaborn": {
+   "test": 4,
+   "dev": 0,
+   "found": 4,
+   "missing": 0,
+   "fetched": 0,
+   "size_kb": 55480
+  },
+  "pallets/flask": {
+   "test": 3,
+   "dev": 0,
+   "found": 3,
+   "missing": 0,
+   "fetched": 0,
+   "size_kb": 13304
+  },
+  "pvlib/pvlib-python": {
+   "test": 0,
+   "dev": 5,
+   "found": 5,
+   "missing": 0,
+   "fetched": 0,
+   "size_kb": 120020
+  },
+  "pydata/xarray": {
+   "test": 5,
+   "dev": 0,
+   "found": 5,
+   "missing": 0,
+   "fetched": 0,
+   "size_kb": 58700
+  },
+  "pydicom/pydicom": {
+   "test": 0,
+   "dev": 5,
+   "found": 5,
+   "missing": 0,
+   "fetched": 0,
+   "size_kb": 160172
+  },
+  "pylint-dev/astroid": {
+   "test": 0,
+   "dev": 5,
+   "found": 5,
+   "missing": 0,
+   "fetched": 0,
+   "size_kb": 19556
+  },
+  "pylint-dev/pylint": {
+   "test": 6,
+   "dev": 0,
+   "found": 6,
+   "missing": 0,
+   "fetched": 0,
+   "size_kb": 46108
+  },
+  "pytest-dev/pytest": {
+   "test": 17,
+   "dev": 0,
+   "found": 17,
+   "missing": 0,
+   "fetched": 0,
+   "size_kb": 47196
+  },
+  "pyvista/pyvista": {
+   "test": 0,
+   "dev": 1,
+   "found": 1,
+   "missing": 0,
+   "fetched": 0,
+   "size_kb": 396116
+  },
+  "scikit-learn/scikit-learn": {
+   "test": 23,
+   "dev": 0,
+   "found": 23,
+   "missing": 0,
+   "fetched": 0,
+   "size_kb": 206192
+  },
+  "sphinx-doc/sphinx": {
+   "test": 16,
+   "dev": 0,
+   "found": 16,
+   "missing": 0,
+   "fetched": 0,
+   "size_kb": 114376
+  },
+  "sqlfluff/sqlfluff": {
+   "test": 0,
+   "dev": 5,
+   "found": 5,
+   "missing": 0,
+   "fetched": 0,
+   "size_kb": 60284
+  },
+  "sympy/sympy": {
+   "test": 77,
+   "dev": 0,
+   "found": 77,
+   "missing": 0,
+   "fetched": 0,
+   "size_kb": 211380
+  }
+ },
+ "missing_events": [],
+ "total_kb": 2535236,
+ "free": "/dev/disk3s5   926Gi   393Gi   473Gi    46%    9.8M  5.0G    0%   /System/Volumes/Data"
+}

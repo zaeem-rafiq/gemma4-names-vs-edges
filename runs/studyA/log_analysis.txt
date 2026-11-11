@@ -1,0 +1,172 @@
+{
+ "files": {
+  "runs/studyA_E2B.jsonl": {
+   "rows": 6400,
+   "error_rows": 0,
+   "unresolved_errors": 0,
+   "unresolved_examples": [],
+   "duplicates": 0,
+   "broken_lines": 0,
+   "model": "E2B",
+   "n_jobs": 6400,
+   "rows_in_roles": 6400,
+   "complete": true,
+   "thought_block": "off",
+   "answer_prefix": "Answer:",
+   "answer_prefix_source": {
+    "rule": "ANSWER_PREFIX"
+   },
+   "model_sha256": "fa401b55b07ee70a54c6dae3903c783a6e65064312529ea57175cb5f8dec6634",
+   "items_dir_matches": true
+  },
+  "runs/studyA_E4B.jsonl": {
+   "rows": 6400,
+   "error_rows": 0,
+   "unresolved_errors": 0,
+   "unresolved_examples": [],
+   "duplicates": 0,
+   "broken_lines": 0,
+   "model": "E4B",
+   "n_jobs": 6400,
+   "rows_in_roles": 6400,
+   "complete": true,
+   "thought_block": "off",
+   "answer_prefix": "",
+   "answer_prefix_source": {
+    "rule": "ANSWER_PREFIX"
+   },
+   "model_sha256": "676c35070db6dbe52f93e9c864ee0fba4eddea94b9c875d9cb10daff453fbaee",
+   "items_dir_matches": true
+  },
+  "runs/studyA_12B.jsonl": {
+   "rows": 3200,
+   "error_rows": 0,
+   "unresolved_errors": 0,
+   "unresolved_examples": [],
+   "duplicates": 0,
+   "broken_lines": 0,
+   "model": "12B",
+   "n_jobs": 3200,
+   "rows_in_roles": 3200,
+   "complete": true,
+   "thought_block": "on",
+   "answer_prefix": "Answer:",
+   "answer_prefix_source": {
+    "rule": "ANSWER_PREFIX"
+   },
+   "model_sha256": "93567e57a8fe10b23569b9d9ec38cd005deedf71e29477c421a4b83f418a538b",
+   "items_dir_matches": true
+  },
+  "runs/studyA_31B.jsonl": {
+   "rows": 3200,
+   "error_rows": 0,
+   "unresolved_errors": 0,
+   "unresolved_examples": [],
+   "duplicates": 0,
+   "broken_lines": 0,
+   "model": "31B",
+   "n_jobs": 3200,
+   "rows_in_roles": 3200,
+   "complete": true,
+   "thought_block": "on",
+   "answer_prefix": "Answer:",
+   "answer_prefix_source": {
+    "rule": "smoke file",
+    "smoke_file": "gng1_rename3_31B.json",
+    "smoke_sha256": "d1a1801b5a3dcd9e07592787a705c5194739c61fa9a0457ddd01ff9b00dd7616",
+    "prefix_rule_choice": "Answer:"
+   },
+   "model_sha256": "179cfb99212709597eae5929112cfca677e1bbf566178b479ae1da0c4772874b",
+   "items_dir_matches": true
+  }
+ },
+ "repos": {
+  "familiar": 16,
+  "fresh": 16
+ },
+ "A1": {
+  "estimate": 0.00546875,
+  "se": 0.009251326395202175,
+  "t": 0.591131451467991,
+  "df": 31,
+  "p": 0.5587183246257046,
+  "ci95_boot": [
+   -0.012304687500000001,
+   0.023046874999999998
+  ],
+  "n_clusters": 32,
+  "tost": {
+   "p_tost": 1.831615885218037e-05,
+   "equivalent_at_0.05": true,
+   "ci90": [
+    -0.010217047666527616,
+    0.021154547666527614
+   ]
+  },
+  "per_model": {
+   "12B": -0.01875,
+   "31B": -0.00625,
+   "E2B": 0.021875,
+   "E4B": 0.025
+  }
+ }
+}
+{
+ "A3": {
+  "role": "registered axis: decides 'flat'",
+  "axis": {
+   "12B": 11950000000.0,
+   "31B": 30700000000.0,
+   "E2B": 2300000000.0,
+   "E4B": 4500000000.0
+  },
+  "estimate": -0.035700618477207555,
+  "tost": {
+   "p_tost": 0.2955006805390218,
+   "equivalent_at_0.05": false,
+   "ci90": [
+    -0.06295174873254988,
+    -0.008449488221865233
+   ],
+   "bound_unit": "span",
+   "span_decades": 1.125410539459594,
+   "bound_slope_per_decade": 0.04442823151808165,
+   "bound_cc_change_over_span": 0.05
+  }
+ },
+ "A3_sensitivity": {
+  "role": "sensitivity axis: reported next to A3; does not decide 'flat'",
+  "axis": {
+   "12B": 11907350576,
+   "31B": 30697345596,
+   "E2B": 4628569635,
+   "E4B": 7463013674
+  },
+  "estimate": -0.04496471096614378,
+  "tost": {
+   "p_tost": 0.23068740749919447,
+   "equivalent_at_0.05": false,
+   "ci90": [
+    -0.08108263216114607,
+    -0.008846789771141492
+   ],
+   "bound_unit": "span",
+   "span_decades": 0.8216540216896231,
+   "bound_slope_per_decade": 0.06085286346822912,
+   "bound_cc_change_over_span": 0.05
+  }
+ },
+ "excluded_models": [],
+ "A1_excluding_parity_flagged": {
+  "estimate": 0.0037950297359159568,
+  "p": 0.6874805531213911,
+  "ci95_boot": [
+   -0.01383982522190303,
+   0.02195067035016604
+  ]
+ },
+ "parity_flagged_items": {
+  "n": 27,
+  "rule": "|token_parity['G2_minus_G1']| > PARITY_TOL (2) in the item files: the real-name (G1) and neutral-name (G2) prompts still differ by more than PARITY_TOL tokens after the parity repair"
+ }
+}

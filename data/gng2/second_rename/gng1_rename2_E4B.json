@@ -1,0 +1,554 @@
+{
+ "settings": {
+  "n_ctx": 4096,
+  "n_batch": 512,
+  "n_ubatch": 512,
+  "n_gpu_layers": -1,
+  "flash_attn": false,
+  "enable_thinking": false,
+  "thought_block": "off",
+  "answer_prefix": "",
+  "llama_cpp_python": "0.3.36"
+ },
+ "model": "gemma-4-E4B_q4_0-it.gguf",
+ "answer_prefix": "",
+ "prompts": {
+  "n": 40,
+  "seed": 0,
+  "n_alt": null,
+  "AD": 40,
+  "AJ": 36
+ },
+ "prompt_tail": ".unwrap\n\nAnswer with the letter of the correct option only.<turn|>\n<|turn>model\n",
+ "template_appends_thought_block": false,
+ "bos_ok": true,
+ "special_tokens_ok": true,
+ "letter_ids_AD": {
+  "A": [
+   236776,
+   562
+  ],
+  "B": [
+   236799,
+   603
+  ],
+  "C": [
+   236780,
+   565
+  ],
+  "D": [
+   236796,
+   622
+  ]
+ },
+ "letter_ids_AJ": {
+  "A": [
+   236776,
+   562
+  ],
+  "B": [
+   236799,
+   603
+  ],
+  "C": [
+   236780,
+   565
+  ],
+  "D": [
+   236796,
+   622
+  ],
+  "E": [
+   236788,
+   645
+  ],
+  "F": [
+   236811,
+   633
+  ],
+  "G": [
+   236823,
+   667
+  ],
+  "H": [
+   236814,
+   640
+  ],
+  "I": [
+   236777,
+   564
+  ],
+  "J": [
+   236863,
+   730
+  ]
+ },
+ "tokenizer_probe": {
+  "n": 4040,
+  "mismatches": 0,
+  "examples": [],
+  "ok": true
+ },
+ "AD": {
+  "n": 40,
+  "share_mass_ge_0.9": 1.0,
+  "min_mass": 0.901885069352092,
+  "mean_mass": 0.9896356995824572,
+  "accuracy": 0.625,
+  "pred_letter_counts": {
+   "A": 12,
+   "B": 12,
+   "C": 9,
+   "D": 7
+  },
+  "prompt_tok_per_s": 3813.7062937062933,
+  "mean_tokens": 681.7,
+  "examples_top": [
+   [
+    [
+     "D",
+     0.9965214629044956
+    ],
+    [
+     "A",
+     0.0014236938883395356
+    ],
+    [
+     "B",
+     0.0010896805717242998
+    ],
+    [
+     "C",
+     0.0007487586627813651
+    ],
+    [
+     "The",
+     4.685135956231444e-05
+    ]
+   ],
+   [
+    [
+     "B",
+     0.7349669847525331
+    ],
+    [
+     "A",
+     0.22362360012610852
+    ],
+    [
+     "D",
+     0.028117177232387106
+    ],
+    [
+     "C",
+     0.010767848463873964
+    ],
+    [
+     "E",
+     0.0013490118931590394
+    ]
+   ],
+   [
+    [
+     "C",
+     0.9955451698897634
+    ],
+    [
+     "A",
+     0.004374243125557589
+    ],
+    [
+     "D",
+     3.0298367728437145e-05
+    ],
+    [
+     "Answer",
+     2.0178522043712094e-05
+    ],
+    [
+     "B",
+     1.1903614046990754e-05
+    ]
+   ]
+  ],
+  "p_channel": {
+   "n": 40,
+   "mean": 3.5133194453022034e-05,
+   "median": 2.056607735970906e-06,
+   "max": 0.0006519207149869746,
+   "share_gt_0.1": 0.0
+  }
+ },
+ "AJ": {
+  "n": 36,
+  "share_mass_ge_0.9": 1.0,
+  "min_mass": 0.9115123980141576,
+  "mean_mass": 0.9919925959470858,
+  "accuracy": 0.9166666666666666,
+  "pred_letter_counts": {
+   "A": 3,
+   "B": 6,
+   "C": 5,
+   "D": 7,
+   "E": 4,
+   "F": 3,
+   "G": 1,
+   "H": 4,
+   "I": 2,
+   "J": 1
+  },
+  "prompt_tok_per_s": 3889.5579581223483,
+  "mean_tokens": 789.4722222222222,
+  "examples_top": [
+   [
+    [
+     "E",
+     0.4320334497403705
+    ],
+    [
+     "H",
+     0.3680949948937582
+    ],
+    [
+     "C",
+     0.06284260194788578
+    ],
+    [
+     "D",
+     0.04056479295952541
+    ],
+    [
+     "B",
+     0.025988021118183022
+    ]
+   ],
+   [
+    [
+     "E",
+     0.98418611147724
+    ],
+    [
+     "A",
+     0.010182658961193468
+    ],
+    [
+     "J",
+     0.0033793443658095145
+    ],
+    [
+     "G",
+     0.000643579165342246
+    ],
+    [
+     "D",
+     0.0005015307546471436
+    ]
+   ],
+   [
+    [
+     "F",
+     0.9995934708848725
+    ],
+    [
+     "Answer",
+     0.000175382237674815
+    ],
+    [
+     "**",
+     6.629592629627688e-05
+    ],
+    [
+     "B",
+     3.406801183876208e-05
+    ],
+    [
+     "Based",
+     2.2601056006327396e-05
+    ]
+   ]
+  ],
+  "p_channel": {
+   "n": 36,
+   "mean": 1.3318936436617255e-05,
+   "median": 1.5563212769438807e-06,
+   "max": 0.0001217091576922094,
+   "share_gt_0.1": 0.0
+  }
+ },
+ "AD_other_thought_block": {
+  "n": 40,
+  "share_mass_ge_0.9": 0.0,
+  "min_mass": 2.417059926334471e-05,
+  "mean_mass": 0.00013831327013245567,
+  "accuracy": 0.125,
+  "pred_letter_counts": {
+   "A": 40,
+   "B": 0,
+   "C": 0,
+   "D": 0
+  },
+  "prompt_tok_per_s": 3833.7782871839313,
+  "mean_tokens": 685.7,
+  "examples_top": [
+   [
+    [
+     "The",
+     0.9077113132338692
+    ],
+    [
+     "*",
+     0.06310681394015184
+    ],
+    [
+     "1",
+     0.01808399177025846
+    ],
+    [
+     "    ",
+     0.0025459248231352208
+    ],
+    [
+     "thought",
+     0.002389527412539813
+    ]
+   ],
+   [
+    [
+     "The",
+     0.8922021485998258
+    ],
+    [
+     "*",
+     0.07402313636627457
+    ],
+    [
+     "1",
+     0.02026460947435153
+    ],
+    [
+     "```",
+     0.003314321145481577
+    ],
+    [
+     "thought",
+     0.003037722230582939
+    ]
+   ],
+   [
+    [
+     "The",
+     0.8809174645841874
+    ],
+    [
+     "*",
+     0.07979169025081545
+    ],
+    [
+     "1",
+     0.031144117271125035
+    ],
+    [
+     "Thought",
+     0.0020258123978239453
+    ],
+    [
+     "/*",
+     0.0013771168926241736
+    ]
+   ]
+  ],
+  "p_channel": {
+   "n": 40,
+   "mean": 5.617109632173817e-08,
+   "median": 1.0174587313381856e-08,
+   "max": 4.526321795547112e-07,
+   "share_gt_0.1": 0.0
+  },
+  "mode": "on"
+ },
+ "AJ_other_thought_block": {
+  "n": 36,
+  "share_mass_ge_0.9": 0.0,
+  "min_mass": 8.657410379304993e-05,
+  "mean_mass": 0.0002593398785294598,
+  "accuracy": 0.05555555555555555,
+  "pred_letter_counts": {
+   "A": 35,
+   "B": 0,
+   "C": 0,
+   "D": 0,
+   "E": 0,
+   "F": 0,
+   "G": 0,
+   "H": 0,
+   "I": 1,
+   "J": 0
+  },
+  "prompt_tok_per_s": 3872.01279600938,
+  "mean_tokens": 793.4722222222222,
+  "examples_top": [
+   [
+    [
+     "The",
+     0.9437607109202605
+    ],
+    [
+     "*",
+     0.04131122465679254
+    ],
+    [
+     "1",
+     0.011690477568154735
+    ],
+    [
+     "thought",
+     0.0007827487168453894
+    ],
+    [
+     "    ",
+     0.000353367423782842
+    ]
+   ],
+   [
+    [
+     "The",
+     0.953722970711274
+    ],
+    [
+     "*",
+     0.030838887852742115
+    ],
+    [
+     "1",
+     0.010272303636589262
+    ],
+    [
+     "thought",
+     0.0010476499807007549
+    ],
+    [
+     "```",
+     0.000995969080497544
+    ]
+   ],
+   [
+    [
+     "The",
+     0.9569284830227163
+    ],
+    [
+     "*",
+     0.028463768387225953
+    ],
+    [
+     "1",
+     0.010569840448613248
+    ],
+    [
+     "thought",
+     0.0010417204889205571
+    ],
+    [
+     "```",
+     0.000950177644251706
+    ]
+   ]
+  ],
+  "p_channel": {
+   "n": 36,
+   "mean": 3.333725308983541e-07,
+   "median": 2.0889642337060997e-07,
+   "max": 1.4260493368139394e-06,
+   "share_gt_0.1": 0.0
+  },
+  "mode": "on"
+ },
+ "repeat": {
+  "n": 10,
+  "argmax_agreement": 1.0,
+  "max_abs_logit_diff": 0.0
+ },
+ "checks_ok": true,
+ "prefix_scan": [
+  {
+   "prefix": "",
+   "AD_share_mass_ge_0.9": 1.0,
+   "AJ_share_mass_ge_0.9": 1.0,
+   "AD_mean_mass": 0.9896356995824572,
+   "AJ_mean_mass": 0.9919925959470858,
+   "passes": true
+  },
+  {
+   "prefix": "Answer:",
+   "AD_share_mass_ge_0.9": 0.925,
+   "AJ_share_mass_ge_0.9": 0.9722222222222222,
+   "AD_mean_mass": 0.9593870069916658,
+   "AJ_mean_mass": 0.9925870833037082,
+   "passes": false
+  },
+  {
+   "prefix": "The correct option is",
+   "AD_share_mass_ge_0.9": 0.0,
+   "AJ_share_mass_ge_0.9": 0.08333333333333333,
+   "AD_mean_mass": 0.6418200151774414,
+   "AJ_mean_mass": 0.6990304684745777,
+   "passes": false
+  }
+ ],
+ "prefix_rule_choice": "",
+ "prefix_matches_rule": true,
+ "own_setting_passes": true,
+ "other_setting_passes": false,
+ "thought_block_decision": "keep",
+ "gng1_pass": true,
+ "model_tag": "E4B",
+ "repos": [
+  "langextract",
+  "trio"
+ ],
+ "model_file": {
+  "file": "gemma-4-E4B_q4_0-it.gguf",
+  "bytes": 5154941280,
+  "general": {
+   "general.architecture": "gemma4",
+   "general.type": "model",
+   "general.sampling.top_k": 64,
+   "general.sampling.top_p": 0.949999988079071,
+   "general.sampling.temp": 1.0,
+   "general.name": "Hf",
+   "general.size_label": "7.5B",
+   "general.license": "apache-2.0",
+   "general.license.link": "https://ai.google.dev/gemma/docs/gemma_4_license",
+   "general.base_model.count": 1,
+   "general.base_model.0.name": "Gemma 4 E4B It",
+   "general.base_model.0.organization": "Google",
+   "general.base_model.0.repo_url": "https://huggingface.co/google/gemma-4-E4B-it",
+   "general.tags": [
+    "any-to-any"
+   ],
+   "general.quantization_version": 2,
+   "general.file_type": 2
+  },
+  "chat_template_sha256": "0a2c8073c878ab1da004bee933a998606537bbb62016310352c7285c3f01c5b5",
+  "template_appends_thought_block": false,
+  "sha256": "676c35070db6dbe52f93e9c864ee0fba4eddea94b9c875d9cb10daff453fbaee"
+ },
+ "package": {
+  "code_hash": "ac53a1781412d62914f808ef0c85d88b95201b6ecb27146693e26978ca9eb971",
+  "code_sha256_current": true,
+  "items_digest": "78146cf671fb60d7c9c778d6e70f0d176a16225fc6273762f39630e1cca06c57",
+  "items_folder": "data/items",
+  "manifests": {}
+ },
+ "model_n_params": 7463013674,
+ "projection": {
+  "perms": [
+   1,
+   2
+  ],
+  "prompts": 6400,
+  "prompt_tokens": 3836032,
+  "tok_per_s": 3813.7062937062933,
+  "hours_x1.3": 0.3632250810881294
+ }
+}

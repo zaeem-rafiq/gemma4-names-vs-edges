@@ -1,0 +1,27 @@
+llama_kv_cache_iswa: using full-size SWA cache (ref: https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+llama_kv_cache: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 512
+llama_kv_cache: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 512
+E2B off none fails AD 0.175 0.621 AJ 0.028 0.407 top other AD: [['Let', 0.2393], ['The', 0.0619], ['Based', 0.0217]]
+E2B off answer_colon passes AD 1.0 0.985 AJ 1.0 0.979 top other AD: [[' **', 0.0099], [' E', 0.0008], [' None', 0.0007]]
+E2B off correct_option_is fails AD 0.0 0.443 AJ 0.0 0.381 top other AD: [[' **', 0.5519], [' $\\', 0.0025], [':', 0.0006]]
+E2B on none fails AD 0.0 0.005 AJ 0.0 0.005 top other AD: [['The', 0.9298], ['*', 0.0439], ['1', 0.0093]]
+E2B on answer_colon passes AD 1.0 0.982 AJ 1.0 0.986 top other AD: [['\n', 0.0035], [' **', 0.0032], [' E', 0.0013]]
+E2B on correct_option_is fails AD 0.0 0.401 AJ 0.0 0.264 top other AD: [[' determined', 0.212], [' the', 0.1654], [' **', 0.1246]]
+llama_kv_cache_iswa: using full-size SWA cache (ref: https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+llama_kv_cache: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 1024
+llama_kv_cache: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 1024
+E4B off none passes AD 1.0 0.99 AJ 1.0 0.992 top other AD: [['The', 0.0061], ['Based', 0.0016], ['1', 0.0007]]
+E4B off answer_colon fails AD 0.925 0.959 AJ 0.972 0.993 top other AD: [['\n', 0.0359], [' E', 0.0018], [' None', 0.0007]]
+E4B off correct_option_is fails AD 0.0 0.642 AJ 0.083 0.699 top other AD: [[' **', 0.34], [' $\\', 0.0059], [' the', 0.005]]
+E4B on none fails AD 0.0 0.0 AJ 0.0 0.0 top other AD: [['The', 0.8912], ['*', 0.0719], ['1', 0.0295]]
+E4B on answer_colon fails AD 0.925 0.948 AJ 0.972 0.972 top other AD: [['\n', 0.0432], [' E', 0.0025], [' **', 0.0016]]
+E4B on correct_option_is fails AD 0.9 0.931 AJ 0.75 0.923 top other AD: [[' **', 0.0261], [' the', 0.02], [' determined', 0.0071]]
+llama_kv_cache_iswa: using full-size SWA cache (ref: https://github.com/ggml-org/llama.cpp/pull/13194#issuecomment-2868343055)
+llama_kv_cache: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 2048
+llama_kv_cache: the V embeddings have different sizes across layers and FA is not enabled - padding V cache to 2048
+12B on none fails AD 0.675 0.783 AJ 0.639 0.843 top other AD: [['To', 0.1852], ['The', 0.0252], ['E', 0.002]]
+12B on answer_colon passes AD 1.0 0.999 AJ 1.0 0.999 top other AD: [[' None', 0.0006], [' E', 0.0005], [' (', 0.0001]]
+12B on correct_option_is fails AD 0.0 0.424 AJ 0.0 0.487 top other AD: [[' **', 0.5585], [':', 0.0108], [' not', 0.0018]]
+12B off none fails AD 0.0 0.0 AJ 0.0 0.0 top other AD: [['<|channel>', 1.0], ['---', 0.0], ['<', 0.0]]
+12B off answer_colon passes AD 1.0 0.988 AJ 1.0 0.998 top other AD: [['\n', 0.0078], [' T', 0.0011], [' ', 0.0004]]
+12B off correct_option_is fails AD 0.525 0.914 AJ 0.528 0.881 top other AD: [[' **', 0.0636], [' not', 0.0102], [' (', 0.0037]]

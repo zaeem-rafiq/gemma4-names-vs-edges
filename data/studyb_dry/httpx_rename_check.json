@@ -1,0 +1,49 @@
+{
+ "repo": "httpx",
+ "seed": 1,
+ "build_secs": 0.55,
+ "names_defined": 1177,
+ "names_renamed": 1098,
+ "third_party_names": 284,
+ "packages": [
+  "httpx"
+ ],
+ "identity": [
+  "encode",
+  "httpx"
+ ],
+ "fallback_subtokens": 0,
+ "parse_errors": 0,
+ "issues": {
+  "n": 10,
+  "hard_texts": 0,
+  "hard": {},
+  "soft": {
+   "url": 5,
+   "text": 1,
+   "name": 1,
+   "default": 1,
+   "data": 1,
+   "Client": 1,
+   "client": 1
+  },
+  "residual_identity": {},
+  "share_changed": {
+   "median": 0.07746478873239436,
+   "max": 0.18681318681318682
+  }
+ },
+ "code": {
+  "n": 429,
+  "hard_texts": 0,
+  "hard": {},
+  "soft": {
+   "url": 1
+  },
+  "residual_identity": {},
+  "share_changed": {
+   "median": 0.22727272727272727,
+   "max": 0.6290322580645161
+  }
+ }
+}
