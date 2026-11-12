@@ -1,0 +1,211 @@
+{
+ "label": "EXPLORATORY, not pre-registered",
+ "n_tasks": 174,
+ "definition": "graph block = subgraph edges among anchors and candidates plus get_code_neighbors(first anchor) edges, as stored in the frozen task files' context (real names; chars = JSON length with real names, a proxy for the renamed block)",
+ "by_set": {
+  "competition": {
+   "n_tasks": 43,
+   "a_gold_anchor_edge_share": {
+    "true": 0.2093,
+    "rewired": 0,
+    "true_minus_rewired": {
+     "mean_diff": 0.2093,
+     "ci95": [
+      0.093,
+      0.3256
+     ]
+    }
+   },
+   "b_any_gold_edge_share": {
+    "true": 0.6977,
+    "rewired": 0.3953,
+    "true_minus_rewired": {
+     "mean_diff": 0.3023,
+     "ci95": [
+      0.1628,
+      0.4419
+     ]
+    }
+   },
+   "c_edges": {
+    "true": {
+     "median": 5,
+     "iqr": [
+      3,
+      11
+     ]
+    },
+    "rewired": {
+     "median": 3,
+     "iqr": [
+      2,
+      6
+     ]
+    },
+    "true_minus_rewired": {
+     "mean_diff": 3.0698,
+     "ci95": [
+      1.8605,
+      4.4186
+     ]
+    }
+   },
+   "c_block_chars": {
+    "true": {
+     "median": 954,
+     "iqr": [
+      687,
+      1437
+     ]
+    },
+    "rewired": {
+     "median": 754,
+     "iqr": [
+      660,
+      919
+     ]
+    }
+   },
+   "truncated_share": {
+    "true": 0,
+    "rewired": 0
+   }
+  },
+  "Lite": {
+   "n_tasks": 131,
+   "a_gold_anchor_edge_share": {
+    "true": 0.2366,
+    "rewired": 0,
+    "true_minus_rewired": {
+     "mean_diff": 0.2366,
+     "ci95": [
+      0.1679,
+      0.313
+     ]
+    }
+   },
+   "b_any_gold_edge_share": {
+    "true": 0.5267,
+    "rewired": 0.229,
+    "true_minus_rewired": {
+     "mean_diff": 0.2977,
+     "ci95": [
+      0.2214,
+      0.3817
+     ]
+    }
+   },
+   "c_edges": {
+    "true": {
+     "median": 7,
+     "iqr": [
+      4,
+      13
+     ]
+    },
+    "rewired": {
+     "median": 2,
+     "iqr": [
+      1,
+      4
+     ]
+    },
+    "true_minus_rewired": {
+     "mean_diff": 6.5344,
+     "ci95": [
+      5.4962,
+      7.6336
+     ]
+    }
+   },
+   "c_block_chars": {
+    "true": {
+     "median": 1265,
+     "iqr": [
+      1005,
+      1861
+     ]
+    },
+    "rewired": {
+     "median": 851,
+     "iqr": [
+      711,
+      972
+     ]
+    }
+   },
+   "truncated_share": {
+    "true": 0.0076,
+    "rewired": 0
+   }
+  },
+  "all": {
+   "n_tasks": 174,
+   "a_gold_anchor_edge_share": {
+    "true": 0.2299,
+    "rewired": 0,
+    "true_minus_rewired": {
+     "mean_diff": 0.2299,
+     "ci95": [
+      0.1667,
+      0.2931
+     ]
+    }
+   },
+   "b_any_gold_edge_share": {
+    "true": 0.569,
+    "rewired": 0.2701,
+    "true_minus_rewired": {
+     "mean_diff": 0.2989,
+     "ci95": [
+      0.2299,
+      0.3678
+     ]
+    }
+   },
+   "c_edges": {
+    "true": {
+     "median": 7.0,
+     "iqr": [
+      4,
+      13
+     ]
+    },
+    "rewired": {
+     "median": 2.0,
+     "iqr": [
+      1,
+      4
+     ]
+    },
+    "true_minus_rewired": {
+     "mean_diff": 5.6782,
+     "ci95": [
+      4.7931,
+      6.5977
+     ]
+    }
+   },
+   "c_block_chars": {
+    "true": {
+     "median": 1162.0,
+     "iqr": [
+      883,
+      1775
+     ]
+    },
+    "rewired": {
+     "median": 826.5,
+     "iqr": [
+      697,
+      957
+     ]
+    }
+   },
+   "truncated_share": {
+    "true": 0.0057,
+    "rewired": 0
+   }
+  }
+ }
+}

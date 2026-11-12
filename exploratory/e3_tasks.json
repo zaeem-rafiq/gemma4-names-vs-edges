@@ -1,0 +1,219 @@
+{
+ "label": "EXPLORATORY, not pre-registered",
+ "hint": "Hint: the function to edit is a direct neighbour of {a} in the repository's call graph.",
+ "n_tasks": 19,
+ "tasks": [
+  {
+   "task_id": "fastapi_13786",
+   "set": "official",
+   "repo": "fastapi/fastapi",
+   "first_anchor": "fastapi.security.api_key.APIKeyQuery",
+   "first_anchor_renamed": "lunger.mallis.sek_bo.SEKBoTakbis",
+   "gold_neighbours_of_first_anchor": [
+    "fastapi.security.api_key.APIKeyQuery.__init__"
+   ],
+   "stratum": "S1"
+  },
+  {
+   "task_id": "fastapi_14873",
+   "set": "official",
+   "repo": "fastapi/fastapi",
+   "first_anchor": "fastapi.routing.APIRouter",
+   "first_anchor_renamed": "lunger.routing.SEKNimu",
+   "gold_neighbours_of_first_anchor": [
+    "fastapi.routing.APIRouter.__init__"
+   ],
+   "stratum": "S0"
+  },
+  {
+   "task_id": "fastapi_15745",
+   "set": "official",
+   "repo": "fastapi/fastapi",
+   "first_anchor": "fastapi.routing.APIRouter",
+   "first_anchor_renamed": "lunger.routing.SEKNimu",
+   "gold_neighbours_of_first_anchor": [
+    "fastapi.applications.FastAPI.__init__",
+    "fastapi.routing.APIRouter.__init__"
+   ],
+   "stratum": "S1"
+  },
+  {
+   "task_id": "rich_3718",
+   "set": "official",
+   "repo": "Textualize/rich",
+   "first_anchor": "rich.panel.Panel",
+   "first_anchor_renamed": "biso.berpa.Berpa",
+   "gold_neighbours_of_first_anchor": [
+    "rich.panel.Panel.__rich_console__"
+   ],
+   "stratum": "S1"
+  },
+  {
+   "task_id": "rich_3905",
+   "set": "official",
+   "repo": "Textualize/rich",
+   "first_anchor": "rich.progress.Progress",
+   "first_anchor_renamed": "biso.lekgoltes.Lekgoltes",
+   "gold_neighbours_of_first_anchor": [
+    "rich.progress.Progress.stop"
+   ],
+   "stratum": "S1"
+  },
+  {
+   "task_id": "rich_4070",
+   "set": "official",
+   "repo": "Textualize/rich",
+   "first_anchor": "rich.logging.RichHandler",
+   "first_anchor_renamed": "biso.logging.BisoBikne",
+   "gold_neighbours_of_first_anchor": [
+    "rich.logging.RichHandler.emit",
+    "rich.logging.RichHandler.render"
+   ],
+   "stratum": "S0"
+  },
+  {
+   "task_id": "astropy__astropy-6938",
+   "set": "lite",
+   "repo": "astropy/astropy",
+   "first_anchor": "astropy.io.fits.util.encode_ascii",
+   "first_anchor_renamed": "rurlil.io.tek.util.darka_pekgu",
+   "gold_neighbours_of_first_anchor": [
+    "astropy.io.fits.fitsrec.FITS_rec._scale_back_ascii"
+   ],
+   "stratum": "S1"
+  },
+  {
+   "task_id": "astropy__astropy-7746",
+   "set": "lite",
+   "repo": "astropy/astropy",
+   "first_anchor": "astropy.wcs.wcs.WCS.wcs_pix2world",
+   "first_anchor_renamed": "rurlil.wcs.wcs.PIK.pik_tanzo2bazan",
+   "gold_neighbours_of_first_anchor": [
+    "astropy.wcs.wcs.WCS._array_converter"
+   ],
+   "stratum": "S0"
+  },
+  {
+   "task_id": "django__django-12700",
+   "set": "lite",
+   "repo": "django/django",
+   "first_anchor": "django.views.debug.SafeExceptionReporterFilter.get_safe_settings",
+   "first_anchor_renamed": "vonil.binber.zer.ZulrerTirosbokfulZilGurzakvin.kinsis_zulrer_gonbak",
+   "gold_neighbours_of_first_anchor": [
+    "django.views.debug.SafeExceptionReporterFilter.cleanse_setting"
+   ],
+   "stratum": "S0"
+  },
+  {
+   "task_id": "django__django-14382",
+   "set": "lite",
+   "repo": "django/django",
+   "first_anchor": "django.core.management.templates.TemplateCommand.validate_name",
+   "first_anchor_renamed": "vonil.core.kismistok.loska.PolbasFanvi.ferbil_ni",
+   "gold_neighbours_of_first_anchor": [
+    "django.core.management.templates.TemplateCommand.handle"
+   ],
+   "stratum": "S1"
+  },
+  {
+   "task_id": "django__django-14787",
+   "set": "lite",
+   "repo": "django/django",
+   "first_anchor": "django.utils.decorators.method_decorator",
+   "first_anchor_renamed": "vonil.utils.lekukarvuk.mulga_rikkonva",
+   "gold_neighbours_of_first_anchor": [
+    "django.utils.decorators._multi_decorate"
+   ],
+   "stratum": "S1"
+  },
+  {
+   "task_id": "django__django-17051",
+   "set": "lite",
+   "repo": "django/django",
+   "first_anchor": "django.db.models.query.QuerySet.bulk_create",
+   "first_anchor_renamed": "vonil.db.models.lokal.LokalGantu.tinlol_pekgumul",
+   "gold_neighbours_of_first_anchor": [
+    "django.db.models.query.QuerySet._batched_insert"
+   ],
+   "stratum": "S1"
+  },
+  {
+   "task_id": "matplotlib__matplotlib-22711",
+   "set": "lite",
+   "repo": "matplotlib/matplotlib",
+   "first_anchor": "matplotlib.widgets.RangeSlider.__init__",
+   "first_anchor_renamed": "vagugel.germe.NurGuves.__init__",
+   "gold_neighbours_of_first_anchor": [
+    "matplotlib.widgets.RangeSlider.set_val"
+   ],
+   "stratum": "S0"
+  },
+  {
+   "task_id": "pytest-dev__pytest-7373",
+   "set": "lite",
+   "repo": "pytest-dev/pytest",
+   "first_anchor": "_pytest.mark.evaluate.cached_eval",
+   "first_anchor_renamed": "_lokgol.makdes.gesmis.reker_ralvol",
+   "gold_neighbours_of_first_anchor": [
+    "_pytest.mark.evaluate.MarkEvaluator._istrue"
+   ],
+   "stratum": "S0"
+  },
+  {
+   "task_id": "pytest-dev__pytest-7490",
+   "set": "lite",
+   "repo": "pytest-dev/pytest",
+   "first_anchor": "_pytest.outcomes.xfail",
+   "first_anchor_renamed": "_lokgol.nuvok.fok",
+   "gold_neighbours_of_first_anchor": [
+    "_pytest.skipping.pytest_runtest_setup"
+   ],
+   "stratum": "S1"
+  },
+  {
+   "task_id": "scikit-learn__scikit-learn-15535",
+   "set": "lite",
+   "repo": "scikit-learn/scikit-learn",
+   "first_anchor": "sklearn.metrics.cluster._supervised.mutual_info_score",
+   "first_anchor_renamed": "morsas.selpinu.cluster._ripesmi.zusnen_va_dipil",
+   "gold_neighbours_of_first_anchor": [
+    "sklearn.metrics.cluster._supervised.check_clusterings"
+   ],
+   "stratum": "S1"
+  },
+  {
+   "task_id": "scikit-learn__scikit-learn-25638",
+   "set": "lite",
+   "repo": "scikit-learn/scikit-learn",
+   "first_anchor": "sklearn.utils.multiclass.unique_labels",
+   "first_anchor_renamed": "morsas.utils.sasbukbu.fafunbok_fasbik",
+   "gold_neighbours_of_first_anchor": [
+    "sklearn.utils.multiclass.type_of_target"
+   ],
+   "stratum": "S1"
+  },
+  {
+   "task_id": "sympy__sympy-22005",
+   "set": "lite",
+   "repo": "sympy/sympy",
+   "first_anchor": "sympy.solvers.polysys.solve_poly_system",
+   "first_anchor_renamed": "gokzu.solvers.roski.zaspu_parvon_luszu",
+   "gold_neighbours_of_first_anchor": [
+    "sympy.solvers.polysys.solve_generic"
+   ],
+   "stratum": "S1"
+  },
+  {
+   "task_id": "sympy__sympy-23117",
+   "set": "lite",
+   "repo": "sympy/sympy",
+   "first_anchor": "sympy.tensor.array.ndim_array.NDimArray._handle_ndarray_creation_inputs",
+   "first_anchor_renamed": "gokzu.tensor.array.dakmir_dosbik.LMesbesDosbik._burbos_mikgol_mikgon_verpis",
+   "gold_neighbours_of_first_anchor": [
+    "sympy.tensor.array.ndim_array.NDimArray._scan_iterable_shape"
+   ],
+   "stratum": "S0"
+  }
+ ],
+ "hint_v1_superseded": "Hint: the function to edit is a direct neighbour of {a} in the call graph above."
+}

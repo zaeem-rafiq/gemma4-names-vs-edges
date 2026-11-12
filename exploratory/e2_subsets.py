@@ -4,7 +4,8 @@
 import os
 import json, random, statistics as st, sys
 from collections import defaultdict
-P = os.environ["P"]  # the project folder (redacted in the release; was an absolute path); R = P + "/studyB-v1.1/runs/"
+P = os.environ["P"]  # the project folder (redacted in the release; was an absolute path)
+R = P + "/studyB-v1.1/runs/"  # the author's folder layout; point it at your copy of these files
 TASKS = {"official": P + "/studyb-frozen/official/tasks.json", "lite": P + "/studyb-frozen/lite/tasks.json"}
 RUNS = ["studyB_official_E4B", "studyB_official_31B", "studyB_lite_E4B", "studyB_official_12B", "studyB_lite_31B"]
 CONF = {("E4B", "official"), ("31B", "official"), ("E4B", "lite")}

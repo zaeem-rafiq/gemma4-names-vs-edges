@@ -1,0 +1,48 @@
+{
+ "label": "EXPLORATORY fact check",
+ "neighbors_output": "undirected neighbour list (no direction)",
+ "by_set": {
+  "competition": {
+   "n_tasks": 111,
+   "true": {
+    "non_loop_directed_edges": 188,
+    "reverse_also_shown_share": 1.0,
+    "tasks_with_any_edge": 54,
+    "tasks_with_one_way_edge": 0,
+    "tasks_with_one_way_edge_share": 0.0,
+    "self_loops": 29,
+    "tasks_with_self_loop": 23
+   },
+   "rewired": {
+    "non_loop_directed_edges": 26,
+    "reverse_also_shown_share": 1.0,
+    "tasks_with_any_edge": 30,
+    "tasks_with_one_way_edge": 0,
+    "tasks_with_one_way_edge_share": 0.0,
+    "self_loops": 29,
+    "tasks_with_self_loop": 23
+   }
+  },
+  "Lite": {
+   "n_tasks": 260,
+   "true": {
+    "non_loop_directed_edges": 1262,
+    "reverse_also_shown_share": 0.9984,
+    "tasks_with_any_edge": 193,
+    "tasks_with_one_way_edge": 1,
+    "tasks_with_one_way_edge_share": 0.0038,
+    "self_loops": 0,
+    "tasks_with_self_loop": 0
+   },
+   "rewired": {
+    "non_loop_directed_edges": 52,
+    "reverse_also_shown_share": 1.0,
+    "tasks_with_any_edge": 20,
+    "tasks_with_one_way_edge": 0,
+    "tasks_with_one_way_edge_share": 0.0,
+    "self_loops": 0,
+    "tasks_with_self_loop": 0
+   }
+  }
+ }
+}

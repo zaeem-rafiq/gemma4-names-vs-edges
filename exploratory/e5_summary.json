@@ -1,0 +1,22 @@
+{
+ "label": "EXPLORATORY, not pre-registered",
+ "new_header": "Below is the output of a code-graph tool for part of the static call graph of the Python repository {repo}.",
+ "counts": {
+  "12B": {
+   "items": 640,
+   "prompts": 2560
+  },
+  "31B": {
+   "items": 640,
+   "prompts": 2560
+  },
+  "E2B": {
+   "items": 640,
+   "prompts": 2560
+  },
+  "E4B": {
+   "items": 640,
+   "prompts": 2560
+  }
+ }
+}

@@ -1,0 +1,128 @@
+{
+ "label": "EXPLORATORY, not pre-registered",
+ "n_tasks": 19,
+ "models": {
+  "E4B": {
+   "acc_hint": {
+    "true": 0.5,
+    "rewired": 0.5263,
+    "none": 0.5789
+   },
+   "acc_nohint_studyB": {
+    "true": 0.4474,
+    "rewired": 0.4737,
+    "none": 0.5
+   },
+   "hint_gain_true": {
+    "n": 19,
+    "mean": 0.0526,
+    "ci95": [
+     -0.0526,
+     0.1842
+    ]
+   },
+   "hint_gain_rewired": {
+    "n": 19,
+    "mean": 0.0526,
+    "ci95": [
+     -0.0526,
+     0.1842
+    ]
+   },
+   "hint_gain_none": {
+    "n": 19,
+    "mean": 0.0789,
+    "ci95": [
+     -0.0526,
+     0.2105
+    ]
+   },
+   "hint_true_minus_rewired": {
+    "n": 19,
+    "mean": -0.0263,
+    "ci95": [
+     -0.0789,
+     0.0
+    ]
+   },
+   "hint_true_minus_none": {
+    "n": 19,
+    "mean": -0.0789,
+    "ci95": [
+     -0.2105,
+     0.0
+    ]
+   },
+   "n_tasks_scored": 19,
+   "note": ""
+  },
+  "31B": {
+   "acc_hint": {
+    "true": 0.8421,
+    "rewired": 0.8947,
+    "none": 0.9474
+   },
+   "acc_nohint_studyB": {
+    "true": 0.7632,
+    "rewired": 0.7895,
+    "none": 0.7368
+   },
+   "hint_gain_true": {
+    "n": 19,
+    "mean": 0.0789,
+    "ci95": [
+     -0.0263,
+     0.2105
+    ]
+   },
+   "hint_gain_rewired": {
+    "n": 19,
+    "mean": 0.1053,
+    "ci95": [
+     -0.0263,
+     0.2632
+    ]
+   },
+   "hint_gain_none": {
+    "n": 19,
+    "mean": 0.2105,
+    "ci95": [
+     0.0789,
+     0.3684
+    ]
+   },
+   "hint_true_minus_rewired": {
+    "n": 19,
+    "mean": -0.0526,
+    "ci95": [
+     -0.1842,
+     0.0526
+    ]
+   },
+   "hint_true_minus_none": {
+    "n": 19,
+    "mean": -0.1053,
+    "ci95": [
+     -0.2632,
+     0.0263
+    ]
+   },
+   "n_tasks_scored": 19,
+   "note": "31B on Lite is descriptive in Study B; its no-hint cells come from studyB_lite_31B.jsonl"
+  }
+ },
+ "hinted_neighbour_baseline": {
+  "true": {
+   "gold_among_anchor_candidate_neighbours_share": 1.0,
+   "k_median": 2,
+   "mean_1_over_k_where_gold_among_them": 0.6322,
+   "uniform_pick_accuracy_over_all_tasks": 0.6322
+  },
+  "rewired": {
+   "gold_among_anchor_candidate_neighbours_share": 0.0,
+   "k_median": 0,
+   "mean_1_over_k_where_gold_among_them": null,
+   "uniform_pick_accuracy_over_all_tasks": 0.0
+  }
+ }
+}

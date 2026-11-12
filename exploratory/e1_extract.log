@@ -1,0 +1,469 @@
+official fastapi_13207 ok 0.7s
+official fastapi_13713 ok 0.6s
+official fastapi_13786 ok 0.7s
+official fastapi_14099 ok 0.6s
+official fastapi_14262 ok 0.7s
+official fastapi_14266 ok 0.7s
+official fastapi_14301 ok 0.7s
+official fastapi_14306 ok 0.7s
+official fastapi_14356 ok 0.6s
+official fastapi_14419 ok 0.7s
+official fastapi_14455 ok 0.6s
+official fastapi_14458 ok 0.6s
+official fastapi_14459 ok 0.7s
+official fastapi_14463 ok 0.7s
+official fastapi_14479 ok 0.7s
+official fastapi_14616 ok 0.7s
+official fastapi_14786 ok 0.7s
+official fastapi_14794 ok 0.7s
+official fastapi_14873 ok 0.7s
+official fastapi_14953 ok 0.6s
+official fastapi_14986 ok 0.7s
+official fastapi_15745 ok 0.8s
+official fastapi_5077 ok 0.7s
+official httpx_3672 ok 0.1s
+official requests_6589 ok 0.1s
+official requests_7309 ok 0.2s
+official requests_7315 ok 0.2s
+official requests_7328 ok 0.2s
+official requests_7427 ok 0.2s
+official requests_7433 ok 0.2s
+official requests_7502 ok 0.1s
+official requests_7505 ok 0.1s
+official rich_3130 ok 0.4s
+official rich_3471 ok 0.4s
+official rich_3506 ok 0.4s
+official rich_3518 ok 0.4s
+official rich_3521 ok 0.4s
+official rich_3718 ok 0.5s
+official rich_3882 ok 0.5s
+official rich_3894 ok 0.3s
+official rich_3905 ok 0.5s
+official rich_4006 ok 0.5s
+official rich_4070 ok 0.6s
+lite astropy__astropy-12907 ok 4.0s
+lite astropy__astropy-14182 ok 3.9s
+lite astropy__astropy-14365 ok 4.1s
+lite astropy__astropy-6938 ok 2.8s
+lite astropy__astropy-7746 ok 3.1s
+lite django__django-11001 ok 5.0s
+lite django__django-11583 ok 5.2s
+lite django__django-11620 ok 5.0s
+lite django__django-11848 ok 5.2s
+lite django__django-11910 ok 5.2s
+lite django__django-12113 ok 5.2s
+lite django__django-12184 ok 5.7s
+lite django__django-12308 ok 5.6s
+lite django__django-12453 ok 5.7s
+lite django__django-12700 ok 5.6s
+lite django__django-12983 ok 5.3s
+lite django__django-13028 ok 5.5s
+lite django__django-13033 ok 5.8s
+lite django__django-13158 ok 5.7s
+lite django__django-13265 ok 5.7s
+lite django__django-13321 ok 5.4s
+lite django__django-13447 ok 5.4s
+lite django__django-13448 ok 5.1s
+lite django__django-13551 ok 5.4s
+lite django__django-13590 ok 5.4s
+lite django__django-13658 ok 5.3s
+lite django__django-13660 ok 5.1s
+lite django__django-13768 ok 5.4s
+lite django__django-13925 ok 5.4s
+lite django__django-13964 ok 5.4s
+lite django__django-14155 ok 5.5s
+lite django__django-14238 ok 5.6s
+lite django__django-14382 ok 5.4s
+lite django__django-14534 ok 5.5s
+lite django__django-14667 ok 5.6s
+lite django__django-14672 ok 5.6s
+lite django__django-14752 ok 6.2s
+lite django__django-14787 ok 6.1s
+lite django__django-14997 ok 6.3s
+lite django__django-15202 ok 6.6s
+lite django__django-15252 ok 6.5s
+lite django__django-15320 ok 6.4s
+lite django__django-15695 ok 5.9s
+lite django__django-15789 ok 6.0s
+lite django__django-15790 ok 5.6s
+lite django__django-15814 ok 5.6s
+lite django__django-16041 ok 5.5s
+lite django__django-16255 ok 5.7s
+lite django__django-16379 ok 5.7s
+lite django__django-16400 ok 6.1s
+lite django__django-16408 ok 6.4s
+lite django__django-16595 ok 6.6s
+lite django__django-16816 ok 6.5s
+lite django__django-16873 ok 6.4s
+lite django__django-16910 ok 6.6s
+lite django__django-17051 ok 6.2s
+lite matplotlib__matplotlib-22711 ok 4.4s
+lite matplotlib__matplotlib-22835 ok 4.6s
+lite matplotlib__matplotlib-23299 ok 4.0s
+lite matplotlib__matplotlib-23476 ok 4.3s
+lite matplotlib__matplotlib-23563 ok 4.5s
+lite matplotlib__matplotlib-23964 ok 4.3s
+lite matplotlib__matplotlib-24149 ok 4.4s
+lite matplotlib__matplotlib-25079 ok 4.1s
+lite matplotlib__matplotlib-25433 ok 4.4s
+lite matplotlib__matplotlib-25442 ok 4.3s
+lite matplotlib__matplotlib-25498 ok 4.0s
+lite matplotlib__matplotlib-26020 ok 4.0s
+lite mwaskom__seaborn-3010 ok 0.6s
+lite mwaskom__seaborn-3190 ok 0.6s
+lite mwaskom__seaborn-3407 ok 0.6s
+lite pallets__flask-4992 ok 0.2s
+lite pydata__xarray-4094 ok 1.0s
+lite pylint-dev__pylint-6506 ok 1.4s
+lite pylint-dev__pylint-7228 ok 1.8s
+lite pytest-dev__pytest-11143 ok 0.8s
+lite pytest-dev__pytest-11148 ok 0.8s
+lite pytest-dev__pytest-5413 ok 0.6s
+lite pytest-dev__pytest-7168 ok 0.7s
+lite pytest-dev__pytest-7373 ok 0.7s
+lite pytest-dev__pytest-7432 ok 0.7s
+lite pytest-dev__pytest-7490 ok 0.7s
+lite pytest-dev__pytest-8365 ok 0.7s
+lite pytest-dev__pytest-8906 ok 0.7s
+lite pytest-dev__pytest-9359 ok 0.8s
+sklearn/datasets/samples_generator.py:794: SyntaxWarning: "\#" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\#"? A raw string is also an option.
+sklearn/datasets/samples_generator.py:857: SyntaxWarning: "\#" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\#"? A raw string is also an option.
+sklearn/datasets/samples_generator.py:923: SyntaxWarning: "\#" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\#"? A raw string is also an option.
+sklearn/datasets/samples_generator.py:1385: SyntaxWarning: "\c" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\c"? A raw string is also an option.
+sklearn/decomposition/nmf.py:842: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sklearn/decomposition/nmf.py:1058: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sklearn/externals/joblib/_memory_helpers.py:10: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sklearn/externals/joblib/func_inspect.py:53: SyntaxWarning: "\<" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\<"? A raw string is also an option.
+sklearn/gaussian_process/kernels.py:1516: SyntaxWarning: "\p" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\p"? A raw string is also an option.
+sklearn/gaussian_process/kernels.py:1625: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sklearn/linear_model/coordinate_descent.py:143: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sklearn/linear_model/coordinate_descent.py:290: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sklearn/linear_model/coordinate_descent.py:1602: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sklearn/linear_model/coordinate_descent.py:1798: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sklearn/linear_model/coordinate_descent.py:1918: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sklearn/linear_model/coordinate_descent.py:2097: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sklearn/linear_model/omp.py:284: SyntaxWarning: "\g" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\g"? A raw string is also an option.
+sklearn/manifold/t_sne.py:387: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sklearn/metrics/classification.py:303: SyntaxWarning: "\k" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\k"? A raw string is also an option.
+sklearn/metrics/cluster/supervised.py:541: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sklearn/utils/estimator_checks.py:1003: SyntaxWarning: "\(" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\("? A raw string is also an option.
+<unknown>:794: SyntaxWarning: "\#" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\#"? A raw string is also an option.
+<unknown>:857: SyntaxWarning: "\#" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\#"? A raw string is also an option.
+<unknown>:923: SyntaxWarning: "\#" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\#"? A raw string is also an option.
+<unknown>:1385: SyntaxWarning: "\c" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\c"? A raw string is also an option.
+<unknown>:842: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:1058: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:10: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:53: SyntaxWarning: "\<" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\<"? A raw string is also an option.
+<unknown>:1516: SyntaxWarning: "\p" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\p"? A raw string is also an option.
+<unknown>:1625: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:143: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:290: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:1602: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:1798: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:1918: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:2097: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:284: SyntaxWarning: "\g" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\g"? A raw string is also an option.
+<unknown>:387: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:303: SyntaxWarning: "\k" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\k"? A raw string is also an option.
+<unknown>:541: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:1003: SyntaxWarning: "\(" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\("? A raw string is also an option.
+lite scikit-learn__scikit-learn-10508 ok 2.1s
+lite scikit-learn__scikit-learn-11040 ok 2.3s
+lite scikit-learn__scikit-learn-13496 ok 2.3s
+lite scikit-learn__scikit-learn-13497 ok 2.3s
+lite scikit-learn__scikit-learn-13584 ok 2.3s
+lite scikit-learn__scikit-learn-13779 ok 2.1s
+lite scikit-learn__scikit-learn-14092 ok 2.1s
+lite scikit-learn__scikit-learn-14894 ok 2.2s
+lite scikit-learn__scikit-learn-15512 ok 2.3s
+lite scikit-learn__scikit-learn-15535 ok 2.3s
+lite scikit-learn__scikit-learn-25500 ok 3.0s
+lite scikit-learn__scikit-learn-25570 ok 2.8s
+lite scikit-learn__scikit-learn-25638 ok 2.6s
+lite scikit-learn__scikit-learn-25747 ok 2.9s
+lite sphinx-doc__sphinx-8474 ok 2.0s
+lite sphinx-doc__sphinx-8713 ok 1.8s
+sympy/calculus/finite_diff.py:425: SyntaxWarning: "\*" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\*"? A raw string is also an option.
+sympy/calculus/util.py:473: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+sympy/combinatorics/fp_groups.py:864: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+sympy/combinatorics/perm_groups.py:1127: SyntaxWarning: "\i" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\i"? A raw string is also an option.
+sympy/combinatorics/perm_groups.py:1624: SyntaxWarning: "\{" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\{"? A raw string is also an option.
+sympy/combinatorics/perm_groups.py:2840: SyntaxWarning: "\{" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\{"? A raw string is also an option.
+sympy/combinatorics/perm_groups.py:3124: SyntaxWarning: "\O" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\O"? A raw string is also an option.
+sympy/combinatorics/util.py:124: SyntaxWarning: "\i" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\i"? A raw string is also an option.
+sympy/concrete/expr_with_intlimits.py:19: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+sympy/core/evalf.py:1473: SyntaxWarning: "\*" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\*"? A raw string is also an option.
+sympy/core/expr.py:2278: SyntaxWarning: "\*" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\*"? A raw string is also an option.
+sympy/core/facts.py:34: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+sympy/core/function.py:1987: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sympy/core/symbol.py:425: SyntaxWarning: "\," is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\,"? A raw string is also an option.
+sympy/core/symbol.py:453: SyntaxWarning: "\," is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\,"? A raw string is also an option.
+sympy/core/symbol.py:453: SyntaxWarning: "\:" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\:"? A raw string is also an option.
+sympy/core/symbol.py:453: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+sympy/crypto/crypto.py:394: SyntaxWarning: "\9" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\9"? A raw string is also an option.
+sympy/crypto/crypto.py:1751: SyntaxWarning: "\e" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\e"? A raw string is also an option.
+sympy/crypto/crypto.py:1825: SyntaxWarning: "\e" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\e"? A raw string is also an option.
+sympy/crypto/crypto.py:1923: SyntaxWarning: "\p" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\p"? A raw string is also an option.
+sympy/diffgeom/diffgeom.py:709: SyntaxWarning: "\|" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\|"? A raw string is also an option.
+sympy/functions/elementary/exponential.py:458: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+sympy/functions/elementary/exponential.py:480: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+sympy/functions/elementary/exponential.py:574: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+sympy/functions/elementary/exponential.py:755: SyntaxWarning: "\e" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\e"? A raw string is also an option.
+sympy/functions/elementary/trigonometric.py:2433: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sympy/holonomic/holonomic.py:1865: SyntaxWarning: "\c" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\c"? A raw string is also an option.
+sympy/integrals/meijerint.py:723: SyntaxWarning: "\i" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\i"? A raw string is also an option.
+sympy/integrals/meijerint.py:838: SyntaxWarning: "\i" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\i"? A raw string is also an option.
+sympy/integrals/meijerint.py:2015: SyntaxWarning: "\i" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\i"? A raw string is also an option.
+sympy/integrals/prde.py:592: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+sympy/integrals/prde.py:699: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+sympy/integrals/rationaltools.py:181: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+sympy/integrals/rationaltools.py:310: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+sympy/integrals/transforms.py:1718: SyntaxWarning: "\i" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\i"? A raw string is also an option.
+sympy/interactive/printing.py:329: SyntaxWarning: "\/" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\/"? A raw string is also an option.
+sympy/interactive/session.py:385: SyntaxWarning: "\/" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\/"? A raw string is also an option.
+sympy/logic/utilities/dimacs.py:35: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sympy/matrices/dense.py:904: SyntaxWarning: "\*" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\*"? A raw string is also an option.
+sympy/matrices/matrices.py:3594: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+sympy/ntheory/factor_.py:1560: SyntaxWarning: "\p" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\p"? A raw string is also an option.
+sympy/ntheory/factor_.py:1603: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+sympy/ntheory/factor_.py:1649: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sympy/ntheory/factor_.py:1722: SyntaxWarning: "\p" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\p"? A raw string is also an option.
+sympy/ntheory/factor_.py:1812: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sympy/parsing/maxima.py:33: SyntaxWarning: "\^" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\^"? A raw string is also an option.
+sympy/parsing/maxima.py:47: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sympy/physics/mechanics/models.py:24: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+sympy/physics/mechanics/models.py:121: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+sympy/physics/quantum/cg.py:159: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+sympy/physics/quantum/spin.py:694: SyntaxWarning: "\g" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\g"? A raw string is also an option.
+sympy/physics/quantum/state.py:938: SyntaxWarning: "\p" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\p"? A raw string is also an option.
+sympy/polys/agca/homomorphisms.py:423: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+sympy/polys/agca/ideals.py:207: SyntaxWarning: "\i" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\i"? A raw string is also an option.
+sympy/polys/distributedmodules.py:83: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+sympy/polys/domains/domain.py:388: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+sympy/polys/fglmtools.py:107: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+sympy/polys/fglmtools.py:135: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+sympy/polys/polyoptions.py:405: SyntaxWarning: "\d" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\d"? A raw string is also an option.
+sympy/polys/polyoptions.py:406: SyntaxWarning: "\d" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\d"? A raw string is also an option.
+sympy/polys/polyoptions.py:407: SyntaxWarning: "\(" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\("? A raw string is also an option.
+sympy/polys/polyoptions.py:408: SyntaxWarning: "\[" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\["? A raw string is also an option.
+sympy/polys/polyoptions.py:409: SyntaxWarning: "\(" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\("? A raw string is also an option.
+sympy/polys/polyoptions.py:410: SyntaxWarning: "\<" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\<"? A raw string is also an option.
+sympy/polys/ring_series.py:565: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+sympy/polys/ring_series.py:584: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+sympy/polys/ring_series.py:794: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+sympy/polys/ring_series.py:849: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+sympy/polys/ring_series.py:1084: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+sympy/polys/ring_series.py:1268: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+sympy/polys/ring_series.py:1528: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+sympy/polys/ring_series.py:1665: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+sympy/printing/latex.py:664: SyntaxWarning: "\o" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\o"? A raw string is also an option.
+sympy/printing/latex.py:680: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sympy/printing/latex.py:1397: SyntaxWarning: "\d" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\d"? A raw string is also an option.
+sympy/printing/latex.py:1427: SyntaxWarning: "\c" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\c"? A raw string is also an option.
+sympy/printing/latex.py:1606: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+sympy/printing/latex.py:1610: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+sympy/printing/latex.py:1699: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+sympy/printing/pretty/pretty.py:490: SyntaxWarning: "\%" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\%"? A raw string is also an option.
+sympy/printing/pretty/pretty.py:1629: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+sympy/printing/pretty/pretty_symbology.py:576: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+sympy/printing/str.py:687: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+sympy/printing/tableform.py:31: SyntaxWarning: "\e" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\e"? A raw string is also an option.
+sympy/series/formal.py:192: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sympy/series/fourier.py:200: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sympy/series/order.py:329: SyntaxWarning: "\*" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\*"? A raw string is also an option.
+sympy/series/sequences.py:299: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+sympy/series/sequences.py:921: SyntaxWarning: "\*" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\*"? A raw string is also an option.
+sympy/sets/sets.py:182: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+sympy/sets/sets.py:1659: SyntaxWarning: "\{" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\{"? A raw string is also an option.
+sympy/simplify/radsimp.py:671: SyntaxWarning: "\/" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\/"? A raw string is also an option.
+sympy/simplify/ratsimp.py:119: SyntaxWarning: "\e" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\e"? A raw string is also an option.
+sympy/solvers/diophantine.py:1405: SyntaxWarning: "\g" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\g"? A raw string is also an option.
+sympy/solvers/diophantine.py:1470: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sympy/solvers/diophantine.py:1533: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sympy/solvers/diophantine.py:1654: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sympy/solvers/diophantine.py:2391: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+sympy/solvers/diophantine.py:2555: SyntaxWarning: "\e" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\e"? A raw string is also an option.
+sympy/solvers/diophantine.py:2597: SyntaxWarning: "\e" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\e"? A raw string is also an option.
+sympy/solvers/diophantine.py:2607: SyntaxWarning: "\c" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\c"? A raw string is also an option.
+sympy/solvers/diophantine.py:2617: SyntaxWarning: "\g" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\g"? A raw string is also an option.
+sympy/solvers/diophantine.py:2758: SyntaxWarning: "\i" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\i"? A raw string is also an option.
+sympy/solvers/diophantine.py:2972: SyntaxWarning: "\g" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\g"? A raw string is also an option.
+sympy/solvers/diophantine.py:3052: SyntaxWarning: "\g" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\g"? A raw string is also an option.
+sympy/solvers/recurr.py:24: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+sympy/solvers/recurr.py:73: SyntaxWarning: "\o" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\o"? A raw string is also an option.
+sympy/solvers/recurr.py:351: SyntaxWarning: "\o" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\o"? A raw string is also an option.
+sympy/solvers/recurr.py:462: SyntaxWarning: "\o" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\o"? A raw string is also an option.
+sympy/solvers/recurr.py:666: SyntaxWarning: "\o" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\o"? A raw string is also an option.
+sympy/solvers/solvers.py:565: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+sympy/solvers/solveset.py:62: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+sympy/solvers/solveset.py:834: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+sympy/stats/error_prop.py:12: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sympy/stats/rv.py:499: SyntaxWarning: "\/" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\/"? A raw string is also an option.
+sympy/tensor/indexed.py:11: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+sympy/utilities/misc.py:47: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+sympy/utilities/runtests.py:542: SyntaxWarning: "\*" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\*"? A raw string is also an option.
+sympy/utilities/runtests.py:1329: SyntaxWarning: "\*" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\*"? A raw string is also an option.
+sympy/utilities/runtests.py:1575: SyntaxWarning: "\d" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\d"? A raw string is also an option.
+sympy/utilities/runtests.py:1783: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sympy/utilities/runtests.py:1787: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+sympy/vector/dyadic.py:260: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+sympy/vector/vector.py:453: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+<unknown>:425: SyntaxWarning: "\*" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\*"? A raw string is also an option.
+<unknown>:473: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+<unknown>:864: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+<unknown>:1127: SyntaxWarning: "\i" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\i"? A raw string is also an option.
+<unknown>:1624: SyntaxWarning: "\{" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\{"? A raw string is also an option.
+<unknown>:2840: SyntaxWarning: "\{" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\{"? A raw string is also an option.
+<unknown>:3124: SyntaxWarning: "\O" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\O"? A raw string is also an option.
+<unknown>:124: SyntaxWarning: "\i" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\i"? A raw string is also an option.
+<unknown>:19: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+<unknown>:1473: SyntaxWarning: "\*" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\*"? A raw string is also an option.
+<unknown>:2278: SyntaxWarning: "\*" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\*"? A raw string is also an option.
+<unknown>:34: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+<unknown>:1987: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:425: SyntaxWarning: "\," is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\,"? A raw string is also an option.
+<unknown>:453: SyntaxWarning: "\," is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\,"? A raw string is also an option.
+<unknown>:453: SyntaxWarning: "\:" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\:"? A raw string is also an option.
+<unknown>:453: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+<unknown>:394: SyntaxWarning: "\9" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\9"? A raw string is also an option.
+<unknown>:1751: SyntaxWarning: "\e" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\e"? A raw string is also an option.
+<unknown>:1825: SyntaxWarning: "\e" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\e"? A raw string is also an option.
+<unknown>:1923: SyntaxWarning: "\p" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\p"? A raw string is also an option.
+<unknown>:709: SyntaxWarning: "\|" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\|"? A raw string is also an option.
+<unknown>:458: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+<unknown>:480: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+<unknown>:574: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+<unknown>:755: SyntaxWarning: "\e" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\e"? A raw string is also an option.
+<unknown>:2433: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:1865: SyntaxWarning: "\c" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\c"? A raw string is also an option.
+<unknown>:723: SyntaxWarning: "\i" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\i"? A raw string is also an option.
+<unknown>:838: SyntaxWarning: "\i" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\i"? A raw string is also an option.
+<unknown>:2015: SyntaxWarning: "\i" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\i"? A raw string is also an option.
+<unknown>:592: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+<unknown>:699: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+<unknown>:181: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+<unknown>:310: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+<unknown>:1718: SyntaxWarning: "\i" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\i"? A raw string is also an option.
+<unknown>:329: SyntaxWarning: "\/" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\/"? A raw string is also an option.
+<unknown>:385: SyntaxWarning: "\/" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\/"? A raw string is also an option.
+<unknown>:35: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:904: SyntaxWarning: "\*" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\*"? A raw string is also an option.
+<unknown>:3594: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+<unknown>:1560: SyntaxWarning: "\p" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\p"? A raw string is also an option.
+<unknown>:1603: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+<unknown>:1649: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:1722: SyntaxWarning: "\p" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\p"? A raw string is also an option.
+<unknown>:1812: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:33: SyntaxWarning: "\^" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\^"? A raw string is also an option.
+<unknown>:47: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:24: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+<unknown>:121: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+<unknown>:159: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+<unknown>:694: SyntaxWarning: "\g" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\g"? A raw string is also an option.
+<unknown>:938: SyntaxWarning: "\p" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\p"? A raw string is also an option.
+<unknown>:423: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+<unknown>:207: SyntaxWarning: "\i" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\i"? A raw string is also an option.
+<unknown>:83: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+<unknown>:388: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+<unknown>:107: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+<unknown>:135: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+<unknown>:405: SyntaxWarning: "\d" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\d"? A raw string is also an option.
+<unknown>:406: SyntaxWarning: "\d" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\d"? A raw string is also an option.
+<unknown>:407: SyntaxWarning: "\(" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\("? A raw string is also an option.
+<unknown>:408: SyntaxWarning: "\[" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\["? A raw string is also an option.
+<unknown>:409: SyntaxWarning: "\(" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\("? A raw string is also an option.
+<unknown>:410: SyntaxWarning: "\<" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\<"? A raw string is also an option.
+<unknown>:565: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+<unknown>:584: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+<unknown>:794: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+<unknown>:849: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+<unknown>:1084: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+<unknown>:1268: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+<unknown>:1528: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+<unknown>:1665: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+<unknown>:664: SyntaxWarning: "\o" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\o"? A raw string is also an option.
+<unknown>:680: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:1397: SyntaxWarning: "\d" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\d"? A raw string is also an option.
+<unknown>:1427: SyntaxWarning: "\c" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\c"? A raw string is also an option.
+<unknown>:1606: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+<unknown>:1610: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+<unknown>:1699: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+<unknown>:490: SyntaxWarning: "\%" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\%"? A raw string is also an option.
+<unknown>:1629: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+<unknown>:576: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+<unknown>:687: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+<unknown>:31: SyntaxWarning: "\e" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\e"? A raw string is also an option.
+<unknown>:192: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:200: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:329: SyntaxWarning: "\*" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\*"? A raw string is also an option.
+<unknown>:299: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+<unknown>:921: SyntaxWarning: "\*" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\*"? A raw string is also an option.
+<unknown>:182: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+<unknown>:1659: SyntaxWarning: "\{" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\{"? A raw string is also an option.
+<unknown>:671: SyntaxWarning: "\/" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\/"? A raw string is also an option.
+<unknown>:119: SyntaxWarning: "\e" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\e"? A raw string is also an option.
+<unknown>:1405: SyntaxWarning: "\g" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\g"? A raw string is also an option.
+<unknown>:1470: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:1533: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:1654: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:2391: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+<unknown>:2555: SyntaxWarning: "\e" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\e"? A raw string is also an option.
+<unknown>:2597: SyntaxWarning: "\e" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\e"? A raw string is also an option.
+<unknown>:2607: SyntaxWarning: "\c" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\c"? A raw string is also an option.
+<unknown>:2617: SyntaxWarning: "\g" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\g"? A raw string is also an option.
+<unknown>:2758: SyntaxWarning: "\i" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\i"? A raw string is also an option.
+<unknown>:2972: SyntaxWarning: "\g" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\g"? A raw string is also an option.
+<unknown>:3052: SyntaxWarning: "\g" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\g"? A raw string is also an option.
+<unknown>:24: SyntaxWarning: "\l" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\l"? A raw string is also an option.
+<unknown>:73: SyntaxWarning: "\o" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\o"? A raw string is also an option.
+<unknown>:351: SyntaxWarning: "\o" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\o"? A raw string is also an option.
+<unknown>:462: SyntaxWarning: "\o" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\o"? A raw string is also an option.
+<unknown>:666: SyntaxWarning: "\o" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\o"? A raw string is also an option.
+<unknown>:565: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+<unknown>:62: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+<unknown>:834: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+<unknown>:12: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:499: SyntaxWarning: "\/" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\/"? A raw string is also an option.
+<unknown>:11: SyntaxWarning: "\_" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\_"? A raw string is also an option.
+<unknown>:47: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+<unknown>:542: SyntaxWarning: "\*" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\*"? A raw string is also an option.
+<unknown>:1329: SyntaxWarning: "\*" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\*"? A raw string is also an option.
+<unknown>:1575: SyntaxWarning: "\d" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\d"? A raw string is also an option.
+<unknown>:1783: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:1787: SyntaxWarning: "\s" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\s"? A raw string is also an option.
+<unknown>:260: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+<unknown>:453: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+<unknown>:3594: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+<unknown>:3594: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\m"? A raw string is also an option.
+lite sympy__sympy-12454 ok 10.1s
+lite sympy__sympy-13471 ok 27.2s
+lite sympy__sympy-13480 ok 25.5s
+lite sympy__sympy-14308 ok 27.5s
+lite sympy__sympy-14396 ok 29.5s
+lite sympy__sympy-14774 ok 29.9s
+lite sympy__sympy-14817 ok 29.9s
+lite sympy__sympy-15011 ok 28.0s
+lite sympy__sympy-15678 ok 26.9s
+lite sympy__sympy-17139 ok 26.2s
+lite sympy__sympy-17630 ok 35.3s
+lite sympy__sympy-18057 ok 33.2s
+lite sympy__sympy-18199 ok 36.2s
+lite sympy__sympy-18621 ok 33.2s
+lite sympy__sympy-18835 ok 34.2s
+lite sympy__sympy-19007 ok 37.6s
+lite sympy__sympy-19254 ok 38.5s
+lite sympy__sympy-20442 ok 39.8s
+lite sympy__sympy-21171 ok 40.4s
+lite sympy__sympy-21379 ok 40.3s
+lite sympy__sympy-21627 ok 42.2s
+lite sympy__sympy-21847 ok 39.1s
+lite sympy__sympy-22005 ok 41.7s
+lite sympy__sympy-22714 ok 41.1s
+lite sympy__sympy-22840 ok 42.6s
+lite sympy__sympy-23117 ok 41.0s
+lite sympy__sympy-23191 ok 42.2s
+lite sympy__sympy-24102 ok 41.9s
+lite sympy__sympy-24152 ok 40.9s
+lite sympy__sympy-24213 ok 39.8s
+ALL DONE
