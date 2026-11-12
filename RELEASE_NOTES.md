@@ -48,7 +48,9 @@ Every other file in `exploratory/` is a byte-identical copy of the file as produ
 
 - `notebooks/names_vs_edges_recompute.ipynb`: recomputes Tables 1 and 3, A1, B1, B2, the B2 injected split and the letter-logit analysis from the run files at commit c787276 (clones the public repository).
 - `reproduce_from_runs.py`: standard library only.
-- `fig/fig1.py` and `fig/figure1.png`: Figure 1 of the paper (`figure1.png` regenerated with matplotlib 3.9.2, 2200 x 1056 px).
+- `fig/fig1.py` and `fig/figure1.png`: Figure 1 of the paper. The script now reads its values from the released result files, and `figure1.png` was regenerated with matplotlib 3.11.2 (2160 x 2979 px).
+- `fig/fig2.py` and `fig/figure2.png`: Figure 2 of the paper (matplotlib 3.11.2, 2160 x 2197 px).
+- `.github/README.md`: the front page that GitHub shows for this repository.
 
 ## Fix of 12 Nov 2026 (no result changes)
 
