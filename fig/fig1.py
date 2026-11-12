@@ -142,7 +142,9 @@ def draw_panel_b(ax, v):
         e, lo, hi = v['study_b'][key]
         ax.plot([lo, hi], [y, y], color=INK, lw=2, solid_capstyle='round', zorder=2)
         ax.plot(e, y, color=INK if confirmatory else BG, zorder=3, **STUDY_MARK)
-        ax.text(hi + 0.6, y, signed(e), va='center_baseline', ha='left', color=SEC)
+        # the paper's Table 2 gives the intervals of B1 to B5; the exploratory row prints its own
+        note = signed(e) if key in B_KEYS else f'{signed(e)} ({plain(lo)} to {plain(hi)})'
+        ax.text(hi + 0.6, y, note, va='center_baseline', ha='left', color=SEC)
     text_x = 6.2          # control labels sit right of every control interval
     dy = 0.22
     for j, (key, _) in enumerate(ctrl):
