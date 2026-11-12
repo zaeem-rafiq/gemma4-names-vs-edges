@@ -50,7 +50,7 @@ The expected result is `280 passed, 1 deselected` when llama-cpp-python is insta
 **Study A analysis.** The run files are in `runs/studyA/`, not in `runs/`. The command needs the packages in `requirements.txt`, and its output path leaves the released `runs/studyA/studyA_report.json` untouched:
 
 ```bash
-PYTHONPATH=src python -m ngraph.analysis --runs runs/studyA/studyA_E2B.jsonl runs/studyA/studyA_E4B.jsonl runs/studyA/studyA_12B.jsonl runs/studyA/studyA_31B.jsonl --manifest data/repos_manifest.json --items-dir data/items --out /tmp/studyA_report_check.json
+PYTHONPATH=src python -m ngraph.analysis --runs runs/studyA/studyA_E2B.jsonl runs/studyA/studyA_E4B.jsonl runs/studyA/studyA_12B.jsonl runs/studyA/studyA_31B.jsonl --manifest data/repos_manifest.json --items-dir data/items --out studyA_report_check.json
 ```
 
 The Study B report cannot be recomputed from this repository alone, because the task files built from the competition data and SWE-bench Lite are not redistributed. `data/studyb/README.md` gives their SHA-256 and the rebuild commands.
