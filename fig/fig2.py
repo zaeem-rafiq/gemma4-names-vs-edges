@@ -102,8 +102,8 @@ def make_figure():
 
     ax.text(0.12, top_pad, 'One Study A question, under the true graph and after one edge swap',
             ha='left', va='top', fontsize=11, fontweight='bold', color=INK, family=SANS)
-    ax.text(0.12, top_pad + title_h, 'The model sees the prompt below, word for word. The swap changes only the highlighted graph lines.\n'
-            'Blue: the lines in the true graph (G1). Orange: the same lines after the swap (G3).',
+    ax.text(0.12, top_pad + title_h, 'The released prompt, word for word. It holds either the blue graph lines (G1) or the orange ones (G3).\n'
+            'The swap changes only those lines. Orange labels and right-hand tags are not in the prompt.',
             ha='left', va='top', fontsize=9, color=SEC, family=SANS, linespacing=1.35)
 
     box_top = top_pad + title_h + sub_h + gap

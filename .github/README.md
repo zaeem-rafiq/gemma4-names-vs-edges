@@ -6,14 +6,14 @@ This repository holds the code, data, pre-registration and run files of the pape
 
 Two pre-registered studies ran Gemma 4 (E2B, E4B, 12B and 31B, Q4_0 files) with one forward pass and thinking off.
 
-- **Study A: Gemma 4 reads the call graph it is shown.** On 640 call-graph questions from 32 Python repositories, 31B answers 96.4% with the true graph and 46.4% with no graph. After an edge swap that contradicts the real code, 31B still follows the shown graph (93.8%). Real names do not change how edges are read: the interaction is +0.5 points, equivalent to zero within ±5 points.
-- **Study B: names help ranking, true edges do not.** On 371 bug-localization tasks from the competition and SWE-bench Lite, real identifiers add 8.0 points of top-1 accuracy over renamed ones (95% CI 4.9 to 11.1). On the 174 tasks that name a function unambiguously, the true call graph scores 2.2 points below a degree-preserving rewired copy (95% CI −4.2 to −0.3, Holm p = 0.0498). That result is borderline, and the pre-registration predicted a gain.
+- **Study A: Gemma 4 reads the call graph it is shown.** On 640 call-graph questions from 32 Python repositories, 31B answers 96.4% with the true graph and 46.4% with no graph. After an edge swap that contradicts the real code, 31B still follows the shown graph (93.8%). Where the models' prior knowledge of the edges is weak, real names do not change how edges are read: the interaction is +0.5 points, equivalent to zero within ±5 points.
+- **Study B: names help ranking, true edges do not.** On 371 bug-localization tasks from the competition and SWE-bench Lite, with no graph shown, real identifiers add 8.0 points of top-1 accuracy over renamed ones (95% CI 4.9 to 11.1). With identifiers renamed, on the 174 tasks that name a function unambiguously, the true call graph scores 2.2 points below a degree-preserving rewired copy (95% CI −4.2 to −0.3, Holm p = 0.0498). That result is borderline, and the pre-registration predicted a gain.
 
 ![Figure 1 of the paper: Study A accuracy by model and graph version, and Study B differences with 95% intervals](https://raw.githubusercontent.com/zaeem-rafiq/gemma4-names-vs-edges/main/fig/figure1.png)
 
 ## Reprint the paper's tables
 
-Python 3 is enough; nothing needs installing. Run the script from the repository root. From any other folder it finds no run files and prints empty tables.
+Python 3 is enough; nothing needs installing. Run the script from the repository root. From any other folder it finds no run files and stops with a `ZeroDivisionError`.
 
 ```bash
 git clone https://github.com/zaeem-rafiq/gemma4-names-vs-edges.git
@@ -39,13 +39,13 @@ For the first freeze, unpack `frozen/prereg-v1.0.tar.gz` into an empty folder an
 
 The root [README.md](https://github.com/zaeem-rafiq/gemma4-names-vs-edges/blob/main/README.md) is the package README as it was frozen with the pre-registration on 10 November 2026, before Study B was scored. The manifest hashes it, so it stays byte-identical and its status paragraph is out of date. [STATUS.md](https://github.com/zaeem-rafiq/gemma4-names-vs-edges/blob/main/STATUS.md) has the current state. Two of its commands need a different form on this tree.
 
-**Tests.** One test, `test_package_code_sha256_is_current`, compares the frozen `CODE_SHA256.txt` with the current tree. It fails on any tree that holds files added after the freeze, as this one does. Set the environment variables of the root README's section 1, then run:
+**Tests.** One test, `test_package_code_sha256_is_current`, compares the frozen `CODE_SHA256.txt` with the current tree. It fails on any tree that holds files added after the freeze, as this one does. The tests need the packages in `requirements.txt`; the released results used Python 3.13.18 and 3.14.8. Set the environment variables of the root README's section 1, then run:
 
 ```bash
 python -m pytest -q tests --deselect tests/test_commit.py::test_package_code_sha256_is_current
 ```
 
-The expected result is `280 passed, 1 deselected`.
+The expected result is `280 passed, 1 deselected` when llama-cpp-python is installed, as the root README's setup section describes. Without it, the 15 tests that need it are skipped and the result is `265 passed, 15 skipped, 1 deselected`. The root README adds that one more test is skipped where `sha256sum` is not on the PATH.
 
 **Study A analysis.** The run files are in `runs/studyA/`, not in `runs/`. The command needs the packages in `requirements.txt`, and its output path leaves the released `runs/studyA/studyA_report.json` untouched:
 

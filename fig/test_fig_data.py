@@ -2,16 +2,32 @@
 
 Run from the repository root:
     uv run --with matplotlib==3.11.2 python -m unittest discover -s fig -p "test_*.py"
+
+The tests write nothing into the repository: the scripts run in a temporary copy.
 """
-import os
+import json
+import shutil
+import struct
 import subprocess
 import sys
+import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 FIG = Path(__file__).resolve().parent
 ROOT = FIG.parent
 sys.path.insert(0, str(FIG))
+
+# The released files that the two scripts read. The scripts must need nothing else.
+INPUTS = (
+    'runs/studyA/studyA_report.json',
+    'runs/studyB/studyB_report.json',
+    'exploratory/e3_results.json',
+    'exploratory/e4c_results.json',
+    'exploratory/e5_results.json',
+    'data/items/click.json',
+)
 
 # Expected plotted values, at the precision the figure prints.
 # Study A accuracy in percent, in the order E2B, E4B, 12B, 31B.
@@ -40,12 +56,20 @@ CONTROLS = {
 }
 # Control row hint_vs_none: exploratory/e3_results.json, hint_true_minus_none, two decimals.
 HINT_VS_NONE = {'31B': (-10.53, -26.32, 2.63), 'E4B': (-7.89, -21.05, 0.00)}
+HINT_TASKS = 19
 
 
-def run_script(script, cwd):
-    """Run a figure script in a separate process and return the finished process."""
-    return subprocess.run([sys.executable, str(FIG / script)], cwd=str(cwd),
-                          capture_output=True, text=True, timeout=300)
+def copy_inputs(root):
+    """Copy the released input files into the folder `root`, at the same relative paths."""
+    for rel in INPUTS:
+        (root / rel).parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(ROOT / rel, root / rel)
+
+
+def png_size(path):
+    """Pixel width and height, read from the PNG header."""
+    with open(path, 'rb') as f:
+        return struct.unpack('>II', f.read(24)[16:24])
 
 
 class Figure1Data(unittest.TestCase):
@@ -60,6 +84,7 @@ class Figure1Data(unittest.TestCase):
             for model, expected in by_model.items():
                 got = tuple(round(x, 1) for x in v['controls'][key][model])
                 self.assertEqual(got, expected, f'{key} {model}')
+        self.assertEqual(v['hint_tasks'], HINT_TASKS)
 
     def test_loader_returns_the_hint_against_no_graph_row(self):
         from fig1 import load_values
@@ -69,17 +94,54 @@ class Figure1Data(unittest.TestCase):
                 self.assertAlmostEqual(got, want, places=2, msg=model)
 
 
+class Figure1ReadsTheReleasedFiles(unittest.TestCase):
+    def test_a_changed_file_changes_what_the_figure_draws(self):
+        """Values typed into the script would leave the drawing as it was."""
+        import fig1
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            copy_inputs(root)
+
+            def rewrite(rel, change):
+                data = json.loads((root / rel).read_text())
+                change(data)
+                (root / rel).write_text(json.dumps(data))
+
+            rewrite('runs/studyA/studyA_report.json', lambda d: d['accuracy']['31B'].update(G1=0.5))
+            rewrite('runs/studyB/studyB_report.json', lambda d: d['B1'].update(estimate=0.01))
+            rewrite('exploratory/e3_results.json',
+                    lambda d: d['models']['31B']['hint_true_minus_rewired'].update(mean=0.02))
+            with mock.patch.object(fig1, 'ROOT', root):
+                fig = fig1.make_figure()
+        try:
+            panel_a, panel_b = fig.axes
+            g1 = next(line for line in panel_a.lines if str(line.get_label()).startswith('G1 '))
+            self.assertAlmostEqual(g1.get_ydata()[fig1.MODELS.index('31B')], 50.0)
+            printed = [t.get_text() for t in panel_b.texts]
+            self.assertIn('+1.0', printed)
+            self.assertTrue(any(t.startswith('31B +2.0 (') for t in printed), printed)
+        finally:
+            fig1.plt.close(fig)
+
+
 class FigureOutput(unittest.TestCase):
     def test_each_png_is_written_next_to_its_script_from_any_working_folder(self):
-        for script, name in (('fig1.py', 'figure1.png'), ('fig2.py', 'figure2.png')):
-            png = FIG / name
-            for cwd in (ROOT, FIG):
-                if png.exists():
-                    os.utime(png, (0, 0))  # an old time, so any rewrite is visible
-                done = run_script(script, cwd)
-                self.assertEqual(done.returncode, 0, done.stderr)
-                self.assertTrue(png.exists(), f'no {name} after running from {cwd.name}')
-                self.assertGreater(png.stat().st_mtime, 0, f'{name} not rewritten from {cwd.name}')
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            copy_inputs(root)
+            fig = root / 'fig'
+            fig.mkdir()
+            for script in ('fig1.py', 'fig2.py'):
+                shutil.copyfile(FIG / script, fig / script)
+            for script, name in (('fig1.py', 'figure1.png'), ('fig2.py', 'figure2.png')):
+                png = fig / name
+                for where, cwd in (('the root folder', root), ('the fig folder', fig)):
+                    png.unlink(missing_ok=True)
+                    done = subprocess.run([sys.executable, str(fig / script)], cwd=str(cwd),
+                                          capture_output=True, text=True, timeout=300)
+                    self.assertEqual(done.returncode, 0, done.stderr)
+                    self.assertTrue(png.exists(), f'no {name} after running from {where}')
+                self.assertEqual(png_size(png), png_size(FIG / name), f'{name} has another size than the released file')
 
 
 class Figure2Item(unittest.TestCase):
@@ -97,6 +159,15 @@ class Figure2Item(unittest.TestCase):
         for i in differing:
             self.assertTrue(any(g1[i].startswith(c + ' -> ') for c in callers), g1[i])
         self.assertEqual(differing, list(self.fig2.swapped_lines(self.item)))
+
+    def test_rows_reprint_the_prompt_word_for_word(self):
+        rows = self.fig2.build_rows(self.item)
+        shown = ' '.join(r['text'] for r in rows if r['kind'] not in ('label', 'swapped'))
+        self.assertEqual(shown.split(), self.item['g1'].split())
+        g3 = self.item['g3'].split('\n')
+        swapped = ' '.join(r['text'] for r in rows if r['kind'] == 'swapped')
+        expected = ' '.join(g3[i] for i in self.fig2.swapped_lines(self.item))
+        self.assertEqual(swapped.split(), expected.split())
 
     def test_correct_letters_come_from_the_item_file(self):
         self.assertEqual(self.item['correct_g1'], 'D')
