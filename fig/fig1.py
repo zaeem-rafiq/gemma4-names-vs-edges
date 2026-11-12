@@ -1,63 +1,203 @@
-import matplotlib; matplotlib.use('Agg')
+"""Figure 1: Study A accuracy (panel a) and Study B differences (panel b).
+
+Every plotted value is read from the released run and exploratory files when the
+script runs. The PNG is written next to this script, whatever the working folder.
+
+    python fig/fig1.py        (needs matplotlib)
+"""
+import json
+from pathlib import Path
+
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-INK='#0b0b0b'; SEC='#52514e'; MUT='#898781'; GRID='#e1e0d9'; BG='#ffffff'
-C1,C2,C3='#2a78d6','#eb6834','#1baf7a'
-plt.rcParams.update({'font.family':'DejaVu Sans','font.size':9,'axes.edgecolor':MUT,'axes.labelcolor':SEC,
- 'xtick.color':SEC,'ytick.color':SEC,'axes.titlesize':10,'axes.titleweight':'bold','axes.titlecolor':INK})
-fig,(a,b)=plt.subplots(1,2,figsize=(10,4.8),gridspec_kw={'width_ratios':[1,1.15]})
-fig.patch.set_facecolor(BG)
-# (a) Study A, values from studyA_headline.md
-models=['E2B','E4B','12B','31B']; x=range(4)
-G0=[32.66,36.88,40.00,46.41]; G1=[57.27,64.84,91.56,96.41]; G2=[58.44,61.72,91.25,96.09]; G3=[46.72,54.61,89.84,93.75]; G4=[50.08,53.98,87.66,92.81]
-for ys,c,lab,ls in [(G1,C1,'G1 true, real names','-'),(G2,C3,'G2 true, neutral','--'),(G3,C2,'G3 swapped, real','-'),(G4,'#8a5cc7','G4 swapped, neutral','--'),(G0,MUT,'G0 no graph',':')]:
-    a.plot(x,ys,color=c,lw=2,ls=ls,marker='o',ms=5,label=lab,markeredgecolor=BG,markeredgewidth=1)
-a.axhline(25,color=MUT,lw=1,ls=(0,(2,2)))
-a.text(-0.15,26.2,'chance (25%)',va='bottom',ha='left',color=MUT,fontsize=7.5)
-a.set_xticks(list(x)); a.set_xticklabels(models); a.set_ylim(15,127); a.set_xlim(-0.2,3.2); a.set_yticks(range(20,101,20))
-a.set_ylabel('Accuracy (%)'); a.set_yticklabels([str(v) for v in range(20,101,20)]); a.set_title('(a) Study A: the shown graph drives accuracy',loc='left')
-a.grid(axis='y',color=GRID,lw=0.6); a.set_axisbelow(True)
-for s in ['top','right']: a.spines[s].set_visible(False)
-a.legend(frameon=False,fontsize=7.5,loc='upper left',labelcolor=SEC,ncol=2,columnspacing=1.0,handlelength=2.2)
-# (b) Study B forest, values from studyB_headline.md (stratified 95% CI)
-rows=[('B1 real − renamed names',8.02,4.92,11.12,True),
-      ('B2 true − rewired (renamed, anchored)',-2.16,-4.17,-0.29,True),
-      ('B3 graph value, renamed − real',-2.30,-5.03,0.43,False),
-      ('B4 names effect, 31B − E4B',1.35,-6.31,9.01,False),
-      ('B5 scorer, true − rewired',-1.15,-2.87,0.00,False),
-      ('Within-module rewiring (expl.)',-0.72,-2.87,1.44,False)]
-ctrl=[('Equal density: true − random',(-0.3,-1.4,0.6),(0.3,-2.0,2.6)),
-      ('Equal sparsity: thinned true − rewired',(0.9,-0.3,2.3),(-1.4,-3.2,0.3)),
-      ('With hint: true − rewired (19 tasks)',(-5.3,-18.4,5.3),(-2.6,-7.9,0.0)),
-      ('JSON vs line format (Study A, G1)',(1.1,-0.2,2.3),(-0.2,-2.7,2.2))]
-n=len(rows)+len(ctrl)+1
-b.axvspan(-5,5,color='#eef3fb',zorder=0)
-b.axvline(0,color=MUT,lw=1,zorder=1)
-for i,(lab,e,lo,hi,conf) in enumerate(rows):
-    y=n-1-i
-    b.plot([lo,hi],[y,y],color=INK,lw=2,solid_capstyle='round',zorder=2)
-    b.plot(e,y,'o',ms=7,color=INK if conf else BG,markeredgecolor=INK,markeredgewidth=1.6,zorder=3)
-    b.text(hi+0.4,y,f'{e:+.1f}'.replace('-','−'),va='center',ha='left',fontsize=8,color=SEC)
-XMIN=-8
-labels=[r[0] for r in rows]+['Exploratory controls (Sections 4.3, 5)']+[c[0] for c in ctrl]
-for j,(lab,m31,m4) in enumerate(ctrl):
-    y=n-1-(len(rows)+1+j)
-    for (e,lo,hi),dy,mk in [(m31,0.14,'s'),(m4,-0.14,'^')]:
-        lo2=max(lo,XMIN+0.05)
-        b.plot([lo2,hi],[y+dy,y+dy],color=SEC,lw=1.6,solid_capstyle='round',zorder=2)
-        if lo<XMIN: b.annotate('',xy=(XMIN+0.05,y+dy),xytext=(XMIN+0.9,y+dy),arrowprops=dict(arrowstyle='->',color=SEC,lw=1.2))
-        b.plot(e,y+dy,mk,ms=6,color=BG,markeredgecolor=SEC,markeredgewidth=1.4,zorder=3)
-yh=n-1-len(rows)
-b.axhline(yh+0.5,color=GRID,lw=0.8)
-b.set_yticks(range(n)); b.set_yticklabels(labels[::-1],fontsize=8)
-b.get_yticklabels()[n-1-len(rows)].set_fontweight('bold')
-b.set_xlim(-8,13); b.set_ylim(-0.75,n-0.1)
-b.set_xlabel('Acc@1 difference, points (95% CI)')
-b.text(-4.8,-0.6,'±5-point equivalence band',ha='left',va='bottom',fontsize=7,color=SEC)
-b.set_title('(b) Study B: names help, true edges do not',loc='left')
-for s in ['top','right','left']: b.spines[s].set_visible(False)
-b.tick_params(axis='y',length=0)
-b.set_xticks([-5,0,5,10]); b.set_xticklabels(['−5','0','+5','+10'])
-b.text(13,n-0.45,'filled: confirmatory; open: secondary or exploratory',ha='right',va='bottom',fontsize=7,color=MUT)
-b.text(13,-0.6,'controls: square 31B, triangle E4B',ha='right',va='bottom',fontsize=7,color=MUT)
-fig.tight_layout()
-fig.savefig('figure1.png',dpi=220,facecolor=BG)
+from matplotlib.lines import Line2D
+from matplotlib.patches import Patch
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+OUT = HERE / 'figure1.png'
+
+INK, SEC, MUT, GRID, BG = '#0b0b0b', '#52514e', '#898781', '#e1e0d9', '#ffffff'
+C1, C2, C3, C4 = '#2a78d6', '#eb6834', '#1baf7a', '#8a5cc7'   # C1 true/real, C2 swapped/real
+BAND = '#eef3fb'
+RC = {'font.family': 'DejaVu Sans', 'font.size': 9, 'axes.edgecolor': MUT, 'axes.labelcolor': SEC,
+      'xtick.color': SEC, 'ytick.color': SEC, 'axes.titlesize': 11, 'axes.titleweight': 'bold',
+      'axes.titlecolor': INK}
+
+MODELS = ['E2B', 'E4B', '12B', '31B']     # left to right in panel a
+CHANCE = 25        # percent: four answer options
+EQUIV = 5          # points: the pre-registered equivalence margin, half-width of the band
+XMIN = -12         # left edge of panel b; an interval that runs past it is drawn as an arrow
+
+B_KEYS = ['B1', 'B2', 'B3', 'B4', 'B5']
+# control row -> (exploratory results file, key of the difference in each model's entry)
+CONTROL_SOURCES = {
+    'equal_density': ('e4c', 'acc_true_minus_random_dense'),
+    'equal_sparsity': ('e4c', 'acc_true_thinned_minus_rewired'),
+    'hint': ('e3', 'hint_true_minus_rewired'),
+    'hint_vs_none': ('e3', 'hint_true_minus_none'),
+    'json_vs_line': ('e5', 'G1J_minus_G1'),
+}
+
+
+def _read(path):
+    return json.loads((ROOT / path).read_text())
+
+
+def load_values():
+    """Read every plotted value from the released files. Values are in percent or points."""
+    a = _read('runs/studyA/studyA_report.json')['accuracy']
+    b = _read('runs/studyB/studyB_report.json')
+    study_b = {k: (b[k]['estimate'] * 100, *[c * 100 for c in b[k]['ci95_stratified']]) for k in B_KEYS}
+    wm = b['exploratory']['within_module_null']
+    study_b['within_module'] = (wm['estimate'] * 100, *[c * 100 for c in wm['ci95']])
+    files = {name: _read(f'exploratory/{name}_results.json')['models'] for name in ('e3', 'e4c', 'e5')}
+    controls = {}
+    for key, (name, field) in CONTROL_SOURCES.items():
+        controls[key] = {m: (files[name][m][field]['mean'] * 100,
+                             *[c * 100 for c in files[name][m][field]['ci95']])
+                         for m in ('31B', 'E4B')}
+    return {
+        'models': MODELS,
+        'study_a': {ver: [a[m][ver] * 100 for m in MODELS] for ver in ('G0', 'G1', 'G2', 'G3', 'G4')},
+        'study_b': study_b,
+        'controls': controls,
+        'hint_tasks': files['e3']['31B']['hint_true_minus_rewired']['n'],
+    }
+
+
+def signed(x):
+    return f'{x:+.1f}'.replace('-', '−')
+
+
+def plain(x):
+    return f'{x:.1f}'.replace('-', '−')
+
+
+# Figure size in inches. The width stays under 7.5 in, so the point sizes below hold at the width shown.
+W = 7.2
+PAD_BOTTOM, LEGEND_H, XAXIS_H = 0.10, 0.55, 0.52
+B_H, TITLE_GAP, A_H, A_XAXIS_H, TITLE_H = 4.64, 0.42, 2.65, 0.55, 0.50
+B_BOTTOM = PAD_BOTTOM + LEGEND_H + XAXIS_H
+B_TOP = B_BOTTOM + B_H
+A_BOTTOM = B_TOP + TITLE_GAP + A_XAXIS_H
+A_TOP = A_BOTTOM + A_H
+H = A_TOP + TITLE_H
+A_LEFT, B_LEFT, RIGHT = 0.70, 2.30, 0.15
+
+
+def rect(left, bottom, width, height):
+    return [left / W, bottom / H, width / W, height / H]
+
+
+def draw_panel_a(ax, v):
+    x = range(len(MODELS))
+    lines = [('G1', C1, 'G1 true graph, real names', '-'), ('G2', C3, 'G2 true graph, neutral names', '--'),
+             ('G3', C2, 'G3 swapped graph, real names', '-'), ('G4', C4, 'G4 swapped graph, neutral names', '--'),
+             ('G0', MUT, 'G0 no graph', ':')]
+    for ver, color, label, ls in lines:
+        ax.plot(x, v['study_a'][ver], color=color, lw=2, ls=ls, marker='o', ms=5, label=label,
+                markeredgecolor=BG, markeredgewidth=1)
+    ax.axhline(CHANCE, color=MUT, lw=1, ls=(0, (2, 2)))
+    ax.text(3.9, CHANCE + 1.2, f'chance ({CHANCE}%)', va='bottom', ha='right', color=SEC)
+    ax.set_xticks(list(x))
+    ax.set_xticklabels(MODELS)
+    ax.set_xlim(-0.25, 3.95)
+    ax.set_ylim(20, 100)
+    ax.set_yticks(range(20, 101, 20))
+    ax.set_xlabel('Gemma 4 model')
+    ax.set_ylabel('Accuracy (%)')
+    ax.grid(axis='y', color=GRID, lw=0.6)
+    ax.set_axisbelow(True)
+    for s in ('top', 'right'):
+        ax.spines[s].set_visible(False)
+    # the area right of 12B between about 48 and 84 percent holds no line
+    ax.legend(frameon=False, loc='center left', bbox_to_anchor=(2.1, 67), bbox_transform=ax.transData,
+              labelcolor=SEC, handlelength=2.2, labelspacing=0.5)
+
+
+def draw_panel_b(ax, v):
+    rows = [('B1', 'B1 real − renamed names', True),
+            ('B2', 'B2 true − rewired\n(renamed, anchored)', True),
+            ('B3', 'B3 graph value,\nrenamed − real', False),
+            ('B4', 'B4 names effect,\n31B − E4B', False),
+            ('B5', 'B5 scorer,\ntrue − rewired', False),
+            ('within_module', 'Within-module rewiring\n(exploratory)', False)]
+    ctrl = [('equal_density', 'Equal density:\ntrue − random'),
+            ('equal_sparsity', 'Equal sparsity:\nthinned true − rewired'),
+            ('hint', f"With hint: true − rewired\n({v['hint_tasks']} tasks)"),
+            ('hint_vs_none', f"With hint: true − no graph\n({v['hint_tasks']} tasks)"),
+            ('json_vs_line', 'JSON vs line format\n(Study A, G1)')]
+    header = 'Exploratory controls\n(Sections 4.3, 5)'
+    n = len(rows) + 1 + len(ctrl)
+    ax.axvspan(-EQUIV, EQUIV, color=BAND, zorder=0)
+    ax.axvline(0, color=MUT, lw=1, zorder=1)
+    for i, (key, _, confirmatory) in enumerate(rows):
+        y = n - 1 - i
+        e, lo, hi = v['study_b'][key]
+        ax.plot([lo, hi], [y, y], color=INK, lw=2, solid_capstyle='round', zorder=2)
+        ax.plot(e, y, 'o', ms=7, color=INK if confirmatory else BG, markeredgecolor=INK,
+                markeredgewidth=1.6, zorder=3)
+        ax.text(hi + 0.6, y, signed(e), va='center_baseline', ha='left', color=SEC)
+    text_x = 6.2          # control labels sit right of every control interval
+    dy = 0.22
+    for j, (key, _) in enumerate(ctrl):
+        y = n - 1 - (len(rows) + 1 + j)
+        for model, off, marker in (('31B', dy, 's'), ('E4B', -dy, '^')):
+            e, lo, hi = v['controls'][key][model]
+            ax.plot([max(lo, XMIN + 0.05), hi], [y + off] * 2, color=SEC, lw=1.6, solid_capstyle='round', zorder=2)
+            if lo < XMIN:
+                ax.annotate('', xy=(XMIN + 0.05, y + off), xytext=(XMIN + 0.9, y + off),
+                            arrowprops=dict(arrowstyle='->', color=SEC, lw=1.2))
+            ax.plot(e, y + off, marker, ms=6, color=BG, markeredgecolor=SEC, markeredgewidth=1.4, zorder=3)
+            ax.text(text_x, y + off, f'{model} {signed(e)} ({plain(lo)} to {plain(hi)})',
+                    va='center_baseline', ha='left', color=SEC)
+    ax.axhline(n - 1 - len(rows) + 0.5, color=GRID, lw=0.8)
+    ax.set_yticks(range(n))
+    top_to_bottom = [r[1] for r in rows] + [header] + [c[1] for c in ctrl]
+    ax.set_yticklabels(top_to_bottom[::-1], linespacing=1.15)
+    ax.get_yticklabels()[n - 1 - len(rows)].set_fontweight('bold')
+    ax.set_xlim(XMIN, 16.6)
+    ax.set_ylim(-0.7, n - 0.4)
+    ax.set_xlabel('Difference in accuracy, points (95% CI)')
+    for s in ('top', 'right', 'left'):
+        ax.spines[s].set_visible(False)
+    ax.tick_params(axis='y', length=0, pad=9)   # keeps the left-edge arrow clear of the row labels
+    ax.set_xticks([-10, -5, 0, 5, 10])
+    ax.set_xticklabels(['−10', '−5', '0', '+5', '+10'])
+    handles = [Line2D([], [], marker='o', ls='', ms=7, color=INK, markeredgecolor=INK, markeredgewidth=1.6),
+               Line2D([], [], marker='o', ls='', ms=7, color=BG, markeredgecolor=INK, markeredgewidth=1.6),
+               Line2D([], [], marker='s', ls='', ms=6, color=BG, markeredgecolor=SEC, markeredgewidth=1.4),
+               Line2D([], [], marker='^', ls='', ms=6, color=BG, markeredgecolor=SEC, markeredgewidth=1.4),
+               Patch(facecolor=BAND, edgecolor=GRID)]
+    labels = ['Confirmatory comparison', 'Secondary or exploratory comparison',
+              'Control row: 31B', 'Control row: E4B', f'±{EQUIV}-point equivalence band']
+    return handles, labels
+
+
+def make_figure():
+    plt.rcParams.update(RC)
+    v = load_values()
+    fig = plt.figure(figsize=(W, H))
+    fig.patch.set_facecolor(BG)
+    a = fig.add_axes(rect(A_LEFT, A_BOTTOM, W - A_LEFT - RIGHT, A_H))
+    b = fig.add_axes(rect(B_LEFT, B_BOTTOM, W - B_LEFT - RIGHT, B_H))
+    draw_panel_a(a, v)
+    handles, labels = draw_panel_b(b, v)
+    title_kw = dict(ha='left', va='bottom', fontsize=11, fontweight='bold', color=INK)
+    fig.text(0.12 / W, (A_TOP + 0.18) / H, '(a) Study A: Gemma 4 reads the graph it is shown', **title_kw)
+    fig.text(0.12 / W, (B_TOP + 0.18) / H, '(b) Study B: names help ranking, true edges do not', **title_kw)
+    fig.legend(handles, labels, loc='lower center', bbox_to_anchor=(0.5, PAD_BOTTOM / H), ncol=3,
+               frameon=False, labelcolor=SEC, columnspacing=1.6, handletextpad=0.5)
+    return fig
+
+
+def main():
+    fig = make_figure()
+    fig.savefig(OUT, dpi=300, facecolor=BG)
+    plt.close(fig)
+
+
+if __name__ == '__main__':
+    main()
