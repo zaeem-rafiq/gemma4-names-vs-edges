@@ -7,7 +7,6 @@ written next to this script, whatever the working folder.
     python fig/fig2.py        (needs matplotlib)
 """
 import json
-import re
 import textwrap
 from pathlib import Path
 
@@ -41,15 +40,15 @@ def load_item():
     data = json.loads(ITEM_FILE.read_text())
     item = next(i for i in data['items'] if i['item_id'] == ITEM_ID)
     g1, g3 = item['versions']['G1'], item['versions']['G3']
-    return {'item_id': ITEM_ID, 'commit': data['commit'], 'g1': g1['text'], 'g3': g3['text'],
+    return {'item_id': ITEM_ID, 'repo': item['repo'], 'commit': item['commit'], 'g1': g1['text'], 'g3': g3['text'],
             'correct_g1': g1['correct'], 'correct_g3': g3['correct'], 'swap': item['swap']}
 
 
-def swap_rows(item):
-    """(line number, true line, swapped line) for each graph line whose caller the swap removes an edge from."""
-    callers = {caller for caller, _ in item['swap']['remove']}
+def swapped_lines(item):
+    """{line number: swapped line} for each graph line whose caller the swap removes an edge from."""
+    prefixes = tuple(caller + ' -> ' for caller, _ in item['swap']['remove'])
     g1, g3 = item['g1'].split('\n'), item['g3'].split('\n')
-    return [(i, g1[i], g3[i]) for i in range(len(g1)) if any(g1[i].startswith(c + ' -> ') for c in callers)]
+    return {i: g3[i] for i, line in enumerate(g1) if line.startswith(prefixes)}
 
 
 def wrap(line):
@@ -59,16 +58,16 @@ def wrap(line):
 
 def build_rows(item):
     """Rows of the drawing, top to bottom. kind: plain, true, label, swapped, right_true, right_swapped, blank."""
-    swapped = {i: g3 for i, _, g3 in swap_rows(item)}
+    swapped = swapped_lines(item)
     rows = []
     for i, line in enumerate(item['g1'].split('\n')):
         if not line:
             rows.append({'kind': 'blank', 'text': ''})
             continue
         kind = 'true' if i in swapped else 'plain'
-        if re.match(rf"{item['correct_g1']}\. ", line):
+        if line.startswith(f"{item['correct_g1']}. "):
             kind = 'right_true'
-        elif re.match(rf"{item['correct_g3']}\. ", line):
+        elif line.startswith(f"{item['correct_g3']}. "):
             kind = 'right_swapped'
         rows += [{'kind': kind, 'text': piece} for piece in wrap(line)]
         if i in swapped:
@@ -119,15 +118,13 @@ def make_figure():
             if tag:
                 ax.text(XR, y + h / 2, tag, ha='right', va='center_baseline', fontsize=FS,
                         fontweight='bold', color=tag_color, family=SANS, zorder=3)
-        if r['kind'] == 'label':
-            ax.text(X0, y + h / 2, r['text'], ha='left', va='center_baseline', fontsize=FS,
-                    fontweight='bold', color=ORANGE_TEXT, family=SANS, zorder=3)
-        elif r['text']:
-            ax.text(X0, y + h / 2, r['text'], ha='left', va='center_baseline', fontsize=FS,
-                    color=INK, family=MONO, zorder=3)
+        if r['text']:
+            font = (dict(fontweight='bold', color=ORANGE_TEXT, family=SANS) if r['kind'] == 'label'
+                    else dict(color=INK, family=MONO))
+            ax.text(X0, y + h / 2, r['text'], ha='left', va='center_baseline', fontsize=FS, zorder=3, **font)
         y += h
     ax.text(0.12, box_top + box_h + 0.12, f"Item {item['item_id']} in data/items/{ITEM_FILE.name}. "
-            f"Repository {ITEM_ID.split('/')[0]}, pinned commit {item['commit'][:7]}.",
+            f"Repository {item['repo']}, pinned commit {item['commit'][:7]}.",
             ha='left', va='top', fontsize=8.5, color=SEC, family=SANS)
     return fig
 

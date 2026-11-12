@@ -31,6 +31,10 @@ EQUIV = 5          # points: the pre-registered equivalence margin, half-width o
 XMIN = -12         # left edge of panel b; an interval that runs past it is drawn as an arrow
 
 B_KEYS = ['B1', 'B2', 'B3', 'B4', 'B5']
+CONTROL_MODELS = (('31B', 's'), ('E4B', '^'))   # model and its marker in the control rows
+# marker styles shared by the plotted points and their legend entries
+STUDY_MARK = dict(marker='o', ls='', ms=7, markeredgecolor=INK, markeredgewidth=1.6)
+CONTROL_MARK = dict(ls='', ms=6, markeredgecolor=SEC, markeredgewidth=1.4)
 # control row -> (exploratory results file, key of the difference in each model's entry)
 CONTROL_SOURCES = {
     'equal_density': ('e4c', 'acc_true_minus_random_dense'),
@@ -57,9 +61,8 @@ def load_values():
     for key, (name, field) in CONTROL_SOURCES.items():
         controls[key] = {m: (files[name][m][field]['mean'] * 100,
                              *[c * 100 for c in files[name][m][field]['ci95']])
-                         for m in ('31B', 'E4B')}
+                         for m, _ in CONTROL_MODELS}
     return {
-        'models': MODELS,
         'study_a': {ver: [a[m][ver] * 100 for m in MODELS] for ver in ('G0', 'G1', 'G2', 'G3', 'G4')},
         'study_b': study_b,
         'controls': controls,
@@ -131,33 +134,33 @@ def draw_panel_b(ax, v):
             ('json_vs_line', 'JSON vs line format\n(Study A, G1)')]
     header = 'Exploratory controls\n(Sections 4.3, 5)'
     n = len(rows) + 1 + len(ctrl)
+    header_y = n - 1 - len(rows)
     ax.axvspan(-EQUIV, EQUIV, color=BAND, zorder=0)
     ax.axvline(0, color=MUT, lw=1, zorder=1)
     for i, (key, _, confirmatory) in enumerate(rows):
         y = n - 1 - i
         e, lo, hi = v['study_b'][key]
         ax.plot([lo, hi], [y, y], color=INK, lw=2, solid_capstyle='round', zorder=2)
-        ax.plot(e, y, 'o', ms=7, color=INK if confirmatory else BG, markeredgecolor=INK,
-                markeredgewidth=1.6, zorder=3)
+        ax.plot(e, y, color=INK if confirmatory else BG, zorder=3, **STUDY_MARK)
         ax.text(hi + 0.6, y, signed(e), va='center_baseline', ha='left', color=SEC)
     text_x = 6.2          # control labels sit right of every control interval
     dy = 0.22
     for j, (key, _) in enumerate(ctrl):
-        y = n - 1 - (len(rows) + 1 + j)
-        for model, off, marker in (('31B', dy, 's'), ('E4B', -dy, '^')):
+        y = header_y - 1 - j
+        for (model, marker), off in zip(CONTROL_MODELS, (dy, -dy)):
             e, lo, hi = v['controls'][key][model]
             ax.plot([max(lo, XMIN + 0.05), hi], [y + off] * 2, color=SEC, lw=1.6, solid_capstyle='round', zorder=2)
             if lo < XMIN:
                 ax.annotate('', xy=(XMIN + 0.05, y + off), xytext=(XMIN + 0.9, y + off),
                             arrowprops=dict(arrowstyle='->', color=SEC, lw=1.2))
-            ax.plot(e, y + off, marker, ms=6, color=BG, markeredgecolor=SEC, markeredgewidth=1.4, zorder=3)
+            ax.plot(e, y + off, marker=marker, color=BG, zorder=3, **CONTROL_MARK)
             ax.text(text_x, y + off, f'{model} {signed(e)} ({plain(lo)} to {plain(hi)})',
                     va='center_baseline', ha='left', color=SEC)
-    ax.axhline(n - 1 - len(rows) + 0.5, color=GRID, lw=0.8)
+    ax.axhline(header_y + 0.5, color=GRID, lw=0.8)
     ax.set_yticks(range(n))
     top_to_bottom = [r[1] for r in rows] + [header] + [c[1] for c in ctrl]
     ax.set_yticklabels(top_to_bottom[::-1], linespacing=1.15)
-    ax.get_yticklabels()[n - 1 - len(rows)].set_fontweight('bold')
+    ax.get_yticklabels()[header_y].set_fontweight('bold')
     ax.set_xlim(XMIN, 16.6)
     ax.set_ylim(-0.7, n - 0.4)
     ax.set_xlabel('Difference in accuracy, points (95% CI)')
@@ -166,13 +169,11 @@ def draw_panel_b(ax, v):
     ax.tick_params(axis='y', length=0, pad=9)   # keeps the left-edge arrow clear of the row labels
     ax.set_xticks([-10, -5, 0, 5, 10])
     ax.set_xticklabels(['−10', '−5', '0', '+5', '+10'])
-    handles = [Line2D([], [], marker='o', ls='', ms=7, color=INK, markeredgecolor=INK, markeredgewidth=1.6),
-               Line2D([], [], marker='o', ls='', ms=7, color=BG, markeredgecolor=INK, markeredgewidth=1.6),
-               Line2D([], [], marker='s', ls='', ms=6, color=BG, markeredgecolor=SEC, markeredgewidth=1.4),
-               Line2D([], [], marker='^', ls='', ms=6, color=BG, markeredgecolor=SEC, markeredgewidth=1.4),
+    handles = [Line2D([], [], color=INK, **STUDY_MARK), Line2D([], [], color=BG, **STUDY_MARK),
+               *[Line2D([], [], marker=marker, color=BG, **CONTROL_MARK) for _, marker in CONTROL_MODELS],
                Patch(facecolor=BAND, edgecolor=GRID)]
     labels = ['Confirmatory comparison', 'Secondary or exploratory comparison',
-              'Control row: 31B', 'Control row: E4B', f'±{EQUIV}-point equivalence band']
+              *[f'Control row: {model}' for model, _ in CONTROL_MODELS], f'±{EQUIV}-point equivalence band']
     return handles, labels
 
 

@@ -13,7 +13,7 @@ FIG = Path(__file__).resolve().parent
 ROOT = FIG.parent
 sys.path.insert(0, str(FIG))
 
-# Values the first version of fig1.py hard-coded, in the precision the figure uses.
+# Expected plotted values, at the precision the figure prints.
 # Study A accuracy in percent, in the order E2B, E4B, 12B, 31B.
 STUDY_A = {
     'G0': [32.66, 36.88, 40.00, 46.41],
@@ -38,8 +38,7 @@ CONTROLS = {
     'hint': {'31B': (-5.3, -18.4, 5.3), 'E4B': (-2.6, -7.9, 0.0)},
     'json_vs_line': {'31B': (1.1, -0.2, 2.3), 'E4B': (-0.2, -2.7, 2.2)},
 }
-# A control row the first version did not draw, from exploratory/e3_results.json
-# (hint_true_minus_none), two decimals.
+# Control row hint_vs_none: exploratory/e3_results.json, hint_true_minus_none, two decimals.
 HINT_VS_NONE = {'31B': (-10.53, -26.32, 2.63), 'E4B': (-7.89, -21.05, 0.00)}
 
 
@@ -50,10 +49,9 @@ def run_script(script, cwd):
 
 
 class Figure1Data(unittest.TestCase):
-    def test_loader_returns_every_value_the_old_script_hard_coded(self):
+    def test_loader_returns_the_plotted_values(self):
         from fig1 import load_values
         v = load_values()
-        self.assertEqual(v['models'], ['E2B', 'E4B', '12B', '31B'])
         for ver, expected in STUDY_A.items():
             self.assertEqual([round(x, 2) for x in v['study_a'][ver]], expected, ver)
         for key, expected in STUDY_B.items():
@@ -71,16 +69,17 @@ class Figure1Data(unittest.TestCase):
                 self.assertAlmostEqual(got, want, places=2, msg=model)
 
 
-class Figure1Output(unittest.TestCase):
-    def test_png_is_written_next_to_the_script_from_any_working_folder(self):
-        png = FIG / 'figure1.png'
-        for cwd in (ROOT, FIG):
-            if png.exists():
-                os.utime(png, (0, 0))  # an old time, so any rewrite is visible
-            done = run_script('fig1.py', cwd)
-            self.assertEqual(done.returncode, 0, done.stderr)
-            self.assertTrue(png.exists(), f'no figure1.png after running from {cwd.name}')
-            self.assertGreater(png.stat().st_mtime, 0, f'figure1.png not rewritten from {cwd.name}')
+class FigureOutput(unittest.TestCase):
+    def test_each_png_is_written_next_to_its_script_from_any_working_folder(self):
+        for script, name in (('fig1.py', 'figure1.png'), ('fig2.py', 'figure2.png')):
+            png = FIG / name
+            for cwd in (ROOT, FIG):
+                if png.exists():
+                    os.utime(png, (0, 0))  # an old time, so any rewrite is visible
+                done = run_script(script, cwd)
+                self.assertEqual(done.returncode, 0, done.stderr)
+                self.assertTrue(png.exists(), f'no {name} after running from {cwd.name}')
+                self.assertGreater(png.stat().st_mtime, 0, f'{name} not rewritten from {cwd.name}')
 
 
 class Figure2Item(unittest.TestCase):
@@ -97,7 +96,7 @@ class Figure2Item(unittest.TestCase):
         self.assertTrue(differing)
         for i in differing:
             self.assertTrue(any(g1[i].startswith(c + ' -> ') for c in callers), g1[i])
-        self.assertEqual(differing, [i for i, _, _ in self.fig2.swap_rows(self.item)])
+        self.assertEqual(differing, list(self.fig2.swapped_lines(self.item)))
 
     def test_correct_letters_come_from_the_item_file(self):
         self.assertEqual(self.item['correct_g1'], 'D')
